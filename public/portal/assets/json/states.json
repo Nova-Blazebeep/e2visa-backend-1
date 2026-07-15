@@ -1,0 +1,770 @@
+[
+    {
+        "id": 1,
+        "country_id": 250,
+        "state_name": "Kabul",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 2,
+        "country_id": 2,
+        "state_name": "Tirana",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 3,
+        "country_id": 3,
+        "state_name": "Algiers",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 4,
+        "country_id": 4,
+        "state_name": "Pago Pago",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 5,
+        "country_id": 5,
+        "state_name": "Andorra la Vella",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 6,
+        "country_id": 6,
+        "state_name": "Luanda",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 7,
+        "country_id": 9,
+        "state_name": "Saint John's",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 8,
+        "country_id": 10,
+        "state_name": "Buenos Aires",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 9,
+        "country_id": 10,
+        "state_name": "Cordoba",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 10,
+        "country_id": 11,
+        "state_name": "Yerevan",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 11,
+        "country_id": 13,
+        "state_name": "New South Wales",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 12,
+        "country_id": 13,
+        "state_name": "Victoria",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 13,
+        "country_id": 14,
+        "state_name": "Vienna",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 14,
+        "country_id": 14,
+        "state_name": "Upper Austria",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 15,
+        "country_id": 15,
+        "state_name": "Baku",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 16,
+        "country_id": 16,
+        "state_name": "New Providence",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 17,
+        "country_id": 17,
+        "state_name": "Capital Governorate",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 18,
+        "country_id": 18,
+        "state_name": "Dhaka",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 19,
+        "country_id": 19,
+        "state_name": "Saint Michael",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 20,
+        "country_id": 20,
+        "state_name": "Minsk",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 21,
+        "country_id": 21,
+        "state_name": "Brussels-Capital",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 22,
+        "country_id": 22,
+        "state_name": "Belize District",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 23,
+        "country_id": 23,
+        "state_name": "Littoral",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 24,
+        "country_id": 24,
+        "state_name": "Hamilton",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 25,
+        "country_id": 25,
+        "state_name": "Thimphu",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 26,
+        "country_id": 26,
+        "state_name": "La Paz",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 27,
+        "country_id": 27,
+        "state_name": "Sarajevo",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 28,
+        "country_id": 28,
+        "state_name": "Gaborone",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 29,
+        "country_id": 29,
+        "state_name": "N/A",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 30,
+        "country_id": 30,
+        "state_name": "Sao Paulo",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 31,
+        "country_id": 30,
+        "state_name": "Rio de Janeiro",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 32,
+        "country_id": 31,
+        "state_name": "N/A",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 33,
+        "country_id": 32,
+        "state_name": "Diego Garcia",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 34,
+        "country_id": 33,
+        "state_name": "Road Town",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 35,
+        "country_id": 34,
+        "state_name": "Brunei-Muara",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 36,
+        "country_id": 35,
+        "state_name": "Sofia",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 37,
+        "country_id": 36,
+        "state_name": "Centre",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 38,
+        "country_id": 37,
+        "state_name": "Bujumbura Mairie",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 39,
+        "country_id": 38,
+        "state_name": "Phnom Penh",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 40,
+        "country_id": 39,
+        "state_name": "Centre",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 41,
+        "country_id": 40,
+        "state_name": "Ontario",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 42,
+        "country_id": 40,
+        "state_name": "Quebec",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 43,
+        "country_id": 42,
+        "state_name": "Santiago",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 44,
+        "country_id": 43,
+        "state_name": "George Town",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 45,
+        "country_id": 44,
+        "state_name": "Bangui",
+        "deleted_at": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 46,
+        "country_id": 1,
+        "state_name": "Alabama",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 47,
+        "country_id": 1,
+        "state_name": "Alaska",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 48,
+        "country_id": 1,
+        "state_name": "Arizona",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 49,
+        "country_id": 1,
+        "state_name": "Arkansas",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 50,
+        "country_id": 1,
+        "state_name": "California",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 51,
+        "country_id": 1,
+        "state_name": "Colorado",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 52,
+        "country_id": 1,
+        "state_name": "Connecticut",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 53,
+        "country_id": 1,
+        "state_name": "Delaware",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 54,
+        "country_id": 1,
+        "state_name": "District of Columbia",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 55,
+        "country_id": 1,
+        "state_name": "Florida",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 56,
+        "country_id": 1,
+        "state_name": "Georgia",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 57,
+        "country_id": 1,
+        "state_name": "Hawaii",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 58,
+        "country_id": 1,
+        "state_name": "Idaho",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 59,
+        "country_id": 1,
+        "state_name": "Illinois",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 60,
+        "country_id": 1,
+        "state_name": "Indiana",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 61,
+        "country_id": 1,
+        "state_name": "Iowa",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 62,
+        "country_id": 1,
+        "state_name": "Kansas",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 63,
+        "country_id": 1,
+        "state_name": "Kentucky",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 64,
+        "country_id": 1,
+        "state_name": "Louisiana",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 65,
+        "country_id": 1,
+        "state_name": "Maine",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 66,
+        "country_id": 1,
+        "state_name": "Maryland",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 67,
+        "country_id": 1,
+        "state_name": "Massachusetts",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 68,
+        "country_id": 1,
+        "state_name": "Michigan",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 69,
+        "country_id": 1,
+        "state_name": "Minnesota",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 70,
+        "country_id": 1,
+        "state_name": "Mississippi",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 71,
+        "country_id": 1,
+        "state_name": "Missouri",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 72,
+        "country_id": 1,
+        "state_name": "Montana",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 73,
+        "country_id": 1,
+        "state_name": "Nebraska",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 74,
+        "country_id": 1,
+        "state_name": "Nevada",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 75,
+        "country_id": 1,
+        "state_name": "New Hampshire",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 76,
+        "country_id": 1,
+        "state_name": "New Jersey",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 77,
+        "country_id": 1,
+        "state_name": "New Mexico",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 78,
+        "country_id": 1,
+        "state_name": "New York",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 79,
+        "country_id": 1,
+        "state_name": "North Carolina",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 80,
+        "country_id": 1,
+        "state_name": "North Dakota",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 81,
+        "country_id": 1,
+        "state_name": "Ohio",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 82,
+        "country_id": 1,
+        "state_name": "Oklahoma",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 83,
+        "country_id": 1,
+        "state_name": "Oregon",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 84,
+        "country_id": 1,
+        "state_name": "Pennsylvania",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 85,
+        "country_id": 1,
+        "state_name": "Rhode Island",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 86,
+        "country_id": 1,
+        "state_name": "South Carolina",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 87,
+        "country_id": 1,
+        "state_name": "South Dakota",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 88,
+        "country_id": 1,
+        "state_name": "Tennessee",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 89,
+        "country_id": 1,
+        "state_name": "Texas",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 90,
+        "country_id": 1,
+        "state_name": "Utah",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 91,
+        "country_id": 1,
+        "state_name": "Vermont",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 92,
+        "country_id": 1,
+        "state_name": "Virginia",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 93,
+        "country_id": 1,
+        "state_name": "Washington",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 94,
+        "country_id": 1,
+        "state_name": "West Virginia",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 95,
+        "country_id": 1,
+        "state_name": "Wisconsin",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    },
+    {
+        "id": 96,
+        "country_id": 1,
+        "state_name": "Wyoming",
+        "deleted_at": null,
+        "created_at": "null",
+        "updated_at": "null"
+    }
+]

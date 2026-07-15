@@ -1,0 +1,51 @@
+[
+	{
+		"id" : 1,
+		"deleted_at" : null,
+		"listing_type" : "Established Business for Sale",
+		"created_at" : null,
+		"updated_at" : null
+	},
+	{
+		"id" : 2,
+		"deleted_at" : null,
+		"listing_type" : "Asset Sale",
+		"created_at" : null,
+		"updated_at" : null
+	},
+	{
+		"id" : 3,
+		"deleted_at" : null,
+		"listing_type" : "Commercial Real Estate for Sale",
+		"created_at" : null,
+		"updated_at" : null
+	},
+	{
+		"id" : 4,
+		"deleted_at" : null,
+		"listing_type" : "Commercial Real Estate for Lease",
+		"created_at" : null,
+		"updated_at" : null
+	},
+	{
+		"id" : 5,
+		"deleted_at" : null,
+		"listing_type" : "Residential Real Estate for Sale",
+		"created_at" : null,
+		"updated_at" : null
+	},
+	{
+		"id" : 6,
+		"deleted_at" : null,
+		"listing_type" : "Residential Real Estate for Lease",
+		"created_at" : null,
+		"updated_at" : null
+	},
+	{
+		"id" : 7,
+		"deleted_at" : null,
+		"listing_type" : "Miscellaneous Listing",
+		"created_at" : null,
+		"updated_at" : null
+	}
+]

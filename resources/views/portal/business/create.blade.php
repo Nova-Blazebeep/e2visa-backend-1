@@ -1,0 +1,998 @@
+@extends('portal.layout.app')
+@section('content')
+    <style>
+        .btn-primary {
+            background-color: #0d6efd !important;
+            border-color: #0d6efd !important;
+        }
+
+        .text-primary {
+            color: #0d6efd !important;
+        }
+    </style>
+    <div id="fullscreen-loader" class="fullscreen-loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+    <main class="px-4 py-4">
+        <div class="bg-white">
+            <form class="p-3 form" id="businessForm" enctype="multipart/form-data">
+                @csrf
+                <h5 class="mt-2">Business information</h5>
+                <hr>
+
+                {{-- Listing Heading at top — this is what users see on the front end --}}
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">
+                        Listing Heading :
+                        <br><small class="text-success fw-semibold">(this title will appear to users)</small>
+                    </legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <input type="text" class="form-control" placeholder="Listing Heading"
+                                    value="{{ old('listing_heading') }}" id="listing_heading" name="listing_heading"
+                                    required>
+                                <p class="ms-2">Required</p>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="row mb-3 d-none">
+                    <legend class="col-form-label col-sm-3 pt-0">Seller :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-8 d-flex">
+                                <select id="user_id" name="user_id" class="form-select" required>
+                                    <option value="{{ auth()->user()->id }}" selected>{{ auth()->user()->name }}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">Listing Is :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9">
+                             {{-- First 2 rows --}}
+                                @foreach ($listing_types->take(2) as $listing_type)
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="listing_type"
+                                            id="listingType{{ $listing_type->id }}"
+                                            value="{{ $listing_type->listing_type }}"
+                                            {{ old('listing_type') == $listing_type->listing_type ? 'checked' : '' }}
+                                            required>
+                                        <label class="form-check-label" for="listingType{{ $listing_type->id }}">
+                                            {{ $listing_type->listing_type }}
+                                        </label>
+                                    </div>
+                                @endforeach
+
+                                {{-- Last row --}}
+                                @if ($listing_types->count() > 2)
+                                    @php $last = $listing_types->last(); @endphp
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="listing_type"
+                                            id="listingType{{ $last->id }}"
+                                            value="{{ $last->listing_type }}"
+                                            {{ old('listing_type') == $last->listing_type ? 'checked' : '' }}
+                                            required>
+                                        <label class="form-check-label" for="listingType{{ $last->id }}">
+                                            {{ $last->listing_type }}
+                                        </label>
+                                    </div>
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Primary Business Category :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-8 d-flex">
+                                <select id="category_id" name="category_id" class="form-select" required>
+                                    <option value="">Select category</option>
+                                    @foreach ($categories as $category)
+                                        <option value="{{ $category->id }}"
+                                            {{ old('category_id') == $category->id ? 'selected' : '' }}>
+                                            {{ $category->name }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                                <p class="ms-2">Required</p>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Business Subcategory :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-8 d-flex">
+                                <select id="subcategory_id" name="sub_category_id" class="form-select" required>
+                                    <option value="">Select subcategory</option>
+                                </select>
+                                <p class="ms-2">Required</p>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                {{-- Business is: optional, multi-select --}}
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Details :</legend>
+                    <div class="col-sm-9">
+                        <div class="col-md-9 inner-type">
+                            @foreach ($business_types as $business_type)
+                                <div class="form-check">
+                                    <input class="form-check-input" name="business_type_ids[]"
+                                        value="{{ $business_type->id }}" type="checkbox"
+                                        id="business_type_{{ $business_type->id }}"
+                                        {{ in_array($business_type->id, old('business_type_ids', [])) ? 'checked' : '' }}>
+                                    <label class="form-check-label" for="business_type_{{ $business_type->id }}">
+                                        {{ $business_type->business_type }}
+                                    </label>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="row">
+                    <div class="col-12 inner-border">
+                        <h5>Business Location</h5>
+                    </div>
+                </div>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">Country :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <select id="country_id" name="country_id" class="form-select" required>
+                                    <option value="">Select Country</option>
+                                    @foreach ($countries as $country)
+                                        <option value="{{ $country->id }}"
+                                            {{ old('country_id') == $country->id ? 'selected' : '' }}>
+                                            {{ $country->name }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                                <p class="ms-2">Required</p>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">State :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <select id="state_id" name="state_id" class="form-select" required>
+                                    <option value="">Select State</option>
+                                </select>
+                                <p class="ms-2">Required</p>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">County :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <select id="county_id" name="county_id" class="form-select" required>
+                                    <option value="">Select County</option>
+                                </select>
+                                <p class="ms-2">Required</p>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">City :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <input type="text" class="form-control" placeholder="City"
+                                    value="{{ old('zip_code') }}" id="zip_code" name="zip_code">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Street Address :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <input type="text" class="form-control pac-target-input" placeholder="Street Address"
+                                    value="{{ old('street_address', '') }}" id="street_address" name="street_address"
+                                    autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Make Confidential :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 inner-type">
+                                <div class="form-check ms-2">
+                                    <input class="form-check-input" type="checkbox" name="is_confidential_state"
+                                        id="is_confidential_state" value="1"
+                                        {{ old('is_confidential_state') ? 'checked' : '' }}>
+                                    <label class="form-check-label" for="is_confidential_state">State</label>
+                                </div>
+                                <div class="form-check ms-2">
+                                    <input class="form-check-input" type="checkbox" name="is_confidential_country"
+                                        id="is_confidential_country" value="1"
+                                        {{ old('is_confidential_country') ? 'checked' : '' }}>
+                                    <label class="form-check-label" for="is_confidential_country">Country</label>
+                                </div>
+                                <div class="form-check ms-2">
+                                    <input class="form-check-input" type="checkbox" name="is_confidential_city"
+                                        id="is_confidential_city" value="1"
+                                        {{ old('is_confidential_city') ? 'checked' : '' }}>
+                                    <label class="form-check-label" for="is_confidential_city">City</label>
+                                </div>
+                                <div class="form-check ms-2">
+                                    <input class="form-check-input" type="checkbox" name="is_confidential_address"
+                                        id="is_confidential_address" value="1"
+                                        {{ old('is_confidential_address') ? 'checked' : '' }}>
+                                    <label class="form-check-label" for="is_confidential_address">Address</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="row">
+                    <div class="col-12 inner-border">
+                        <h5>Contact and Listing Reference Information</h5>
+                    </div>
+                </div>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Contact :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9">
+                                <div class="d-flex">
+                                    <select id="contact_id" name="contact_id" class="form-select" required
+                                        onchange="showBrokerInfo(this)">
+                                        <option value="">Select Contact</option>
+                                        @foreach ($users as $user)
+                                            <option value="{{ $user->id }}" data-email="{{ $user->email }}"
+                                                data-phone="{{ $user->userInformation->phone_number ?? 'NA' }}"
+                                                {{ old('contact_id') == $user->id ? 'selected' : '' }}>
+                                                {{ $user->name }}
+                                            </option>
+                                        @endforeach
+                                    </select>
+                                    <p class="ms-2">Required</p>
+                                </div>
+
+                                <div class="contactInfoDiv mt-3">
+                                    <p><a href="#" class="text-primary"
+                                            id="contact_email">{{ old('contact_email') }}</a></p>
+                                    <p><a href="#" class="text-primary"
+                                            id="contact_phone">{{ old('contact_phone') }}</a></p>
+                                </div>
+                                <input type="hidden" name="contact_name" id="hidden_contact_name"
+                                    value="{{ old('contact_name') }}">
+                                <input type="hidden" name="contact_email" id="hidden_contact_email"
+                                    value="{{ old('contact_email') }}">
+                                <input type="hidden" name="contact_phone" id="hidden_contact_phone"
+                                    value="{{ old('contact_phone') }}">
+                                <input type="hidden" name="contact_user_id" id="hidden_contact_user_id"
+                                    value="{{ old('contact_user_id') }}">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">
+                        Listing Number:
+                        <br><span class="text-danger fw-semibold">(Not shown on listing)</span>
+                    </legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <input type="text" class="form-control" placeholder=""
+                                    id="listing_number" name="listing_number" value="{{ old('listing_number') }}">
+                                <p class="ms-2">Required</p>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Non-Disclosure Agreement</legend>
+                    <div class="col-sm-9">
+                        <div class="col-md-9">
+                            <div class="form-check ms-4">
+                                <input class="form-check-input use_ndaClass" type="radio"
+                                    name="is_non_disclosure_agreement" id="nda_no" value="0"
+                                    {{ old('is_non_disclosure_agreement') == '0' ? 'checked' : '' }}>
+                                <label class="form-check-label" for="nda_no">
+                                    Do Not Use a Non-Disclosure Agreement
+                                </label>
+                            </div>
+                            <div class="form-check ms-4">
+                                <input class="form-check-input use_ndaClass" type="radio"
+                                    name="is_non_disclosure_agreement" id="nda_yes" value="1"
+                                    {{ old('is_non_disclosure_agreement') == '1' ? 'checked' : '' }}>
+                                <label class="form-check-label" for="nda_yes">
+                                    Upload Your Own Non-Disclosure Agreement
+                                </label>
+                            </div>
+                            <div id="nda_upload_section" class="ms-4 mt-2" style="{{ old('is_non_disclosure_agreement') == '1' ? '' : 'display:none;' }}">
+                                <input type="file" class="form-control" name="nda_document" id="nda_document"
+                                    accept=".pdf,.doc,.docx">
+                                <small class="text-muted">Accepted formats: PDF, DOC, DOCX (max 10MB)</small>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <h5 class="mt-2">Listing Summary and Description</h5>
+                <hr>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Listing Summary:</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <div class="input-group mb-3">
+                                    <textarea class="form-control" id="listing_summary" name="listing_summary" placeholder="Listing Summary"
+                                        rows="3">{{ old('listing_summary') }}</textarea>
+                                </div>
+                                <p class="ms-2">Required</p>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="row">
+                    <div class="col-12 inner-border">
+                        <h5>Financial Information</h5>
+                    </div>
+                </div>
+
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Listing Price:</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="asking_price_label">$</span>
+                                    <input type="text" class="form-control" name="asking_price"
+                                        id="asking_price" placeholder="Listing Price" aria-label="Listing Price"
+                                        aria-describedby="asking_price_label" value="{{ old('asking_price') }}">
+                                </div>
+                                <p class="ms-2">Required</p>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Cash Flow:</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="cash_flow_label">$</span>
+                                    <input type="text" class="form-control" name="cash_flow"
+                                        id="cash_flow" placeholder="Cash Flow" aria-label="Cash Flow"
+                                        aria-describedby="cash_flow_label" value="{{ old('cash_flow') }}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">EBITDA:</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="ebitdas_label">$</span>
+                                    <input type="text" class="form-control" name="ebitdas"
+                                        id="ebitdas" placeholder="EBITDA" aria-label="EBITDA"
+                                        aria-describedby="ebitdas_label" value="{{ old('ebitdas') }}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Gross Revenue:</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="gross_revenue_label">$</span>
+                                    <input type="text" class="form-control" name="gross_revenue"
+                                        id="gross_revenue" placeholder="Gross Revenue" aria-label="Gross Revenue"
+                                        aria-describedby="gross_revenue_label" value="{{ old('gross_revenue') }}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Inventory:</legend>
+                    <div class="col-sm-9">
+                        <div class="col-md-9">
+                            <div class="input-group mb-2">
+                                <span class="input-group-text" id="inventory_label">$</span>
+                                <input type="text" class="form-control" name="inventory"
+                                    id="inventory" placeholder="Inventory" aria-label="Inventory"
+                                    aria-describedby="inventory_label" value="{{ old('inventory') }}">
+                            </div>
+                            <div class="form-check ms-1">
+                                <input class="form-check-input" type="checkbox" name="inventory_included_in_price"
+                                    id="inventory_included_in_price" value="1"
+                                    {{ old('inventory_included_in_price') ? 'checked' : '' }}>
+                                <label class="form-check-label" for="inventory_included_in_price">
+                                    Included in Listing Price
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">FF&amp;E:</legend>
+                    <div class="col-sm-9">
+                        <div class="col-md-9">
+                            <div class="input-group mb-2">
+                                <span class="input-group-text" id="ffe_label">$</span>
+                                <input type="text" class="form-control" placeholder="FF&E"
+                                    name="ffe" id="ffe" aria-label="FFE" aria-describedby="ffe_label"
+                                    value="{{ old('ffe') }}">
+                            </div>
+                            <div class="form-check ms-1">
+                                <input class="form-check-input" type="checkbox" name="ffe_included_in_price"
+                                    id="ffe_included_in_price" value="1"
+                                    {{ old('ffe_included_in_price') ? 'checked' : '' }}>
+                                <label class="form-check-label" for="ffe_included_in_price">
+                                    Included in Listing Price
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Total Building Size:</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 inner-type d-flex">
+                                <div class="input-group mb-3">
+                                    <input type="number" class="form-control" placeholder="Total Building Size"
+                                        name="building_size" id="building_size" aria-label="Building Size"
+                                        aria-describedby="building_size_label" value="{{ old('building_size') }}">
+                                    <span class="input-group-text" id="building_size_label">sqft</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Seller Financing?</legend>
+                    <div class="col-sm-9">
+                        <div class="col-md-9">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" name="is_seller_financing_available"
+                                    id="is_seller_financing_available" value="1"
+                                    {{ old('is_seller_financing_available') ? 'checked' : '' }}>
+                                <label class="form-check-label" for="is_seller_financing_available">
+                                    Seller Financing Available
+                                </label>
+                            </div>
+                            <input type="text" class="form-control" id="seller_note" name="seller_note"
+                                placeholder="Notes About Seller Financing" value="{{ old('seller_note') }}">
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="row">
+                    <div class="col-12 inner-border">
+                        <h5>Detailed Business Information</h5>
+                    </div>
+                </div>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Number of Employees :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                {{-- text type allows entries like "12 full time, 2 part-time" --}}
+                                <input type="text" class="form-control"
+                                    placeholder="e.g. 12 full time, 2 part-time" value="{{ old('number_of_employees') }}"
+                                    id="number_of_employees" name="number_of_employees">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Year Established :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-5 d-flex">
+                                <select id="year_established" name="year_established" class="form-select">
+                                    <option value="">Select Year</option>
+                                    @foreach ($established_years as $established_year)
+                                        <option value="{{ $established_year->year }}"
+                                            {{ old('year_established') == $established_year->year ? 'selected' : '' }}>
+                                            {{ $established_year->year }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                                <p class="ms-2">Required</p>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Site/Infrastructure :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <textarea class="form-control" id="facilities" name="facilities" rows="3" placeholder="Site/Infrastructure">{{ old('facilities') }}</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Training/Onboarding:</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <textarea class="form-control" id="support_and_training" name="support_and_training" rows="3"
+                                    placeholder="Training/Onboarding">{{ old('support_and_training') }}</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Motivation for Sale :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <input type="text" class="form-control" placeholder="Motivation for Sale"
+                                    id="reason_for_selling" name="reason_for_selling"
+                                    value="{{ old('reason_for_selling') }}">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Competitive Landscape/Market Dynamics:</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <textarea class="form-control" placeholder="Competitive Landscape/Market Dynamics" id="competition_market_pros_and_cons"
+                                    name="competition_market_pros_and_cons" rows="3">{{ old('competition_market_pros_and_cons') }}</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Opportunities/Development:</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-9 d-flex">
+                                <textarea class="form-control" placeholder="Opportunities/Development"
+                                    id="growth_and_expansion_pros_and_cons" name="growth_and_expansion_pros_and_cons" rows="3">{{ old('growth_and_expansion_pros_and_cons') }}</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                {{-- Real Estate Section --}}
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Real Estate:</legend>
+                    <div class="col-sm-9">
+                        <div class="col-md-9">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" name="real_estate_leased"
+                                    id="real_estate_leased" value="1"
+                                    {{ old('real_estate_leased') ? 'checked' : '' }}>
+                                <label class="form-check-label" for="real_estate_leased">Real Estate Leased</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" name="real_estate_available"
+                                    id="real_estate_available" value="1"
+                                    {{ old('real_estate_available') ? 'checked' : '' }}>
+                                <label class="form-check-label" for="real_estate_available">Real Estate Available</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" name="real_estate_included"
+                                    id="real_estate_included" value="1"
+                                    {{ old('real_estate_included') ? 'checked' : '' }}>
+                                <label class="form-check-label" for="real_estate_included">Real Estate Included</label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" name="home_based_business"
+                                    id="home_based_business" value="1"
+                                    {{ old('home_based_business') ? 'checked' : '' }}>
+                                <label class="form-check-label" for="home_based_business">Home-Based Business</label>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-text">Rent</span>
+                                <input type="text" class="form-control" placeholder="Monthly Rent Amount"
+                                    name="real_estate_rent" id="real_estate_rent"
+                                    value="{{ old('real_estate_rent') }}">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="row">
+                    <div class="col-12 inner-border">
+                        <h5>Images</h5>
+                    </div>
+                </div>
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Gallery :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-5 d-flex">
+                                <input type="file" class="form-control" id="images" accept="image/*"
+                                    name="images[]">
+                                <p class="ms-2">Required</p>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="row mb-3 mt-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Document Upload :</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <div class="col-md-5 d-flex">
+                                <input type="file" class="form-control" id="seller_financial_documents"
+                                    name="seller_financial_documents[]">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <p class="mt-4">Please note that requesting more information typically lowers the number of contacts you
+                    will receive</p>
+                <input type="hidden" id="is_publish" name="is_publish" value="0">
+                <div class="d-flex justify-content-end">
+                    <button type="button" onclick="publish(event)" class="btn btn-primary mt-2 mx-1">
+                        Publish My Listing
+                    </button>
+                    <button type="button" onclick="saveDraft(event)" class="btn btn-secondary mt-2 mx-1">
+                        Save &amp; Finish Later
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        const subcategoriesByCategory = {
+            @foreach ($categories as $category)
+                "{{ $category->id }}": [
+                    @foreach ($category->subcategories as $sub)
+                        {
+                            id: "{{ $sub->id }}",
+                            name: "{{ $sub->name }}"
+                        },
+                    @endforeach
+                ],
+            @endforeach
+        };
+
+        const categorySelect = document.getElementById('category_id');
+        const subcategorySelect = document.getElementById('subcategory_id');
+
+        function populateSubcategories(selectedCategoryId, selectedSubcategoryId = null) {
+            subcategorySelect.innerHTML = '<option value="">Select subcategory</option>';
+            if (subcategoriesByCategory[selectedCategoryId]) {
+                subcategoriesByCategory[selectedCategoryId].forEach(subcat => {
+                    const option = document.createElement('option');
+                    option.value = subcat.id;
+                    option.textContent = subcat.name;
+                    if (subcat.id == selectedSubcategoryId) {
+                        option.selected = true;
+                    }
+                    subcategorySelect.appendChild(option);
+                });
+            }
+        }
+
+        categorySelect.addEventListener('change', function() {
+            populateSubcategories(this.value);
+        });
+
+        window.addEventListener('DOMContentLoaded', function() {
+            const oldCategory = "{{ old('category_id') }}";
+            const oldSubcategory = "{{ old('sub_category_id') }}";
+            if (oldCategory) {
+                categorySelect.value = oldCategory;
+                populateSubcategories(oldCategory, oldSubcategory);
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const countries = @json($countries);
+
+            const countrySelect = document.getElementById('country_id');
+            const stateSelect = document.getElementById('state_id');
+            const countySelect = document.getElementById('county_id');
+
+            const oldCountry = "{{ old('country_id') }}";
+            const oldState = "{{ old('state_id') }}";
+            const oldCounty = "{{ old('county_id') }}";
+
+            function populateStates(countryId, selectedStateId = null) {
+                stateSelect.innerHTML = '<option value="">Select State</option>';
+                countySelect.innerHTML = '<option value="">Select County</option>';
+
+                const selectedCountry = countries.find(c => c.id == countryId);
+                if (selectedCountry && selectedCountry.states.length > 0) {
+                    selectedCountry.states.forEach(state => {
+                        const option = document.createElement('option');
+                        option.value = state.id;
+                        option.textContent = state.name;
+                        if (state.id == selectedStateId) {
+                            option.selected = true;
+                        }
+                        stateSelect.appendChild(option);
+                    });
+                }
+            }
+
+            function populateCounties(countryId, stateId, selectedCountyId = null) {
+                countySelect.innerHTML = '<option value="">Select County</option>';
+
+                const selectedCountry = countries.find(c => c.id == countryId);
+                if (!selectedCountry) return;
+
+                const selectedState = selectedCountry.states.find(s => s.id == stateId);
+                if (selectedState && selectedState.counties.length > 0) {
+                    selectedState.counties.forEach(county => {
+                        const option = document.createElement('option');
+                        option.value = county.id;
+                        option.textContent = county.name;
+                        if (county.id == selectedCountyId) {
+                            option.selected = true;
+                        }
+                        countySelect.appendChild(option);
+                    });
+                }
+            }
+
+            countrySelect.addEventListener('change', () => {
+                populateStates(countrySelect.value);
+            });
+
+            stateSelect.addEventListener('change', () => {
+                populateCounties(countrySelect.value, stateSelect.value);
+            });
+
+            if (oldCountry) {
+                countrySelect.value = oldCountry;
+                populateStates(oldCountry, oldState);
+
+                if (oldState) {
+                    populateCounties(oldCountry, oldState, oldCounty);
+                }
+            }
+        });
+
+        function showBrokerInfo(select) {
+            const selected = select.options[select.selectedIndex];
+            let email = selected.getAttribute('data-email') || '';
+            let phone = selected.getAttribute('data-phone') || '';
+            let name = selected.text || '';
+            let userId = selected.value;
+
+            email = email.trim() === '' ? 'N/A' : email;
+            phone = phone.trim() === '' ? 'N/A' : phone;
+
+            document.getElementById('contact_email').innerText = 'Email: ' + email;
+            document.getElementById('contact_phone').innerText = 'Phone: ' + phone;
+            document.getElementById('hidden_contact_email').value = email;
+            document.getElementById('hidden_contact_phone').value = phone;
+            document.getElementById('hidden_contact_name').value = name;
+            document.getElementById('hidden_contact_user_id').value = userId;
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            @if (session(SUCCESS_CODE))
+                Swal.fire({
+                    toast: true,
+                    position: 'top-end',
+                    icon: 'success',
+                    title: '{{ session(SUCCESS_CODE) }}',
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                });
+            @elseif (session(FAILURE_CODE))
+                Swal.fire({
+                    toast: true,
+                    position: 'top-end',
+                    icon: 'error',
+                    title: '{{ session(FAILURE_CODE) }}',
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                });
+            @endif
+        });
+
+        function publish(e) {
+            e.preventDefault();
+
+            const errors = [];
+
+            // Only the required fields per client spec
+            const requiredFields = [
+                { id: 'category_id', name: 'Primary Business Category' },
+                { id: 'subcategory_id', name: 'Business Subcategory' },
+                { id: 'country_id', name: 'Country' },
+                { id: 'state_id', name: 'State' },
+                { id: 'county_id', name: 'County' },
+                { id: 'contact_id', name: 'Contact' },
+                { id: 'listing_number', name: 'Listing Number' },
+                { id: 'listing_heading', name: 'Listing Heading' },
+                { id: 'listing_summary', name: 'Listing Summary' },
+                { id: 'asking_price', name: 'Listing Price' },
+                { id: 'year_established', name: 'Year Established' },
+            ];
+
+            requiredFields.forEach(field => {
+                const value = document.getElementById(field.id)?.value.trim();
+                if (!value) errors.push(`Please enter ${field.name}.`);
+            });
+
+            const radios = [
+                { name: 'listing_type', label: 'Listing Is' },
+                { name: 'is_non_disclosure_agreement', label: 'NDA Option' }
+            ];
+
+            radios.forEach(radio => {
+                const checked = document.querySelector(`input[name="${radio.name}"]:checked`);
+                if (!checked) errors.push(`Please select ${radio.label}.`);
+            });
+
+            const images = document.getElementById('images');
+            if (!images.files.length) errors.push("Please upload at least one gallery image.");
+            const maxFileSize = 50 * 1024 * 1024; // 50MB
+            if (images.files[0] && images.files[0].size > maxFileSize)
+                errors.push("Image file is too large. Maximum size is 50MB.");
+            const docInput = document.getElementById('seller_financial_documents');
+            if (docInput?.files[0] && docInput.files[0].size > maxFileSize)
+                errors.push("Document file is too large. Maximum size is 50MB.");
+
+            if (errors.length > 0) {
+                Swal.fire({
+                    icon: 'error',
+                    title: errors[0],
+                    toast: true,
+                    position: 'top-end',
+                    timer: 3000,
+                    showConfirmButton: false
+                });
+                return;
+            }
+
+            const formData = new FormData(document.getElementById('businessForm'));
+            formData.set('is_publish', 1);
+            formData.set('_token', document.querySelector('input[name="_token"]').value);
+
+            document.getElementById('fullscreen-loader').style.display = 'block';
+            fetch("/business/create", {
+                    method: "POST",
+                    headers: {
+                        'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value,
+                        'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    body: formData
+                })
+                .then(res => {
+                    document.getElementById('fullscreen-loader').style.display = 'none';
+                    const contentType = res.headers.get("content-type");
+                    if (contentType && contentType.includes("application/json")) {
+                        return res.json();
+                    } else {
+                        throw new Error("Server returned non-JSON response.");
+                    }
+                })
+                .then(data => {
+                    if (data.code === 200) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Listing published successfully!',
+                            toast: true,
+                            position: 'top-end',
+                            timer: 3000,
+                            showConfirmButton: false
+                        });
+                        window.location.href = "/business";
+                    } else {
+                        throw new Error(data.message || "Unexpected error");
+                    }
+                })
+                .catch(err => {
+                    document.getElementById('fullscreen-loader').style.display = 'none';
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: err.message,
+                        toast: true,
+                        position: 'top-end',
+                        timer: 3000,
+                        showConfirmButton: false
+                    });
+                });
+        }
+
+        function saveDraft(e) {
+            e.preventDefault();
+
+            const formData = new FormData(document.getElementById('businessForm'));
+            formData.set('is_publish', 0);
+            formData.set('_token', document.querySelector('input[name="_token"]').value);
+
+            document.getElementById('fullscreen-loader').style.display = 'block';
+            fetch("/business/create", {
+                    method: "POST",
+                    headers: {
+                        'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value,
+                        'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    body: formData
+                })
+                .then(res => {
+                    document.getElementById('fullscreen-loader').style.display = 'none';
+                    const contentType = res.headers.get("content-type");
+                    if (contentType && contentType.includes("application/json")) {
+                        return res.json();
+                    } else {
+                        throw new Error("Server returned non-JSON response.");
+                    }
+                })
+                .then(data => {
+                    document.getElementById('fullscreen-loader').style.display = 'none';
+                    if (data.code === 200) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Draft saved successfully!',
+                            toast: true,
+                            position: 'top-end',
+                            timer: 3000,
+                            showConfirmButton: false
+                        });
+                        window.location.href = "/business";
+                    } else {
+                        throw new Error(data.message || "Unexpected error");
+                    }
+                })
+                .catch(err => {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: err.message,
+                        toast: true,
+                        position: 'top-end',
+                        timer: 3000,
+                        showConfirmButton: false
+                    });
+                });
+        }
+
+        // Show/hide NDA upload section based on radio selection
+        document.querySelectorAll('.use_ndaClass').forEach(function(radio) {
+            radio.addEventListener('change', function() {
+                document.getElementById('nda_upload_section').style.display =
+                    this.value === '1' ? '' : 'none';
+            });
+        });
+    </script>
+@endsection

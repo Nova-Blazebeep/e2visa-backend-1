@@ -1,0 +1,5886 @@
+[
+	{
+		"subcategory_name" : "Advertising Agency",
+		"category_id" : 2
+	},
+	{
+		"subcategory_name" : "Crop Preparation",
+		"category_id" : 3
+	},
+	{
+		"subcategory_name" : "Bookkeeping",
+		"category_id" : 1
+	},
+	{
+		"subcategory_name" : "CPA Practice",
+		"category_id" : 1
+	},
+	{
+		"subcategory_name" : "Tax Practice",
+		"category_id" : 1
+	},
+	{
+		"subcategory_name" : "Advertising Sub Category",
+		"category_id" : 2
+	},
+	{
+		"subcategory_name" : "Christmas Trees",
+		"category_id" : 3
+	},
+	{
+		"subcategory_name" : "Aquarium Store",
+		"category_id" : 4
+	},
+	{
+		"subcategory_name" : "Advertising Specialties",
+		"category_id" : 103
+	},
+	{
+		"subcategory_name" : "Advertising Agency",
+		"category_id" : 103
+	},
+	{
+		"subcategory_name" : "Advertising Agency",
+		"category_id" : 105
+	},
+	{
+		"subcategory_name" : "Advertising Agency",
+		"category_id" : 106
+	},
+	{
+		"subcategory_name" : "Advertising Agency",
+		"category_id" : 107
+	},
+	{
+		"subcategory_name" : "Advertising Agency",
+		"category_id" : 108
+	},
+	{
+		"subcategory_name" : "Christmas Trees",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Advertising Specialties",
+		"category_id" : 108
+	},
+	{
+		"subcategory_name" : "Advertising/Promotion",
+		"category_id" : 108
+	},
+	{
+		"subcategory_name" : "Art & Graphic Design",
+		"category_id" : 108
+	},
+	{
+		"subcategory_name" : "Concert Promotions",
+		"category_id" : 108
+	},
+	{
+		"subcategory_name" : "Direct Mailing",
+		"category_id" : 108
+	},
+	{
+		"subcategory_name" : "Mobile Billboard",
+		"category_id" : 108
+	},
+	{
+		"subcategory_name" : "Outdoor Advertising Billboards",
+		"category_id" : 108
+	},
+	{
+		"subcategory_name" : "Print Media",
+		"category_id" : 108
+	},
+	{
+		"subcategory_name" : "Public Relations",
+		"category_id" : 108
+	},
+	{
+		"subcategory_name" : "Trade Show Exhibits",
+		"category_id" : 108
+	},
+	{
+		"subcategory_name" : "TV Media",
+		"category_id" : 108
+	},
+	{
+		"subcategory_name" : "Crop Preparation",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Crop Spraying",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Dist-Seed",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Farm Equipment Sales/Service",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Feed/Farm Supplies",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Fertilizer",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Fish Farm",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Fruit Farm",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Irrigation",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Livestock",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Meat Processing",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Mulch Products",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Nursery/Plants",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Plant Leasing/Maintenance",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Plant Leasing/Maintenance",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Sod Distribution",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Tree Farm",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Vineyard/Wines",
+		"category_id" : 110
+	},
+	{
+		"subcategory_name" : "Dog Training",
+		"category_id" : 4
+	},
+	{
+		"subcategory_name" : "Kennel",
+		"category_id" : 4
+	},
+	{
+		"subcategory_name" : "Other Pet Services",
+		"category_id" : 4
+	},
+	{
+		"subcategory_name" : "Pet Clothing",
+		"category_id" : 4
+	},
+	{
+		"subcategory_name" : "Pet Containment",
+		"category_id" : 4
+	},
+	{
+		"subcategory_name" : "Pet Grooming",
+		"category_id" : 4
+	},
+	{
+		"subcategory_name" : "Pet Shop",
+		"category_id" : 4
+	},
+	{
+		"subcategory_name" : "Pet Sitting",
+		"category_id" : 4
+	},
+	{
+		"subcategory_name" : "Pet Supplies",
+		"category_id" : 4
+	},
+	{
+		"subcategory_name" : "Products/Services",
+		"category_id" : 4
+	},
+	{
+		"subcategory_name" : "Tack Store",
+		"category_id" : 4
+	},
+	{
+		"subcategory_name" : "Taxidermist",
+		"category_id" : 4
+	},
+	{
+		"subcategory_name" : "Veterinary Clinic",
+		"category_id" : 4
+	},
+	{
+		"subcategory_name" : "Antiques Dealer",
+		"category_id" : 5
+	},
+	{
+		"subcategory_name" : "Antiques/Repairs",
+		"category_id" : 5
+	},
+	{
+		"subcategory_name" : "Appliance Repairs",
+		"category_id" : 6
+	},
+	{
+		"subcategory_name" : "Appliance Sales",
+		"category_id" : 6
+	},
+	{
+		"subcategory_name" : "Art Catalog Sales",
+		"category_id" : 7
+	},
+	{
+		"subcategory_name" : "Art Dealer",
+		"category_id" : 7
+	},
+	{
+		"subcategory_name" : "Art Framing",
+		"category_id" : 7
+	},
+	{
+		"subcategory_name" : "Art Framing/Gallery",
+		"category_id" : 7
+	},
+	{
+		"subcategory_name" : "Art Galleries",
+		"category_id" : 7
+	},
+	{
+		"subcategory_name" : "Art Reproduction",
+		"category_id" : 7
+	},
+	{
+		"subcategory_name" : "Art Studio/Gallery",
+		"category_id" : 7
+	},
+	{
+		"subcategory_name" : "Art Supplies",
+		"category_id" : 7
+	},
+	{
+		"subcategory_name" : "Auto Accessories",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Air Condition",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Body Shop",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Brake Shop",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Broker",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Car Wash",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Customizing",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Dealership",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Detailing",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Engine Rebuilding",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto General Repair",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Glass",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Inspection Service",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Interior",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Muffler Shop",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Parts Store",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Quick Lube",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Radiator Shop",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Restoration",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Salvage/Junk Yard",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Speed Shop",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Tune Up",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Upholstery",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Used Cars",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Auto Window Tinting",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Automotive Auction",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Automotive Painting",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Classic Cars Sales/Repair",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Custom Auto Builder",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Electrical Repair",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Engine Installation",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Fleet Service",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Motor Home Sales",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Painting/Touch Up",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Radio Installations",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Rustproofing",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "RV Rental",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "RV Sales/Service",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Specialty Repairs",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Tire Dealer",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Tanker Cleaning",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Towing Service",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Trailer Hitches",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Trailer Refrigeration",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Trailer Sales/Service",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Transmission Shop",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Truck Accessories",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Truck Dealership",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Truck Repairs",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Truck Trailer Sales",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Van Conversion",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Wrecker/Carrier Dealers",
+		"category_id" : 8
+	},
+	{
+		"subcategory_name" : "Aircraft Cleaning",
+		"category_id" : 9
+	},
+	{
+		"subcategory_name" : "Aircraft Dealership",
+		"category_id" : 9
+	},
+	{
+		"subcategory_name" : "Aircraft Maintenance",
+		"category_id" : 9
+	},
+	{
+		"subcategory_name" : "Aircraft Painting",
+		"category_id" : 9
+	},
+	{
+		"subcategory_name" : "Aviation FBO",
+		"category_id" : 9
+	},
+	{
+		"subcategory_name" : "Charter/Tour Airline",
+		"category_id" : 9
+	},
+	{
+		"subcategory_name" : "Flight School",
+		"category_id" : 9
+	},
+	{
+		"subcategory_name" : "Parts and Supply",
+		"category_id" : 9
+	},
+	{
+		"subcategory_name" : "Awards Engraving",
+		"category_id" : 10
+	},
+	{
+		"subcategory_name" : "Barber Shop",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Beauty Supply House",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Body Piercing Studio",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Body Waxing",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Body Wrapping",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Eyelash Services",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Hair Extension",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Hair Removal",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Hair Replacement",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Hair Salon",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Hair Salon/Day Spa",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Nail Salon",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Shoe Shine",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Skin and/or Massage",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Spa/Holistic Services",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Tanning Salon",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Tattoo Parlor",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Wigs",
+		"category_id" : 11
+	},
+	{
+		"subcategory_name" : "Building Materials",
+		"category_id" : 12
+	},
+	{
+		"subcategory_name" : "Applicant Screening",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Asset Recovery",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Audio Production & Rental",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Christmas Lights",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Cleaning/Janitorial",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Construction Consulting",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Consulting/Training",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Convention Consulting",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Court Recorder",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Cryogenic Tempering",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Data Entry",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Data Management",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Database Sales",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Document Shredding",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Equipment Testing",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Event Planning",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Fund Raising Service",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Inspection Reports Preparation",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Inventory Service",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Investigation Agency",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Law Firm",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Liquidation Services",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Litigation Support",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Logistics",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Mail/Package Service",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Management Services",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Mfg Representative",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Nuclear Gages S & S",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Office Services",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Para-Legal Services",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Power Plant",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Process Server",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Production/Staging",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Referral Service",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Registered Agent",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Repossessing Service",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Reservation Service",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Resume Service",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Secretarial Services",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Specialty Services",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Timekeeping/Payroll",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Translation Service",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "UFOC Preparation",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Valet Parking",
+		"category_id" : 13
+	},
+	{
+		"subcategory_name" : "Book Store",
+		"category_id" : 14
+	},
+	{
+		"subcategory_name" : "Books Adult Rated",
+		"category_id" : 14
+	},
+	{
+		"subcategory_name" : "Cards/Greeting",
+		"category_id" : 14
+	},
+	{
+		"subcategory_name" : "Cigar Store",
+		"category_id" : 14
+	},
+	{
+		"subcategory_name" : "Edible Gifts",
+		"category_id" : 14
+	},
+	{
+		"subcategory_name" : "Gift Baskets",
+		"category_id" : 14
+	},
+	{
+		"subcategory_name" : "Gift Shop",
+		"category_id" : 14
+	},
+	{
+		"subcategory_name" : "Gifts Collectables",
+		"category_id" : 14
+	},
+	{
+		"subcategory_name" : "Gifts/Adult/Novelty",
+		"category_id" : 14
+	},
+	{
+		"subcategory_name" : "Gifts/Tobacco",
+		"category_id" : 14
+	},
+	{
+		"subcategory_name" : "Hobby Shop",
+		"category_id" : 14
+	},
+	{
+		"subcategory_name" : "Party Goods",
+		"category_id" : 14
+	},
+	{
+		"subcategory_name" : "Used Books - CDs",
+		"category_id" : 14
+	},
+	{
+		"subcategory_name" : "Baby Sitting Service",
+		"category_id" : 15
+	},
+	{
+		"subcategory_name" : "Child Play Center",
+		"category_id" : 15
+	},
+	{
+		"subcategory_name" : "Day Care & After School",
+		"category_id" : 15
+	},
+	{
+		"subcategory_name" : "Day Nursery Infants",
+		"category_id" : 15
+	},
+	{
+		"subcategory_name" : "Day Nursery/Kindergarten",
+		"category_id" : 15
+	},
+	{
+		"subcategory_name" : "Cleaners Drop Store",
+		"category_id" : 17
+	},
+	{
+		"subcategory_name" : "Coin Laundry",
+		"category_id" : 17
+	},
+	{
+		"subcategory_name" : "Commercial Laundry",
+		"category_id" : 17
+	},
+	{
+		"subcategory_name" : "Dry Cleaners",
+		"category_id" : 17
+	},
+	{
+		"subcategory_name" : "Hazardous Garments",
+		"category_id" : 17
+	},
+	{
+		"subcategory_name" : "Carpet Cleaning",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Carpet Dyeing/Cleaning",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Cleaning Air Ducts",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Cleaning Chimneys",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Construction Cleanup",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Drape/Curtain Cleaning",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Floor Stripping/Wax",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Grout and Tile Cleaning",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Janitorial Service",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Maid Service",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Mold Remediation",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Parking Lot Cleaning",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Pressure Cleaning",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Restaurant Equipment Cleaning",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Water Damage/Restore",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Window Cleaning",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Bridal Salon",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Clothing Beachwear",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Clothing Boutique",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Clothing Bridal Shop",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Clothing Children",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Clothing Hats",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Clothing Lingerie",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Clothing Men",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Clothing Sportswear",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Clothing Tee Shirts",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Clothing Uniforms",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Clothing Used",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Clothing Western",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Clothing Women",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Costume Rental",
+		"category_id" : 16
+	},
+	{
+		"subcategory_name" : "Costume Rental",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Dancewear",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Embroidery Service",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Formal Wear Boutique",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Formal Wear Rental",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Sewing Contractor",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Silk Screening",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Textile Dying",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Vintage Clothing",
+		"category_id" : 18
+	},
+	{
+		"subcategory_name" : "Commercial Sound Systems",
+		"category_id" : 19
+	},
+	{
+		"subcategory_name" : "Radio Sales & Service",
+		"category_id" : 19
+	},
+	{
+		"subcategory_name" : "Radio Station",
+		"category_id" : 19
+	},
+	{
+		"subcategory_name" : "Satellite Dishes",
+		"category_id" : 19
+	},
+	{
+		"subcategory_name" : "TV Station",
+		"category_id" : 19
+	},
+	{
+		"subcategory_name" : "Wireless Phone Store",
+		"category_id" : 19
+	},
+	{
+		"subcategory_name" : "Building Renovations",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Bridge Construction",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Cabinet Resurfacing",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Concrete Coating",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Construction Contractor (Other)",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Construction Roll-Off",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor A/C & Heating",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Aluminum Products",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Boring",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Cabinets",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Carpenter",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Ceilings",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Closets",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Coatings",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Commercial",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Concrete",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Counters",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Drywall",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Electric",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Fencing",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Fireplace",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Flooring",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor General",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Gutters",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Heavy Const/Utility",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Home Improvement",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Hurricane Shutters",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Installer",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Insulation",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Marine",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Masonry",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor New Homes",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Painting",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Paving",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Plumber",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Pool",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Refrigeration",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Roofing",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Sandblasting",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Screening",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Solar",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Tiling",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Water Treatment",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Welding",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Windows & Doors",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Contractor Wine Cellars",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Crane Service",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Demolition",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Drain Cleaning",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Driveway Sealcoat",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Excavating/Trucking",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Facilities Maintenance Service",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Fire Damage Restoration",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Fire Sprinklers",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Foundation Contractor",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Furniture Repair",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Glass Company",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Grout & Tile Repair",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Handyman Service",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Heavy Construction Parts",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Hotel Refurbishing",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Install Prison Equipment",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Installation Building Equipment",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Leak Detection",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Lighting Contractor",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Overhead Doors",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Parking Lot Maintenance",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Permitting Service",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Pipeline Maintenance",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Pond Construction/Service",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Protective Coatings",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Rigging Company",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Roof Cleaning",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Sheet Metal",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Site Preparation",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Skylights",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Specialized Home Improvement",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Steel Erection",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Storm Shutters",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Stucco",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Surface Preparation",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Telecommunications",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Tennis Court Refinishing",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Traffic Control Services",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Traffic Control Supplies",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Tub Refinishing",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Underground Utilities",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Waterproofing",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Well Drilling",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Woodworking",
+		"category_id" : 20
+	},
+	{
+		"subcategory_name" : "Buying Service",
+		"category_id" : 21
+	},
+	{
+		"subcategory_name" : "Consultant Weddings",
+		"category_id" : 21
+	},
+	{
+		"subcategory_name" : "Consulting Computers",
+		"category_id" : 21
+	},
+	{
+		"subcategory_name" : "Consulting Financial",
+		"category_id" : 21
+	},
+	{
+		"subcategory_name" : "Consulting Human Resources",
+		"category_id" : 21
+	},
+	{
+		"subcategory_name" : "Consulting Insurance",
+		"category_id" : 21
+	},
+	{
+		"subcategory_name" : "Consulting Party",
+		"category_id" : 21
+	},
+	{
+		"subcategory_name" : "Consulting Roofing",
+		"category_id" : 21
+	},
+	{
+		"subcategory_name" : "Beverage Store",
+		"category_id" : 22
+	},
+	{
+		"subcategory_name" : "C-Store & Restaurant",
+		"category_id" : 22
+	},
+	{
+		"subcategory_name" : "C-Store Drive Thru",
+		"category_id" : 22
+	},
+	{
+		"subcategory_name" : "C-Store Only",
+		"category_id" : 22
+	},
+	{
+		"subcategory_name" : "C-Store/Beach Outlet",
+		"category_id" : 22
+	},
+	{
+		"subcategory_name" : "Small Grocery Store",
+		"category_id" : 22
+	},
+	{
+		"subcategory_name" : "Arts & Crafts Supply",
+		"category_id" : 23
+	},
+	{
+		"subcategory_name" : "Ceramics",
+		"category_id" : 23
+	},
+	{
+		"subcategory_name" : "Coin & Stamp Dealer",
+		"category_id" : 23
+	},
+	{
+		"subcategory_name" : "Crafts Shells",
+		"category_id" : 23
+	},
+	{
+		"subcategory_name" : "Crafts Studio",
+		"category_id" : 23
+	},
+	{
+		"subcategory_name" : "Hobby/Models Store",
+		"category_id" : 23
+	},
+	{
+		"subcategory_name" : "Knitting Supplies",
+		"category_id" : 23
+	},
+	{
+		"subcategory_name" : "Needlework",
+		"category_id" : 23
+	},
+	{
+		"subcategory_name" : "Scrapbook Supplies",
+		"category_id" : 23
+	},
+	{
+		"subcategory_name" : "Stained Glass",
+		"category_id" : 23
+	},
+	{
+		"subcategory_name" : "Delivery Automobiles",
+		"category_id" : 24
+	},
+	{
+		"subcategory_name" : "Delivery Food",
+		"category_id" : 24
+	},
+	{
+		"subcategory_name" : "Delivery/Courier",
+		"category_id" : 24
+	},
+	{
+		"subcategory_name" : "Delivery/Freight",
+		"category_id" : 24
+	},
+	{
+		"subcategory_name" : "Office Furniture",
+		"category_id" : 24
+	},
+	{
+		"subcategory_name" : "Dental Lab",
+		"category_id" : 25
+	},
+	{
+		"subcategory_name" : "Dental Practice",
+		"category_id" : 25
+	},
+	{
+		"subcategory_name" : "Dental Supplies",
+		"category_id" : 25
+	},
+	{
+		"subcategory_name" : "Teeth Whitening",
+		"category_id" : 25
+	},
+	{
+		"subcategory_name" : "Dist-A/C & Heat Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Agricultural Supplies",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Aircraft Parts",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Aluminum Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Animals Live",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Auto Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Beer Supplies",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Bev Alcoholic",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Bev Non Alcohol",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Bicycle Supply",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Building Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Ceramic Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Chemical Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Clothing",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Clothing Accessories",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Coffee",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Computer Hardware",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Computer Software",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Communication Equipment",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Construction Material",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Consumer Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Education Items",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Electronics",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Entertainment Media",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Film Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Fireworks",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Fitness Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Flags",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Floral Supplies",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Food Products Dry",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Food Service Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Footwear",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Fragrances",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Framing Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Frozen Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Funeral Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Gifts & Crafts",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Golf Accessory",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Graphics",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Hardware",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Health/Beauty",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Heating Fuels",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Home Accessory",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Home Furniture",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Hospital Supply",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Industrial Products/Supplies",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Janitorial Supplies",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Jewelry Costume",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Jewelry Fine",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Lawn Equipment",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Lighting Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Lubricants",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Lumber",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-MRO Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Magazines",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Mailing Equipment",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Marine Accessory",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Marine Equipment",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Material Handling",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Medical Equipment",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Medical Supply",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Motorcycles",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Office Equipment",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Office Furniture",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Office Supplies",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Optical Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Outdoor Equipment",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Packaging Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Paint",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Paper Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Pet Foods",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Petroleum Equipment",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Plants",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Plastic Equipment",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Plumbing Supplies",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Pool/Spa Equipment",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Pool/Spa Supplies",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Prepared Meals",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Printing Equipment",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Propane",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Religious Goods",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Restaurant Equipment",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Restaurant Supplies",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Routes Newspaper",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Safety Supplies",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Security Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Skin Care Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Snack Items",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Specialty Equipment",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Sporting Goods",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Steel",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Sundry Items",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Textile Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Tobacco Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Tools",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Toys",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Upholstery",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Window Covering",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Dist-Wood Products",
+		"category_id" : 26
+	},
+	{
+		"subcategory_name" : "Bartending School",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Casino Gaming",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Children Art Center",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "College",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Computer School",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Cooking School",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Cosmetologist School",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Dance Academy",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Driving School",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Education Tutoring",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Education/Publishing",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Educational Material",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Horse Riding Academy",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Massage School",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Modeling School",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Music School",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Performing Arts",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Preschool",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Private School",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Nails/Massage School",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Testing & Evaluation",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Trade/Vocational School",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Traffic School",
+		"category_id" : 27
+	},
+	{
+		"subcategory_name" : "Communication Device",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Computer Graphics",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Computer Parts/System",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Computer Programing",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Computer Repair",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Computer Software",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Computer Supplies",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Computer Sales/Service",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Consulting",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Data Processing",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Electric Shaver Repair",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Electronic Equipment Sale",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Electronic Service",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Electronic TV Repair",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Electronic VCR Repair",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Smartphone Service/Repair",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Sound/Video Systems",
+		"category_id" : 28
+	},
+	{
+		"subcategory_name" : "Architecture Service",
+		"category_id" : 29
+	},
+	{
+		"subcategory_name" : "Drafting & Blue Prints",
+		"category_id" : 29
+	},
+	{
+		"subcategory_name" : "Engineering Chemical",
+		"category_id" : 29
+	},
+	{
+		"subcategory_name" : "Engineering Civil",
+		"category_id" : 29
+	},
+	{
+		"subcategory_name" : "Engineering Construction",
+		"category_id" : 29
+	},
+	{
+		"subcategory_name" : "Engineering Drilling",
+		"category_id" : 29
+	},
+	{
+		"subcategory_name" : "Engineering Electric",
+		"category_id" : 29
+	},
+	{
+		"subcategory_name" : "Engineering Environmental",
+		"category_id" : 29
+	},
+	{
+		"subcategory_name" : "Engineering Mechanic",
+		"category_id" : 29
+	},
+	{
+		"subcategory_name" : "Engineering Soil",
+		"category_id" : 29
+	},
+	{
+		"subcategory_name" : "Engineering Logistic",
+		"category_id" : 29
+	},
+	{
+		"subcategory_name" : "Engineering/Consulting",
+		"category_id" : 29
+	},
+	{
+		"subcategory_name" : "Air Filters Sales/Service",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Air Filters Sales/Service",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Aquatic Weed Control",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Consulting",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Environmental Lab",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Environmental Cleanup",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Erosion Control",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Indoor Air Quality",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Landfill",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Mining Non Metallic",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Mining Pumice",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Mining Sand",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Odor Eliminator",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Oil Refinery",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Petroleum Products",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Portable Septic Unit",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Portable Toilets",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Recycling Business",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Refrigerant Reclaim",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Research Company",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Scrap Metal",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Septic Tank Cleaning",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Septic Tank Service",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Slate Mine",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Solar Products",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Trash Hauling",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Waste Management",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Waste Water",
+		"category_id" : 30
+	},
+	{
+		"subcategory_name" : "Alt-Gen-DC Motors S/S",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Electric Motors S/S",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Elevator Installation & Repair",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Equipment Rental",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Equipment Sales New/Used",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Fire Extinguisher Service",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Fire Suppression Equipment",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Heavy Equipment Parts/Repair",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Hydraulic Equipment Repair",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Petroleum Equipment",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Pump Repair",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Restaurant Equipment Repair",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Restaurant Equipment S/S",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Shopping Cart Repair",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Small Engine Sales/Repairs",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Tool Repairs",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Tool Sharpening",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "Vacuum/Sewing Machine",
+		"category_id" : 31
+	},
+	{
+		"subcategory_name" : "ATM Machines",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Bail Bonds",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Banking/Finance",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Barter Club",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Check Cashing",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Collection Child Support",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Collection Agency",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Currency Exchange",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Debt Counseling Service",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Equipment Leasing",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Factoring Company",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Finance Company",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Independent Stock Broker",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Pawn Shop",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Payment Processing",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Precious Metal Dealer",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Title Company",
+		"category_id" : 32
+	},
+	{
+		"subcategory_name" : "Firearms Range",
+		"category_id" : 33
+	},
+	{
+		"subcategory_name" : "Gun Shop",
+		"category_id" : 33
+	},
+	{
+		"subcategory_name" : "Cycling Studio",
+		"category_id" : 34
+	},
+	{
+		"subcategory_name" : "Fitness Aerobic",
+		"category_id" : 34
+	},
+	{
+		"subcategory_name" : "Fitness Center",
+		"category_id" : 34
+	},
+	{
+		"subcategory_name" : "Fitness Equipment",
+		"category_id" : 34
+	},
+	{
+		"subcategory_name" : "Fitness Gym",
+		"category_id" : 34
+	},
+	{
+		"subcategory_name" : "Fitness Health Club",
+		"category_id" : 34
+	},
+	{
+		"subcategory_name" : "Fitness Pro Shop",
+		"category_id" : 34
+	},
+	{
+		"subcategory_name" : "Martial Arts",
+		"category_id" : 34
+	},
+	{
+		"subcategory_name" : "Massage Center",
+		"category_id" : 34
+	},
+	{
+		"subcategory_name" : "Meditation Center",
+		"category_id" : 34
+	},
+	{
+		"subcategory_name" : "Pilates & Therapy",
+		"category_id" : 34
+	},
+	{
+		"subcategory_name" : "Yoga Studio",
+		"category_id" : 34
+	},
+	{
+		"subcategory_name" : "Floor Restoration",
+		"category_id" : 35
+	},
+	{
+		"subcategory_name" : "Flooring Products",
+		"category_id" : 35
+	},
+	{
+		"subcategory_name" : "Flooring/Carpeting",
+		"category_id" : 35
+	},
+	{
+		"subcategory_name" : "Flooring/Tile",
+		"category_id" : 35
+	},
+	{
+		"subcategory_name" : "Flooring/Tile/Stone",
+		"category_id" : 35
+	},
+	{
+		"subcategory_name" : "Hardwood Floors",
+		"category_id" : 35
+	},
+	{
+		"subcategory_name" : "Artificial Flowers",
+		"category_id" : 36
+	},
+	{
+		"subcategory_name" : "Florist",
+		"category_id" : 36
+	},
+	{
+		"subcategory_name" : "Flower Preservation",
+		"category_id" : 36
+	},
+	{
+		"subcategory_name" : "Fresh Flowers",
+		"category_id" : 36
+	},
+	{
+		"subcategory_name" : "Silk Flowers",
+		"category_id" : 36
+	},
+	{
+		"subcategory_name" : "Deli/Catering",
+		"category_id" : 37
+	},
+	{
+		"subcategory_name" : "Food Deli Take Out",
+		"category_id" : 37
+	},
+	{
+		"subcategory_name" : "Food Retail Bakery",
+		"category_id" : 37
+	},
+	{
+		"subcategory_name" : "Food Retail Donuts",
+		"category_id" : 37
+	},
+	{
+		"subcategory_name" : "Food Retail Fish",
+		"category_id" : 37
+	},
+	{
+		"subcategory_name" : "Food Retail Grocery",
+		"category_id" : 37
+	},
+	{
+		"subcategory_name" : "Food Retail Health",
+		"category_id" : 37
+	},
+	{
+		"subcategory_name" : "Food Retail Meats",
+		"category_id" : 37
+	},
+	{
+		"subcategory_name" : "Food Retail Produce",
+		"category_id" : 37
+	},
+	{
+		"subcategory_name" : "Food Retail Snacks",
+		"category_id" : 37
+	},
+	{
+		"subcategory_name" : "Italian Deli/Grocery",
+		"category_id" : 37
+	},
+	{
+		"subcategory_name" : "Meal Prep Delivery",
+		"category_id" : 37
+	},
+	{
+		"subcategory_name" : "Retail Coffee & Tea",
+		"category_id" : 37
+	},
+	{
+		"subcategory_name" : "Specialty Bakery",
+		"category_id" : 37
+	},
+	{
+		"subcategory_name" : "Specialty Grocery",
+		"category_id" : 37
+	},
+	{
+		"subcategory_name" : "Furniture Refinishing",
+		"category_id" : 38
+	},
+	{
+		"subcategory_name" : "Furniture Repair Service",
+		"category_id" : 38
+	},
+	{
+		"subcategory_name" : "Furniture Retail Dinettes",
+		"category_id" : 38
+	},
+	{
+		"subcategory_name" : "Furniture Retail Home/Bed",
+		"category_id" : 38
+	},
+	{
+		"subcategory_name" : "Furniture Retail Lawn/Patio",
+		"category_id" : 38
+	},
+	{
+		"subcategory_name" : "Furniture Retail Office",
+		"category_id" : 38
+	},
+	{
+		"subcategory_name" : "Furniture Children's",
+		"category_id" : 38
+	},
+	{
+		"subcategory_name" : "Furniture Imports",
+		"category_id" : 38
+	},
+	{
+		"subcategory_name" : "Furniture Liquidation",
+		"category_id" : 38
+	},
+	{
+		"subcategory_name" : "Furniture Oriental",
+		"category_id" : 38
+	},
+	{
+		"subcategory_name" : "Furniture Rental",
+		"category_id" : 38
+	},
+	{
+		"subcategory_name" : "Furniture Store",
+		"category_id" : 38
+	},
+	{
+		"subcategory_name" : "Furniture Used",
+		"category_id" : 38
+	},
+	{
+		"subcategory_name" : "Unfinished Furniture",
+		"category_id" : 38
+	},
+	{
+		"subcategory_name" : "Gas Station/Truck Stop",
+		"category_id" : 39
+	},
+	{
+		"subcategory_name" : "Gas Station/C-Store",
+		"category_id" : 39
+	},
+	{
+		"subcategory_name" : "Gas Station/Repairs",
+		"category_id" : 39
+	},
+	{
+		"subcategory_name" : "Glass Creations",
+		"category_id" : 40
+	},
+	{
+		"subcategory_name" : "Glass Etching",
+		"category_id" : 40
+	},
+	{
+		"subcategory_name" : "Glass Tinting",
+		"category_id" : 40
+	},
+	{
+		"subcategory_name" : "Glass Windows/Doors/Mirrors",
+		"category_id" : 40
+	},
+	{
+		"subcategory_name" : "Hardware Retail",
+		"category_id" : 41
+	},
+	{
+		"subcategory_name" : "Hardware/Lumber",
+		"category_id" : 41
+	},
+	{
+		"subcategory_name" : "Lighting Store Retail",
+		"category_id" : 41
+	},
+	{
+		"subcategory_name" : "Paint Store Retail",
+		"category_id" : 41
+	},
+	{
+		"subcategory_name" : "Coin Distributor",
+		"category_id" : 42
+	},
+	{
+		"subcategory_name" : "Coins Store",
+		"category_id" : 42
+	},
+	{
+		"subcategory_name" : "Collectibles",
+		"category_id" : 42
+	},
+	{
+		"subcategory_name" : "Doll Manufacturer",
+		"category_id" : 42
+	},
+	{
+		"subcategory_name" : "Hobby/Toys",
+		"category_id" : 42
+	},
+	{
+		"subcategory_name" : "Stamp & Coin Store",
+		"category_id" : 42
+	},
+	{
+		"subcategory_name" : "Stamp Collector Business",
+		"category_id" : 42
+	},
+	{
+		"subcategory_name" : "Flavored Ice",
+		"category_id" : 43
+	},
+	{
+		"subcategory_name" : "Ice Cream & Yogurt",
+		"category_id" : 43
+	},
+	{
+		"subcategory_name" : "Ice Cream Store",
+		"category_id" : 43
+	},
+	{
+		"subcategory_name" : "Smoothie Business",
+		"category_id" : 43
+	},
+	{
+		"subcategory_name" : "Yogurt Store",
+		"category_id" : 43
+	},
+	{
+		"subcategory_name" : "Custom House/Distribution",
+		"category_id" : 44
+	},
+	{
+		"subcategory_name" : "Export Graphic Arts",
+		"category_id" : 44
+	},
+	{
+		"subcategory_name" : "Herbs/Spices/Produce",
+		"category_id" : 44
+	},
+	{
+		"subcategory_name" : "Import Collectables",
+		"category_id" : 44
+	},
+	{
+		"subcategory_name" : "Import Glassware",
+		"category_id" : 44
+	},
+	{
+		"subcategory_name" : "Import Housewares",
+		"category_id" : 44
+	},
+	{
+		"subcategory_name" : "Import Jewelry",
+		"category_id" : 44
+	},
+	{
+		"subcategory_name" : "Import Medical Supplies",
+		"category_id" : 44
+	},
+	{
+		"subcategory_name" : "Import Metal Product",
+		"category_id" : 44
+	},
+	{
+		"subcategory_name" : "Import - Baskets",
+		"category_id" : 44
+	},
+	{
+		"subcategory_name" : "Import/Export Chemicals",
+		"category_id" : 44
+	},
+	{
+		"subcategory_name" : "Industrial Machinery",
+		"category_id" : 44
+	},
+	{
+		"subcategory_name" : "Insurance Adjusters",
+		"category_id" : 45
+	},
+	{
+		"subcategory_name" : "Insurance Administrator",
+		"category_id" : 45
+	},
+	{
+		"subcategory_name" : "Insurance Appraisal",
+		"category_id" : 45
+	},
+	{
+		"subcategory_name" : "Insurance Auto",
+		"category_id" : 45
+	},
+	{
+		"subcategory_name" : "Insurance General",
+		"category_id" : 45
+	},
+	{
+		"subcategory_name" : "Insurance Health",
+		"category_id" : 45
+	},
+	{
+		"subcategory_name" : "Insurance Medical Assessment",
+		"category_id" : 45
+	},
+	{
+		"subcategory_name" : "Title Insurance Agency",
+		"category_id" : 45
+	},
+	{
+		"subcategory_name" : "Home Interior Design",
+		"category_id" : 46
+	},
+	{
+		"subcategory_name" : "Office Interior Design",
+		"category_id" : 46
+	},
+	{
+		"subcategory_name" : "Wallcoverings",
+		"category_id" : 46
+	},
+	{
+		"subcategory_name" : "Window Coverings",
+		"category_id" : 46
+	},
+	{
+		"subcategory_name" : "Window Tinting",
+		"category_id" : 46
+	},
+	{
+		"subcategory_name" : "E-Bay Drop Store",
+		"category_id" : 47
+	},
+	{
+		"subcategory_name" : "Internet Business",
+		"category_id" : 47
+	},
+	{
+		"subcategory_name" : "Internet/Online Service",
+		"category_id" : 47
+	},
+	{
+		"subcategory_name" : "Online Retail Store",
+		"category_id" : 47
+	},
+	{
+		"subcategory_name" : "Online Wholesale Sales",
+		"category_id" : 47
+	},
+	{
+		"subcategory_name" : "Web Based Publishing",
+		"category_id" : 47
+	},
+	{
+		"subcategory_name" : "Web Development",
+		"category_id" : 47
+	},
+	{
+		"subcategory_name" : "Clock & Watch Repair",
+		"category_id" : 48
+	},
+	{
+		"subcategory_name" : "Gold Dealers",
+		"category_id" : 48
+	},
+	{
+		"subcategory_name" : "Jewelry Manufacturing",
+		"category_id" : 48
+	},
+	{
+		"subcategory_name" : "Jewelry Retail",
+		"category_id" : 48
+	},
+	{
+		"subcategory_name" : "Jewelry Wholesale",
+		"category_id" : 48
+	},
+	{
+		"subcategory_name" : "Comm Mowing/Grading",
+		"category_id" : 49
+	},
+	{
+		"subcategory_name" : "Fertilization",
+		"category_id" : 49
+	},
+	{
+		"subcategory_name" : "Irrigation/Sprinkler",
+		"category_id" : 49
+	},
+	{
+		"subcategory_name" : "Landscape Architects/Designers",
+		"category_id" : 49
+	},
+	{
+		"subcategory_name" : "Landscape Borders",
+		"category_id" : 49
+	},
+	{
+		"subcategory_name" : "Landscape Lighting",
+		"category_id" : 49
+	},
+	{
+		"subcategory_name" : "Lawn & Garden Supply",
+		"category_id" : 49
+	},
+	{
+		"subcategory_name" : "Lawn Biz Commercial",
+		"category_id" : 49
+	},
+	{
+		"subcategory_name" : "Lawn Biz Landscaping",
+		"category_id" : 49
+	},
+	{
+		"subcategory_name" : "Lawn Biz Residential",
+		"category_id" : 49
+	},
+	{
+		"subcategory_name" : "Lawn Equipment Sales",
+		"category_id" : 49
+	},
+	{
+		"subcategory_name" : "Lawn Mower Repairs",
+		"category_id" : 49
+	},
+	{
+		"subcategory_name" : "Lawn Spraying",
+		"category_id" : 49
+	},
+	{
+		"subcategory_name" : "Specialized Grass Services",
+		"category_id" : 49
+	},
+	{
+		"subcategory_name" : "Tree Service",
+		"category_id" : 49
+	},
+	{
+		"subcategory_name" : "Adult Entertainment",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Adult Nite Club",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Bar/Restaurant",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Beer/Wine Bar",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Bottle Club",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Distillery",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Liquor Bar/Lounge",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Liquor Dance Club",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Liquor License Only",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Liquor Nite Club",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Liquor Package Store",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Lounge & Package Store",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Micro Brewer Distillers",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Sports Bar",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Tavern",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Wine Sampling",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Winery",
+		"category_id" : 50
+	},
+	{
+		"subcategory_name" : "Locksmith",
+		"category_id" : 51
+	},
+	{
+		"subcategory_name" : "Machine Shop/Metal",
+		"category_id" : 52
+	},
+	{
+		"subcategory_name" : "Mail Order Business",
+		"category_id" : 53
+	},
+	{
+		"subcategory_name" : "Lawn & Patio Furniture/Awnings",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-A/C & Heat Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Adv Specialties",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Agrarian Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Aircraft Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Alum Foundry",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Aluminum Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Aquarium Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Art Supplies",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Assembler-Fabrication",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Auto Accessories",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Automotive Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Awards/Plaques",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Ball Bearings",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Beverages",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Boats",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Canvas Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Caskets",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Cement Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Ceramic Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Chemicals",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Chocolate",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Clothing",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Consumable Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Cosmetics",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Cranes",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Decorative Fountains",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Doors/Partitions",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Electrical Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Electrical Supplies",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Electronic Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Electroplated Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Elevator Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Equipment",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Fabrication",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Fencing",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Fiberglass Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Fishing Tackle",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Flags",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Flowers Artificial",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Food Bottled",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Foods Canned",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Foods Dry",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Foods Frozen",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Foods Snack",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Foot Apparel",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Furniture Home",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Furniture Leather",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Furniture Office",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Furniture Restaurants",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Giftware Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Home Accessories",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Home Improv Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Ice Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Industrial Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Insulation",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Iron Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Jewelry",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Leather Goods",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Lighting Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Machine Shop",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Machinery",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Manufacturer Rep",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Marble Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Marine Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Medical Equipment",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Medical Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Metal Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Millwork",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Mint",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Mint",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Munitions",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Office Equipment",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Office Supplies",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Packaging",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Paint",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Paper Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Pet Food Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Pet Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Plastic Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Pre Built Homes",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Promo Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Quartz or Glass",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Recreational Equipment",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Restaurant Accessories",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Restaurant Equipment",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Sandwiches",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Shoes",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Signs",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Silk Screen Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Sporting Goods",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Table Tops",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Tool & Die Shop",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Tools",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Traffic Devices",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Trailers",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Truck Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Wallpaper",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Window Coverings",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Mfg-Wood Products",
+		"category_id" : 54
+	},
+	{
+		"subcategory_name" : "Bait & Tackle Store",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Boat Accessories",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Boat Broker",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Boat Club",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Boat Dealer",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Boat Detailing",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Boat Rentals",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Boat Repairs",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Boat Restoration/Repair/Service",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Boat Tours",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Boat Transportation",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Charter Fishing",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Dive Boat",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Dive Shop",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Electric Motors",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Entertainment - Poker",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Fishing Camps/ Resorts",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Fractional Yacht Ownership",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Jet Ski/WR Rental",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Kiteboarding School",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Marinas",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Marine A/C Sales/Service",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Marine Canvas Products",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Marine Contractor",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Marine Electronics",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Marine Gift & Accessories",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Marine Oil Changing",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Marine Parts",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Marine Props S&S",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Marine Rescue/Towing",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Marine Services",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Personal Water Craft",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Sailing School",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Ship Building and Repair",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Taxidermy",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "Yacht Chartering",
+		"category_id" : 55
+	},
+	{
+		"subcategory_name" : "A.F.C.H.",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "A.L.F.",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Acupuncture",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Adult Day Care",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Behavioral Analysis",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Elder Care",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Half Way/Recovery House",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Head Lice Removal Service",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Health Information Management",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "HMO",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Laser Clinic",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Mastectomy Products",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical - Hypnosis",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Asst Living",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Billing Service",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Case Management",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Chiropractic",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Clinic",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Discount Organization",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Equip Lease",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Equipment",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Furniture",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Hearing Aids",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Home Care",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Laboratory",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Licensing",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Marijuana",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical MD Practice",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Nursing Home",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Pharmacy",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Software",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Spa",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Speech Therapy",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Staffing",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Supplies",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Testing",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Transcribing",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Uniform Sales",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical Weight Loss",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Medical-MRI",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Mental Health Service",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Non-Med Home Care",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Nurse Registry",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Occupational Therapy",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Orthotic/Pedorthic Care",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Physical Therapy",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Podiatry Care",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Psychotherapy",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Retirement Home",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Specialty Hospital",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Substance Abuse",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Unborn Imaging",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Wholesale Pharmacy",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Metal Coatings",
+		"category_id" : 57
+	},
+	{
+		"subcategory_name" : "Metal Painting",
+		"category_id" : 56
+	},
+	{
+		"subcategory_name" : "Metal Plating",
+		"category_id" : 57
+	},
+	{
+		"subcategory_name" : "Metal Restoration",
+		"category_id" : 57
+	},
+	{
+		"subcategory_name" : "To Be Classified",
+		"category_id" : 58
+	},
+	{
+		"subcategory_name" : "Mobile Homes Repairs",
+		"category_id" : 59
+	},
+	{
+		"subcategory_name" : "Mobile Homes Sales",
+		"category_id" : 59
+	},
+	{
+		"subcategory_name" : "Motorcycle Dealership",
+		"category_id" : 60
+	},
+	{
+		"subcategory_name" : "Motorcycle Accessories",
+		"category_id" : 60
+	},
+	{
+		"subcategory_name" : "Motorcycle Parts",
+		"category_id" : 60
+	},
+	{
+		"subcategory_name" : "Motorcycle Repairs",
+		"category_id" : 60
+	},
+	{
+		"subcategory_name" : "Motorcycle Sales & Service",
+		"category_id" : 60
+	},
+	{
+		"subcategory_name" : "Crating Services",
+		"category_id" : 61
+	},
+	{
+		"subcategory_name" : "Moving Company",
+		"category_id" : 61
+	},
+	{
+		"subcategory_name" : "Moving Storage Company",
+		"category_id" : 61
+	},
+	{
+		"subcategory_name" : "Music Retail Store",
+		"category_id" : 62
+	},
+	{
+		"subcategory_name" : "Musical Contests",
+		"category_id" : 62
+	},
+	{
+		"subcategory_name" : "Musical Instruments",
+		"category_id" : 62
+	},
+	{
+		"subcategory_name" : "Recording Studio",
+		"category_id" : 62
+	},
+	{
+		"subcategory_name" : "Wholesale Music",
+		"category_id" : 62
+	},
+	{
+		"subcategory_name" : "NF Insurance",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Automotive Industry",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Business Services",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Check Cashing",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Child Care",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Child Fitness Gym",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Cleaning",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Coffee Shop",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Computer S&S",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Const Materials",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Consultant",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Convenience Kiosk",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Dating Service",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Digital Media",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Direct Mail Services",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Distribution Chocolate",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Donut",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Dry Cleaning",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Education",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Employment/Personnel",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Event Hosting",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Executive Coaching",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Executive Offices",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Fast Foods",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Financial Service",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Fitness Centers",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Food Related",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Fund Raising",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Gifts/Collectable",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Gourmet Mkt/Deli",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Hair Care",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Home Furnishings",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Home Improvement",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Ink Cartridge Refill",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Janitorial Service",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Maid Service",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Massage Therapy",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Medical Care Industry",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Motel/Hotel",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Moving Company",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Nail Salon",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Nursery Service",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF On-Line Retail Store",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Pack & Ship",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Paralegal",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Party Supplies",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Pest Control",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Pet Care",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Photography",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Portable Storage",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Pressure Cleaning",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Printing",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Property Maintenance",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Property Management",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Real Estate Office",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Restaurants",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Restoration Services",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Retail Establishment",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Schools Academies Etc",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Screen Printing",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Signs",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Sports Related",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Tanning",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Tax Preparation",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Telephones",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Uniforms",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Vending Business",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Wedding Consultant",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Weight Loss",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "NF Yogurt/Ice Cream",
+		"category_id" : 1055
+	},
+	{
+		"subcategory_name" : "Newsstand",
+		"category_id" : 63
+	},
+	{
+		"subcategory_name" : "Office Furniture",
+		"category_id" : 64
+	},
+	{
+		"subcategory_name" : "Office Machines S/S",
+		"category_id" : 64
+	},
+	{
+		"subcategory_name" : "Office Supplies",
+		"category_id" : 64
+	},
+	{
+		"subcategory_name" : "Eye Wear Sales",
+		"category_id" : 65
+	},
+	{
+		"subcategory_name" : "Ophthalmologist",
+		"category_id" : 65
+	},
+	{
+		"subcategory_name" : "Optical Lab",
+		"category_id" : 65
+	},
+	{
+		"subcategory_name" : "Optical Repairs",
+		"category_id" : 65
+	},
+	{
+		"subcategory_name" : "Optician Practice",
+		"category_id" : 65
+	},
+	{
+		"subcategory_name" : "Optometrist",
+		"category_id" : 65
+	},
+	{
+		"subcategory_name" : "Pack/Ship Service",
+		"category_id" : 66
+	},
+	{
+		"subcategory_name" : "Postal/Mailbox/Misc",
+		"category_id" : 66
+	},
+	{
+		"subcategory_name" : "Fitness Testing",
+		"category_id" : 67
+	},
+	{
+		"subcategory_name" : "Baby Proofing",
+		"category_id" : 67
+	},
+	{
+		"subcategory_name" : "Credit Repair Service",
+		"category_id" : 67
+	},
+	{
+		"subcategory_name" : "Dating Service",
+		"category_id" : 67
+	},
+	{
+		"subcategory_name" : "Detective Agency",
+		"category_id" : 67
+	},
+	{
+		"subcategory_name" : "Funeral Home",
+		"category_id" : 67
+	},
+	{
+		"subcategory_name" : "Home Maintenance",
+		"category_id" : 67
+	},
+	{
+		"subcategory_name" : "Monuments",
+		"category_id" : 67
+	},
+	{
+		"subcategory_name" : "Remailing Service",
+		"category_id" : 67
+	},
+	{
+		"subcategory_name" : "Senior Services",
+		"category_id" : 67
+	},
+	{
+		"subcategory_name" : "Social Club",
+		"category_id" : 67
+	},
+	{
+		"subcategory_name" : "Talent Agency",
+		"category_id" : 67
+	},
+	{
+		"subcategory_name" : "Wedding Chapel",
+		"category_id" : 67
+	},
+	{
+		"subcategory_name" : "Children ID System",
+		"category_id" : 68
+	},
+	{
+		"subcategory_name" : "Employee Leasing",
+		"category_id" : 68
+	},
+	{
+		"subcategory_name" : "Employment Agency",
+		"category_id" : 68
+	},
+	{
+		"subcategory_name" : "Executive Searching",
+		"category_id" : 68
+	},
+	{
+		"subcategory_name" : "Greeting Service",
+		"category_id" : 68
+	},
+	{
+		"subcategory_name" : "Model Training",
+		"category_id" : 68
+	},
+	{
+		"subcategory_name" : "Party Planning",
+		"category_id" : 68
+	},
+	{
+		"subcategory_name" : "Performance Training",
+		"category_id" : 68
+	},
+	{
+		"subcategory_name" : "Personal Assistant",
+		"category_id" : 68
+	},
+	{
+		"subcategory_name" : "Sports/Recreation",
+		"category_id" : 68
+	},
+	{
+		"subcategory_name" : "Temporary Help",
+		"category_id" : 68
+	},
+	{
+		"subcategory_name" : "Pest Control Service",
+		"category_id" : 69
+	},
+	{
+		"subcategory_name" : "Pest Control Supplies",
+		"category_id" : 69
+	},
+	{
+		"subcategory_name" : "Aerial Photo System",
+		"category_id" : 70
+	},
+	{
+		"subcategory_name" : "Aerial Photography",
+		"category_id" : 70
+	},
+	{
+		"subcategory_name" : "Camera Repairs",
+		"category_id" : 70
+	},
+	{
+		"subcategory_name" : "Camera Store",
+		"category_id" : 70
+	},
+	{
+		"subcategory_name" : "Digital Photo System",
+		"category_id" : 70
+	},
+	{
+		"subcategory_name" : "Microfilm Service",
+		"category_id" : 70
+	},
+	{
+		"subcategory_name" : "One Hour Photo Shop",
+		"category_id" : 70
+	},
+	{
+		"subcategory_name" : "Photo Lab",
+		"category_id" : 70
+	},
+	{
+		"subcategory_name" : "Photo Studio",
+		"category_id" : 70
+	},
+	{
+		"subcategory_name" : "Residential/Commercial",
+		"category_id" : 70
+	},
+	{
+		"subcategory_name" : "Stock Footage Library",
+		"category_id" : 70
+	},
+	{
+		"subcategory_name" : "Pool Fences/Guards",
+		"category_id" : 71
+	},
+	{
+		"subcategory_name" : "Pool Heating",
+		"category_id" : 71
+	},
+	{
+		"subcategory_name" : "Pool Repairs",
+		"category_id" : 71
+	},
+	{
+		"subcategory_name" : "Pool Sales/Service",
+		"category_id" : 71
+	},
+	{
+		"subcategory_name" : "Pool Service",
+		"category_id" : 71
+	},
+	{
+		"subcategory_name" : "Pool Supplies",
+		"category_id" : 71
+	},
+	{
+		"subcategory_name" : "Pool/Spa Sales",
+		"category_id" : 71
+	},
+	{
+		"subcategory_name" : "Pool/Spa Supply Store",
+		"category_id" : 71
+	},
+	{
+		"subcategory_name" : "Bindery",
+		"category_id" : 72
+	},
+	{
+		"subcategory_name" : "Color Copying",
+		"category_id" : 72
+	},
+	{
+		"subcategory_name" : "Copying Blueprints",
+		"category_id" : 72
+	},
+	{
+		"subcategory_name" : "Graphics/Layout",
+		"category_id" : 72
+	},
+	{
+		"subcategory_name" : "Laminating Services",
+		"category_id" : 72
+	},
+	{
+		"subcategory_name" : "Print Equip Repair",
+		"category_id" : 72
+	},
+	{
+		"subcategory_name" : "Printing Broker",
+		"category_id" : 72
+	},
+	{
+		"subcategory_name" : "Printing Business",
+		"category_id" : 72
+	},
+	{
+		"subcategory_name" : "Typesetting Business",
+		"category_id" : 72
+	},
+	{
+		"subcategory_name" : "Legal Practice",
+		"category_id" : 73
+	},
+	{
+		"subcategory_name" : "Directory Publishing",
+		"category_id" : 74
+	},
+	{
+		"subcategory_name" : "Publishing",
+		"category_id" : 74
+	},
+	{
+		"subcategory_name" : "Publishing Maps",
+		"category_id" : 74
+	},
+	{
+		"subcategory_name" : "Broker Business",
+		"category_id" : 75
+	},
+	{
+		"subcategory_name" : "Broker Mortgage",
+		"category_id" : 75
+	},
+	{
+		"subcategory_name" : "Broker Real Estate",
+		"category_id" : 75
+	},
+	{
+		"subcategory_name" : "Home Inspection Service",
+		"category_id" : 75
+	},
+	{
+		"subcategory_name" : "Inspection Service",
+		"category_id" : 75
+	},
+	{
+		"subcategory_name" : "Mfg Home Dealer",
+		"category_id" : 75
+	},
+	{
+		"subcategory_name" : "Property Management",
+		"category_id" : 75
+	},
+	{
+		"subcategory_name" : "R/E Appraisal",
+		"category_id" : 75
+	},
+	{
+		"subcategory_name" : "Radon Services",
+		"category_id" : 75
+	},
+	{
+		"subcategory_name" : "Real Estate School",
+		"category_id" : 75
+	},
+	{
+		"subcategory_name" : "Renting/Leasing",
+		"category_id" : 75
+	},
+	{
+		"subcategory_name" : "Surveyors",
+		"category_id" : 75
+	},
+	{
+		"subcategory_name" : "Time Sharing Rental/Sales",
+		"category_id" : 75
+	},
+	{
+		"subcategory_name" : "Wholesale Real Estate",
+		"category_id" : 75
+	},
+	{
+		"subcategory_name" : "Apartment Building",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Auction Service",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Bed & Breakfast",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Commercial Improved Property",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Commercial Building",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Commercial Lease",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Commercial Property with Business",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Development",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Flea Market",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Hotel",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Hotel/Motel",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Income Property",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Industrial Building",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Industrial Park",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Industrial Park",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Office Building",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "R.V. Park",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Rental of Booths",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Resort",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Restaurant Lease",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Retail/Warehouse",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Self Storage",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Shopping Center",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Storage Facility",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Timeshare",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Truck Stop/Property",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Vacant Commercial Land",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Vacant Farm Land",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Vacant Residential Land",
+		"category_id" : 76
+	},
+	{
+		"subcategory_name" : "Amusement",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "ATV Sales & Service",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Billiard Parlor",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Bingo",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Boat Rental",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Bounce Houses",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Bowling Alley",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Casino",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Casino Ship",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Coin Operated Rides",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Dinner Theater",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Entertainment",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Game Room",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Go Carts Sales/Service",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Golf Course",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Golf Driving Range",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Indoor Soccer",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Indy Racing Team",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Lodge/Camping/Etc",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Miniature Golf Course",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Movie Theater",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Movies & Restaurant",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Off Road RV Park",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Parasailing",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Poker",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Race Track",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Riding Club",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Scooter Rentals",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Skating Programs",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Skating Rink",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Ski Resort",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Snowmobile Dealership",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Tourist Attraction",
+		"category_id" : 77
+	},
+	{
+		"subcategory_name" : "Rental Audio/Visual",
+		"category_id" : 78
+	},
+	{
+		"subcategory_name" : "Rental Automobiles",
+		"category_id" : 78
+	},
+	{
+		"subcategory_name" : "Rental Beach Equipment",
+		"category_id" : 78
+	},
+	{
+		"subcategory_name" : "Rental Equipment",
+		"category_id" : 78
+	},
+	{
+		"subcategory_name" : "Rental Linens/Access",
+		"category_id" : 78
+	},
+	{
+		"subcategory_name" : "Rental Office Equipment",
+		"category_id" : 78
+	},
+	{
+		"subcategory_name" : "Rental Party Goods",
+		"category_id" : 78
+	},
+	{
+		"subcategory_name" : "Rental Scaffolding",
+		"category_id" : 78
+	},
+	{
+		"subcategory_name" : "Rental Tents",
+		"category_id" : 78
+	},
+	{
+		"subcategory_name" : "Specialty Vehicle Rentals",
+		"category_id" : 78
+	},
+	{
+		"subcategory_name" : "American Restaurant",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Bagel Restaurant",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Banquet Hall/Caterer",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Barbecue Restaurant",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Boarding & Catering",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Breakfast/Lunch",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Brew/Pub",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Buffet",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Cafe-Type Eatery",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Cafeteria",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Catering",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Coffee Shop/House",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Commercial Kitchen/Commissary",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Concession Stand",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Deli Restaurant",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Dessert Restaurant",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Diner",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Donut Shop",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Ethnic Restaurant",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Family Style",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Fast Casual",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Fast Food Franchise",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Fast Food Mall",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Fast Food-No Franchise",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Floating Fast Food",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Food Est+Drive Thru",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Food Truck",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Gourmet Dining",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Italian Restaurant",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Latin Restaurant",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Mediterranean Restaurant",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Mexican Restaurant",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Office Bldg Restaurant",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Pizza Shop",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Restaurant Bakery",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Restaurant Asian",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Restaurant Kosher",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Restaurant Tea Room",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Restaurant/Mall",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Sandwich Shop",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Seafood Restaurant",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Specialty Restaurant",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Steak Restaurant",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Sub Shop",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Take Out Only",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Vietnamese Restaurant",
+		"category_id" : 79
+	},
+	{
+		"subcategory_name" : "Army/Navy Surplus",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "BBQ and Propane",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Consignment Shop",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Department Store",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Educational Supplies",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Fireplaces",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Kiosk",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Kitchen Cabinets",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Police Supplies",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Batteries",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Candy Store",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail CBD Products",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Chimney Products",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Comic Books",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Cosmetic",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Dollar Store",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Fashion Accessories",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Fine Wines",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Flags",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Games/Accessories",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Health Products",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Home Accessories",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Housewares",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Jewelry",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Luggage",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Nut Store",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Portable Building",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Safe/Security",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Smoke Shop",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Space Lease",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Specialties",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Stationary Store",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Store Sewing",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Table Games",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Thrift Store",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Tobacco Store",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Toys",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Upholstery",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Variety Store",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Watches",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Western Goods",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Retail Wine/Cheese",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Sunglasses & Beachwear",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Surf/Activewear Shop",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Used Clothing",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Wedding/Party Supply",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Window Coverings",
+		"category_id" : 80
+	},
+	{
+		"subcategory_name" : "Routes Air Freshener",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Auto Supplies",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Bread",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Cards",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Coffee Serv",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Dry Cleaning",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Firewood",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Hosiery",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Ice Cream",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Lunch Truck",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Meats & Food",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Milk",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Newspaper",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Packages",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Pastry",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Plants",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Potato Chips",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Produce",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Snacks",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Soda/Juice",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Sundries",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Supplies",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Routes Tools",
+		"category_id" : 81
+	},
+	{
+		"subcategory_name" : "Market Research Company",
+		"category_id" : 82
+	},
+	{
+		"subcategory_name" : "Marketing Company",
+		"category_id" : 82
+	},
+	{
+		"subcategory_name" : "Guard Company",
+		"category_id" : 83
+	},
+	{
+		"subcategory_name" : "Guard Dogs",
+		"category_id" : 83
+	},
+	{
+		"subcategory_name" : "ID Security",
+		"category_id" : 83
+	},
+	{
+		"subcategory_name" : "Security Systems",
+		"category_id" : 83
+	},
+	{
+		"subcategory_name" : "Athletic Footwear",
+		"category_id" : 84
+	},
+	{
+		"subcategory_name" : "Shoes Repair",
+		"category_id" : 84
+	},
+	{
+		"subcategory_name" : "Shoes Retail",
+		"category_id" : 84
+	},
+	{
+		"subcategory_name" : "Sign Companies",
+		"category_id" : 85
+	},
+	{
+		"subcategory_name" : "Baseball Academy",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Bicycles Sales/Service",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Fitness Equipment Sales",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Golf Cart Sales/Service",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Golf Store",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Parasailing",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Playground Equipment",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Shooting Range",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Skateboarding",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Sporting Goods Store",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Sports Cards Dealer",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Sports Center",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Sports Equipment Repair",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Sports Equipment Sales",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Sports Fantasy",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Sports Franchises",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Sports Instruction",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Sports Memorabilia",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Sports Wholesale",
+		"category_id" : 86
+	},
+	{
+		"subcategory_name" : "Accounting & Tax",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Air Craft Manufacturing",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Architectural Concrete",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Automotive Related",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Awards Incentives",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Building Products",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Chemical Products",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Chocolate Products",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Concrete Products",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Copyrights/Trademark/Licenses",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Dating Service",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Dry Cleaner",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Dry Cleaning Route",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Education",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Fast Food",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Financial Services",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Fitness Center",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Floor Safety",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Food Establishment",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Hair/Nail Salons",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Home Improvements",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Importing Granite",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Internet Business",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Jewelry",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Lawn/Landscaping",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Light Manufacturing",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Medical Related",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Nutrition Products",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Patented Ideas",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Pest Control",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Pharmacy",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Pool Related",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Publishing",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Real Estate Management",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Refinishing",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Retail Establishment",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Retractable Awnings",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Route",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Route Ink Products",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Shoes Retail",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Sports Related",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Start Up Day Care",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Telephone Service",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Vending",
+		"category_id" : 1427
+	},
+	{
+		"subcategory_name" : "Alterations",
+		"category_id" : 87
+	},
+	{
+		"subcategory_name" : "Seamstress/Sewing",
+		"category_id" : 87
+	},
+	{
+		"subcategory_name" : "Tailor Shop",
+		"category_id" : 87
+	},
+	{
+		"subcategory_name" : "Answering Service",
+		"category_id" : 88
+	},
+	{
+		"subcategory_name" : "Beeper/Paging Service",
+		"category_id" : 88
+	},
+	{
+		"subcategory_name" : "Cable/Wire Installation",
+		"category_id" : 88
+	},
+	{
+		"subcategory_name" : "Cellular Repair & Sales",
+		"category_id" : 88
+	},
+	{
+		"subcategory_name" : "Cellular/Beeper Sales",
+		"category_id" : 88
+	},
+	{
+		"subcategory_name" : "Long Distance Resell",
+		"category_id" : 88
+	},
+	{
+		"subcategory_name" : "On Hold Service",
+		"category_id" : 88
+	},
+	{
+		"subcategory_name" : "Pay Telephones",
+		"category_id" : 88
+	},
+	{
+		"subcategory_name" : "Telemarketing",
+		"category_id" : 88
+	},
+	{
+		"subcategory_name" : "Telephone Equipment Repair",
+		"category_id" : 88
+	},
+	{
+		"subcategory_name" : "Telephone Equipment Sales",
+		"category_id" : 88
+	},
+	{
+		"subcategory_name" : "Telephone Rental",
+		"category_id" : 88
+	},
+	{
+		"subcategory_name" : "Telephone-Communication Agent",
+		"category_id" : 88
+	},
+	{
+		"subcategory_name" : "Toys",
+		"category_id" : 89
+	},
+	{
+		"subcategory_name" : "Auto Delivery",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Bicycle Cabs",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Car Service",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Charter Buses",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Child Transportation",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Construction Hauling",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Delivery of Trucks",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Equip Delivery",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Freight Company",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Freight Forwarding",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Fuel Delivery",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Funeral Industry Transportation",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Group Transportation",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Guided Tours",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Limo Business",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Medical Transport",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Parking Service",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "School Buses",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Taxi Business",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Transport Livestock",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Transport Mobil Home",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Truck (Hauling) Broker",
+		"category_id" : 90
+	},
+	{
+		"subcategory_name" : "Reservation Center",
+		"category_id" : 91
+	},
+	{
+		"subcategory_name" : "Tour Operator",
+		"category_id" : 91
+	},
+	{
+		"subcategory_name" : "Travel Agency",
+		"category_id" : 91
+	},
+	{
+		"subcategory_name" : "Leather/Vinyl Repair",
+		"category_id" : 92
+	},
+	{
+		"subcategory_name" : "Upholstery",
+		"category_id" : 92
+	},
+	{
+		"subcategory_name" : "Locations Locator",
+		"category_id" : 93
+	},
+	{
+		"subcategory_name" : "Vending Candy",
+		"category_id" : 93
+	},
+	{
+		"subcategory_name" : "Vending Games",
+		"category_id" : 93
+	},
+	{
+		"subcategory_name" : "Vending Hard Goods",
+		"category_id" : 93
+	},
+	{
+		"subcategory_name" : "Vending Ice",
+		"category_id" : 93
+	},
+	{
+		"subcategory_name" : "Vending Machine Repair",
+		"category_id" : 93
+	},
+	{
+		"subcategory_name" : "Vending Personal Items",
+		"category_id" : 93
+	},
+	{
+		"subcategory_name" : "Vending Snack Foods",
+		"category_id" : 93
+	},
+	{
+		"subcategory_name" : "Vending Soft Drinks",
+		"category_id" : 93
+	},
+	{
+		"subcategory_name" : "Vending Water",
+		"category_id" : 93
+	},
+	{
+		"subcategory_name" : "Adult Video Store",
+		"category_id" : 94
+	},
+	{
+		"subcategory_name" : "Vending CDs Videos",
+		"category_id" : 94
+	},
+	{
+		"subcategory_name" : "Video Games",
+		"category_id" : 94
+	},
+	{
+		"subcategory_name" : "Video Production",
+		"category_id" : 94
+	},
+	{
+		"subcategory_name" : "Video Stores",
+		"category_id" : 94
+	},
+	{
+		"subcategory_name" : "Bottled Water",
+		"category_id" : 95
+	},
+	{
+		"subcategory_name" : "Pump Service",
+		"category_id" : 95
+	},
+	{
+		"subcategory_name" : "Water Ice",
+		"category_id" : 95
+	},
+	{
+		"subcategory_name" : "Water Conservation",
+		"category_id" : 95
+	},
+	{
+		"subcategory_name" : "Water Purification",
+		"category_id" : 95
+	},
+	{
+		"subcategory_name" : "Audio Equipment",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Appliances",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Bait",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Bakery",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Batteries",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Cell Phone",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Dry Goods",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Electrical Supplies",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Fabric",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Farmers Market",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Fashion Accessories",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Floor Coverings",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Flowers",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Food Broker",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Footwear",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Frozen Food",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Grain and Field Beans",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Grocery",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Hand Bags",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Hardware",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale HVAC",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Lumber Products",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Meats",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Nutrition Supplement",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Outerwear",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Pets",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Plumbing",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Produce",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Seafood",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Snack Items",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Sunglasses",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Tires",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Watches",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Windows & Doors",
+		"category_id" : 96
+	},
+	{
+		"subcategory_name" : "Wholesale Lawn Products",
+		"category_id" : 96
+	}
+]

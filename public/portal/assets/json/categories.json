@@ -1,0 +1,394 @@
+[
+	{
+		"id" : 1,
+		"category_name" : "Accounting"
+	},
+	{
+		"id" : 4,
+		"category_name" : "Animals/Pets"
+	},
+	{
+		"id" : 5,
+		"category_name" : "Antiques"
+	},
+	{
+		"id" : 6,
+		"category_name" : "Appliances"
+	},
+	{
+		"id" : 7,
+		"category_name" : "Art"
+	},
+	{
+		"id" : 8,
+		"category_name" : "Automotive"
+	},
+	{
+		"id" : 9,
+		"category_name" : "Aviation"
+	},
+	{
+		"id" : 10,
+		"category_name" : "Awards/Prizes"
+	},
+	{
+		"id" : 11,
+		"category_name" : "Beauty/Personal Care"
+	},
+	{
+		"id" : 12,
+		"category_name" : "Building Materials"
+	},
+	{
+		"id" : 13,
+		"category_name" : "Business Services"
+	},
+	{
+		"id" : 14,
+		"category_name" : "Cards/Gifts/Books"
+	},
+	{
+		"id" : 15,
+		"category_name" : "Child Care"
+	},
+	{
+		"id" : 16,
+		"category_name" : "Cleaning"
+	},
+	{
+		"id" : 17,
+		"category_name" : "Cleaning/Clothing"
+	},
+	{
+		"id" : 18,
+		"category_name" : "Clothing"
+	},
+	{
+		"id" : 19,
+		"category_name" : "Communications"
+	},
+	{
+		"id" : 20,
+		"category_name" : "Construction"
+	},
+	{
+		"id" : 21,
+		"category_name" : "Consulting Business"
+	},
+	{
+		"id" : 22,
+		"category_name" : "Convenience Stores"
+	},
+	{
+		"id" : 23,
+		"category_name" : "Crafts/Hobbies"
+	},
+	{
+		"id" : 24,
+		"category_name" : "Delivery"
+	},
+	{
+		"id" : 25,
+		"category_name" : "Dental Related"
+	},
+	{
+		"id" : 26,
+		"category_name" : "Distribution"
+	},
+	{
+		"id" : 27,
+		"category_name" : "Educational/School"
+	},
+	{
+		"id" : 28,
+		"category_name" : "Electronics/Computer"
+	},
+	{
+		"id" : 29,
+		"category_name" : "Engineering"
+	},
+	{
+		"id" : 30,
+		"category_name" : "Environmental Related"
+	},
+	{
+		"id" : 31,
+		"category_name" : "Equipment S&S"
+	},
+	{
+		"id" : 32,
+		"category_name" : "Financial Related"
+	},
+	{
+		"id" : 33,
+		"category_name" : "Firearms"
+	},
+	{
+		"id" : 34,
+		"category_name" : "Fitness"
+	},
+	{
+		"id" : 35,
+		"category_name" : "Flooring"
+	},
+	{
+		"id" : 36,
+		"category_name" : "Flower Related"
+	},
+	{
+		"id" : 37,
+		"category_name" : "Food Business Retail"
+	},
+	{
+		"id" : 38,
+		"category_name" : "Furniture Retail"
+	},
+	{
+		"id" : 39,
+		"category_name" : "Gas Station"
+	},
+	{
+		"id" : 40,
+		"category_name" : "Glass"
+	},
+	{
+		"id" : 41,
+		"category_name" : "Hardware Retail Related"
+	},
+	{
+		"id" : 42,
+		"category_name" : "Hobby Related"
+	},
+	{
+		"id" : 43,
+		"category_name" : "Ice Cream/Yogurt/Ice"
+	},
+	{
+		"id" : 44,
+		"category_name" : "Import/Export"
+	},
+	{
+		"id" : 45,
+		"category_name" : "Insurance"
+	},
+	{
+		"id" : 46,
+		"category_name" : "Interior Design/Dec"
+	},
+	{
+		"id" : 47,
+		"category_name" : "Internet Related"
+	},
+	{
+		"id" : 48,
+		"category_name" : "Jewelry"
+	},
+	{
+		"id" : 49,
+		"category_name" : "Lawn/Landscaping"
+	},
+	{
+		"id" : 50,
+		"category_name" : "Liquor Related Biz"
+	},
+	{
+		"id" : 51,
+		"category_name" : "Locksmith"
+	},
+	{
+		"id" : 52,
+		"category_name" : "Machine Shop"
+	},
+	{
+		"id" : 53,
+		"category_name" : "Mail Order"
+	},
+	{
+		"id" : 54,
+		"category_name" : "Manufacturing"
+	},
+	{
+		"id" : 55,
+		"category_name" : "Marine Related"
+	},
+	{
+		"id" : 56,
+		"category_name" : "Medical Related Biz"
+	},
+	{
+		"id" : 57,
+		"category_name" : "Metal Related"
+	},
+	{
+		"id" : 58,
+		"category_name" : "Miscellaneous/Other"
+	},
+	{
+		"id" : 59,
+		"category_name" : "Mobile Homes"
+	},
+	{
+		"id" : 60,
+		"category_name" : "Motorcycle"
+	},
+	{
+		"id" : 61,
+		"category_name" : "Moving"
+	},
+	{
+		"id" : 62,
+		"category_name" : "Music"
+	},
+	{
+		"id" : 63,
+		"category_name" : "Newspaper/Magazines"
+	},
+	{
+		"id" : 64,
+		"category_name" : "Office Supplies"
+	},
+	{
+		"id" : 65,
+		"category_name" : "Optical Related"
+	},
+	{
+		"id" : 66,
+		"category_name" : "Pack/Ship/Postal"
+	},
+	{
+		"id" : 67,
+		"category_name" : "Personal Services"
+	},
+	{
+		"id" : 68,
+		"category_name" : "Personnel Services"
+	},
+	{
+		"id" : 69,
+		"category_name" : "Pest Control"
+	},
+	{
+		"id" : 70,
+		"category_name" : "Photography"
+	},
+	{
+		"id" : 71,
+		"category_name" : "Pool & Spa Business"
+	},
+	{
+		"id" : 72,
+		"category_name" : "Printing/Typesetting"
+	},
+	{
+		"id" : 73,
+		"category_name" : "Professional Practices"
+	},
+	{
+		"id" : 74,
+		"category_name" : "Publishing"
+	},
+	{
+		"id" : 75,
+		"category_name" : "Real Estate Related"
+	},
+	{
+		"id" : 76,
+		"category_name" : "Real Property Related"
+	},
+	{
+		"id" : 77,
+		"category_name" : "Recreation"
+	},
+	{
+		"id" : 78,
+		"category_name" : "Rental Business"
+	},
+	{
+		"id" : 79,
+		"category_name" : "Restaurants"
+	},
+	{
+		"id" : 80,
+		"category_name" : "Retail Miscellaneous"
+	},
+	{
+		"id" : 81,
+		"category_name" : "Routes"
+	},
+	{
+		"id" : 82,
+		"category_name" : "Sales & Marketing"
+	},
+	{
+		"id" : 83,
+		"category_name" : "Security Related"
+	},
+	{
+		"id" : 84,
+		"category_name" : "Shoes/Footwear"
+	},
+	{
+		"id" : 85,
+		"category_name" : "Signs"
+	},
+	{
+		"id" : 86,
+		"category_name" : "Sports Related Biz"
+	},
+	{
+		"id" : 87,
+		"category_name" : "Tailoring"
+	},
+	{
+		"id" : 88,
+		"category_name" : "Telephone & Related"
+	},
+	{
+		"id" : 89,
+		"category_name" : "Toys"
+	},
+	{
+		"id" : 90,
+		"category_name" : "Transportation"
+	},
+	{
+		"id" : 91,
+		"category_name" : "Travel"
+	},
+	{
+		"id" : 92,
+		"category_name" : "Upholstery/Fabrics"
+	},
+	{
+		"id" : 93,
+		"category_name" : "Vending Related"
+	},
+	{
+		"id" : 94,
+		"category_name" : "Video Related Biz"
+	},
+	{
+		"id" : 95,
+		"category_name" : "Water Related"
+	},
+	{
+		"id" : 96,
+		"category_name" : "Wholesale"
+	},
+	{
+		"id" : 108,
+		"category_name" : "Advertising"
+	},
+	{
+		"id" : 110,
+		"category_name" : "Agricultural"
+	},
+	{
+		"id" : 1055,
+		"category_name" : "New Franchises"
+	},
+	{
+		"id" : 1427,
+		"category_name" : "Start Up Businesses"
+	}
+]

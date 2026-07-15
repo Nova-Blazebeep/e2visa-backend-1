@@ -1,0 +1,37 @@
+[
+	{
+		"id" : 1,
+		"deleted_at" : null,
+		"business_type" : "Absentee Owner",
+		"created_at" : null,
+		"updated_at" : null
+	},
+	{
+		"id" : 2,
+		"deleted_at" : null,
+		"business_type" : "Home Based",
+		"created_at" : null,
+		"updated_at" : null
+	},
+	{
+		"id" : 3,
+		"deleted_at" : null,
+		"business_type" : "Relocatable",
+		"created_at" : null,
+		"updated_at" : null
+	},
+	{
+		"id" : 4,
+		"deleted_at" : null,
+		"business_type" : "Established Franchise",
+		"created_at" : null,
+		"updated_at" : null
+	},
+	{
+		"id" : 5,
+		"deleted_at" : null,
+		"business_type" : "Other",
+		"created_at" : null,
+		"updated_at" : null
+	}
+]

@@ -1,0 +1,1851 @@
+[
+    {
+        "id": 1,
+        "deleted_at": null,
+        "country_name": "United States",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 250,
+        "deleted_at": null,
+        "country_name": "Afghanistan",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 2,
+        "deleted_at": null,
+        "country_name": "Albania",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 3,
+        "deleted_at": null,
+        "country_name": "Algeria",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 4,
+        "deleted_at": null,
+        "country_name": "American Samoa",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 5,
+        "deleted_at": null,
+        "country_name": "Andorra",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 6,
+        "deleted_at": null,
+        "country_name": "Angola",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 7,
+        "deleted_at": null,
+        "country_name": "Anguilla",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 8,
+        "deleted_at": null,
+        "country_name": "Antarctica",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 9,
+        "deleted_at": null,
+        "country_name": "Antigua and Barbuda",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 10,
+        "deleted_at": null,
+        "country_name": "Argentina",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 11,
+        "deleted_at": null,
+        "country_name": "Armenia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 12,
+        "deleted_at": null,
+        "country_name": "Aruba",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 13,
+        "deleted_at": null,
+        "country_name": "Australia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 14,
+        "deleted_at": null,
+        "country_name": "Austria",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 15,
+        "deleted_at": null,
+        "country_name": "Azerbaijan",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 16,
+        "deleted_at": null,
+        "country_name": "Bahamas",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 17,
+        "deleted_at": null,
+        "country_name": "Bahrain",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 18,
+        "deleted_at": null,
+        "country_name": "Bangladesh",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 19,
+        "deleted_at": null,
+        "country_name": "Barbados",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 20,
+        "deleted_at": null,
+        "country_name": "Belarus",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 21,
+        "deleted_at": null,
+        "country_name": "Belgium",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 22,
+        "deleted_at": null,
+        "country_name": "Belize",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 23,
+        "deleted_at": null,
+        "country_name": "Benin",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 24,
+        "deleted_at": null,
+        "country_name": "Bermuda",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 25,
+        "deleted_at": null,
+        "country_name": "Bhutan",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 26,
+        "deleted_at": null,
+        "country_name": "Bolivia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 27,
+        "deleted_at": null,
+        "country_name": "Bosnia and Herzegovina",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 28,
+        "deleted_at": null,
+        "country_name": "Botswana",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 29,
+        "deleted_at": null,
+        "country_name": "Bouvet Island",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 30,
+        "deleted_at": null,
+        "country_name": "Brazil",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 31,
+        "deleted_at": null,
+        "country_name": "British Antarctic Territory",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 32,
+        "deleted_at": null,
+        "country_name": "British Indian Ocean Territory",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 33,
+        "deleted_at": null,
+        "country_name": "British Virgin Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 34,
+        "deleted_at": null,
+        "country_name": "Brunei",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 35,
+        "deleted_at": null,
+        "country_name": "Bulgaria",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 36,
+        "deleted_at": null,
+        "country_name": "Burkina Faso",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 37,
+        "deleted_at": null,
+        "country_name": "Burundi",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 38,
+        "deleted_at": null,
+        "country_name": "Cambodia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 39,
+        "deleted_at": null,
+        "country_name": "Cameroon",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 40,
+        "deleted_at": null,
+        "country_name": "Canada",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 41,
+        "deleted_at": null,
+        "country_name": "Canton and Enderbury Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 42,
+        "deleted_at": null,
+        "country_name": "Cape Verde",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 43,
+        "deleted_at": null,
+        "country_name": "Cayman Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 44,
+        "deleted_at": null,
+        "country_name": "Central African Republic",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 45,
+        "deleted_at": null,
+        "country_name": "Chad",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 46,
+        "deleted_at": null,
+        "country_name": "Chile",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 47,
+        "deleted_at": null,
+        "country_name": "China",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 48,
+        "deleted_at": null,
+        "country_name": "Christmas Island",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 49,
+        "deleted_at": null,
+        "country_name": "Cocos [Keeling] Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 50,
+        "deleted_at": null,
+        "country_name": "Colombia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 51,
+        "deleted_at": null,
+        "country_name": "Comoros",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 52,
+        "deleted_at": null,
+        "country_name": "Congo - Brazzaville",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 53,
+        "deleted_at": null,
+        "country_name": "Congo - Kinshasa",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 54,
+        "deleted_at": null,
+        "country_name": "Cook Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 55,
+        "deleted_at": null,
+        "country_name": "Costa Rica",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 56,
+        "deleted_at": null,
+        "country_name": "Croatia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 57,
+        "deleted_at": null,
+        "country_name": "Cuba",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 58,
+        "deleted_at": null,
+        "country_name": "Cyprus",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 59,
+        "deleted_at": null,
+        "country_name": "Czech Republic",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 60,
+        "deleted_at": null,
+        "country_name": "Côte d’Ivoire",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 61,
+        "deleted_at": null,
+        "country_name": "Denmark",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 62,
+        "deleted_at": null,
+        "country_name": "Djibouti",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 63,
+        "deleted_at": null,
+        "country_name": "Dominica",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 64,
+        "deleted_at": null,
+        "country_name": "Dominican Republic",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 65,
+        "deleted_at": null,
+        "country_name": "Dronning Maud Land",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 66,
+        "deleted_at": null,
+        "country_name": "East Germany",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 67,
+        "deleted_at": null,
+        "country_name": "Ecuador",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 68,
+        "deleted_at": null,
+        "country_name": "Egypt",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 69,
+        "deleted_at": null,
+        "country_name": "El Salvador",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 70,
+        "deleted_at": null,
+        "country_name": "Equatorial Guinea",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 71,
+        "deleted_at": null,
+        "country_name": "Eritrea",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 72,
+        "deleted_at": null,
+        "country_name": "Estonia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 73,
+        "deleted_at": null,
+        "country_name": "Ethiopia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 74,
+        "deleted_at": null,
+        "country_name": "Falkland Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 75,
+        "deleted_at": null,
+        "country_name": "Faroe Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 76,
+        "deleted_at": null,
+        "country_name": "Fiji",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 77,
+        "deleted_at": null,
+        "country_name": "Finland",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 78,
+        "deleted_at": null,
+        "country_name": "France",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 79,
+        "deleted_at": null,
+        "country_name": "French Guiana",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 80,
+        "deleted_at": null,
+        "country_name": "French Polynesia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 81,
+        "deleted_at": null,
+        "country_name": "French Southern Territories",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 82,
+        "deleted_at": null,
+        "country_name": "French Southern and Antarctic Territories",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 83,
+        "deleted_at": null,
+        "country_name": "Gabon",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 84,
+        "deleted_at": null,
+        "country_name": "Gambia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 85,
+        "deleted_at": null,
+        "country_name": "Georgia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 86,
+        "deleted_at": null,
+        "country_name": "Germany",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 87,
+        "deleted_at": null,
+        "country_name": "Ghana",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 88,
+        "deleted_at": null,
+        "country_name": "Gibraltar",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 89,
+        "deleted_at": null,
+        "country_name": "Greece",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 90,
+        "deleted_at": null,
+        "country_name": "Greenland",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 91,
+        "deleted_at": null,
+        "country_name": "Grenada",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 92,
+        "deleted_at": null,
+        "country_name": "Guadeloupe",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 93,
+        "deleted_at": null,
+        "country_name": "Guam",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 94,
+        "deleted_at": null,
+        "country_name": "Guatemala",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 95,
+        "deleted_at": null,
+        "country_name": "Guernsey",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 96,
+        "deleted_at": null,
+        "country_name": "Guinea",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 97,
+        "deleted_at": null,
+        "country_name": "Guinea-Bissau",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 98,
+        "deleted_at": null,
+        "country_name": "Guyana",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 99,
+        "deleted_at": null,
+        "country_name": "Haiti",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 100,
+        "deleted_at": null,
+        "country_name": "Heard Island and McDonald Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 101,
+        "deleted_at": null,
+        "country_name": "Honduras",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 102,
+        "deleted_at": null,
+        "country_name": "Hong Kong SAR China",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 103,
+        "deleted_at": null,
+        "country_name": "Hungary",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 104,
+        "deleted_at": null,
+        "country_name": "Iceland",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 105,
+        "deleted_at": null,
+        "country_name": "India",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 106,
+        "deleted_at": null,
+        "country_name": "Indonesia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 107,
+        "deleted_at": null,
+        "country_name": "Iran",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 108,
+        "deleted_at": null,
+        "country_name": "Iraq",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 109,
+        "deleted_at": null,
+        "country_name": "Ireland",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 110,
+        "deleted_at": null,
+        "country_name": "Isle of Man",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 111,
+        "deleted_at": null,
+        "country_name": "Israel",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 112,
+        "deleted_at": null,
+        "country_name": "Italy",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 113,
+        "deleted_at": null,
+        "country_name": "Jamaica",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 114,
+        "deleted_at": null,
+        "country_name": "Japan",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 115,
+        "deleted_at": null,
+        "country_name": "Jersey",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 116,
+        "deleted_at": null,
+        "country_name": "Johnston Island",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 117,
+        "deleted_at": null,
+        "country_name": "Jordan",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 118,
+        "deleted_at": null,
+        "country_name": "Kazakhstan",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 119,
+        "deleted_at": null,
+        "country_name": "Kenya",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 120,
+        "deleted_at": null,
+        "country_name": "Kiribati",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 121,
+        "deleted_at": null,
+        "country_name": "Kuwait",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 122,
+        "deleted_at": null,
+        "country_name": "Kyrgyzstan",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 123,
+        "deleted_at": null,
+        "country_name": "Laos",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 124,
+        "deleted_at": null,
+        "country_name": "Latvia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 125,
+        "deleted_at": null,
+        "country_name": "Lebanon",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 126,
+        "deleted_at": null,
+        "country_name": "Lesotho",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 127,
+        "deleted_at": null,
+        "country_name": "Liberia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 128,
+        "deleted_at": null,
+        "country_name": "Libya",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 129,
+        "deleted_at": null,
+        "country_name": "Liechtenstein",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 130,
+        "deleted_at": null,
+        "country_name": "Lithuania",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 131,
+        "deleted_at": null,
+        "country_name": "Luxembourg",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 132,
+        "deleted_at": null,
+        "country_name": "Macau SAR China",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 133,
+        "deleted_at": null,
+        "country_name": "Macedonia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 134,
+        "deleted_at": null,
+        "country_name": "Madagascar",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 135,
+        "deleted_at": null,
+        "country_name": "Malawi",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 136,
+        "deleted_at": null,
+        "country_name": "Malaysia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 137,
+        "deleted_at": null,
+        "country_name": "Maldives",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 138,
+        "deleted_at": null,
+        "country_name": "Mali",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 139,
+        "deleted_at": null,
+        "country_name": "Malta",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 140,
+        "deleted_at": null,
+        "country_name": "Marshall Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 141,
+        "deleted_at": null,
+        "country_name": "Martinique",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 142,
+        "deleted_at": null,
+        "country_name": "Mauritania",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 143,
+        "deleted_at": null,
+        "country_name": "Mauritius",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 144,
+        "deleted_at": null,
+        "country_name": "Mayotte",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 145,
+        "deleted_at": null,
+        "country_name": "Metropolitan France",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 146,
+        "deleted_at": null,
+        "country_name": "Mexico",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 147,
+        "deleted_at": null,
+        "country_name": "Micronesia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 148,
+        "deleted_at": null,
+        "country_name": "Midway Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 149,
+        "deleted_at": null,
+        "country_name": "Moldova",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 150,
+        "deleted_at": null,
+        "country_name": "Monaco",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 151,
+        "deleted_at": null,
+        "country_name": "Mongolia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 152,
+        "deleted_at": null,
+        "country_name": "Montenegro",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 153,
+        "deleted_at": null,
+        "country_name": "Montserrat",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 154,
+        "deleted_at": null,
+        "country_name": "Morocco",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 155,
+        "deleted_at": null,
+        "country_name": "Mozambique",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 156,
+        "deleted_at": null,
+        "country_name": "Myanmar [Burma]",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 157,
+        "deleted_at": null,
+        "country_name": "Namibia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 158,
+        "deleted_at": null,
+        "country_name": "Nauru",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 159,
+        "deleted_at": null,
+        "country_name": "Nepal",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 160,
+        "deleted_at": null,
+        "country_name": "Netherlands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 161,
+        "deleted_at": null,
+        "country_name": "Netherlands Antilles",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 162,
+        "deleted_at": null,
+        "country_name": "Neutral Zone",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 163,
+        "deleted_at": null,
+        "country_name": "New Caledonia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 164,
+        "deleted_at": null,
+        "country_name": "New Zealand",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 165,
+        "deleted_at": null,
+        "country_name": "Nicaragua",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 166,
+        "deleted_at": null,
+        "country_name": "Niger",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 167,
+        "deleted_at": null,
+        "country_name": "Nigeria",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 168,
+        "deleted_at": null,
+        "country_name": "Niue",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 169,
+        "deleted_at": null,
+        "country_name": "Norfolk Island",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 170,
+        "deleted_at": null,
+        "country_name": "North Korea",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 171,
+        "deleted_at": null,
+        "country_name": "North Vietnam",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 172,
+        "deleted_at": null,
+        "country_name": "Northern Mariana Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 173,
+        "deleted_at": null,
+        "country_name": "Norway",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 174,
+        "deleted_at": null,
+        "country_name": "Oman",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 175,
+        "deleted_at": null,
+        "country_name": "Pacific Islands Trust Territory",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 176,
+        "deleted_at": null,
+        "country_name": "Pakistan",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 177,
+        "deleted_at": null,
+        "country_name": "Palau",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 178,
+        "deleted_at": null,
+        "country_name": "Palestinian Territories",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 179,
+        "deleted_at": null,
+        "country_name": "Panama",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 180,
+        "deleted_at": null,
+        "country_name": "Panama Canal Zone",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 181,
+        "deleted_at": null,
+        "country_name": "Papua New Guinea",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 182,
+        "deleted_at": null,
+        "country_name": "Paraguay",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 183,
+        "deleted_at": null,
+        "country_name": "People's Democratic Republic of Yemen",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 184,
+        "deleted_at": null,
+        "country_name": "Peru",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 185,
+        "deleted_at": null,
+        "country_name": "Philippines",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 186,
+        "deleted_at": null,
+        "country_name": "Pitcairn Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 187,
+        "deleted_at": null,
+        "country_name": "Poland",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 188,
+        "deleted_at": null,
+        "country_name": "Portugal",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 189,
+        "deleted_at": null,
+        "country_name": "Puerto Rico",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 190,
+        "deleted_at": null,
+        "country_name": "Qatar",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 191,
+        "deleted_at": null,
+        "country_name": "Romania",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 192,
+        "deleted_at": null,
+        "country_name": "Russia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 193,
+        "deleted_at": null,
+        "country_name": "Rwanda",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 194,
+        "deleted_at": null,
+        "country_name": "Réunion",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 195,
+        "deleted_at": null,
+        "country_name": "Saint Barthélemy",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 196,
+        "deleted_at": null,
+        "country_name": "Saint Helena",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 197,
+        "deleted_at": null,
+        "country_name": "Saint Kitts and Nevis",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 198,
+        "deleted_at": null,
+        "country_name": "Saint Lucia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 199,
+        "deleted_at": null,
+        "country_name": "Saint Martin",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 200,
+        "deleted_at": null,
+        "country_name": "Saint Pierre and Miquelon",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 201,
+        "deleted_at": null,
+        "country_name": "Saint Vincent and the Grenadines",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 202,
+        "deleted_at": null,
+        "country_name": "Samoa",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 203,
+        "deleted_at": null,
+        "country_name": "San Marino",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 204,
+        "deleted_at": null,
+        "country_name": "Saudi Arabia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 205,
+        "deleted_at": null,
+        "country_name": "Senegal",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 206,
+        "deleted_at": null,
+        "country_name": "Serbia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 207,
+        "deleted_at": null,
+        "country_name": "Serbia and Montenegro",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 208,
+        "deleted_at": null,
+        "country_name": "Seychelles",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 209,
+        "deleted_at": null,
+        "country_name": "Sierra Leone",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 210,
+        "deleted_at": null,
+        "country_name": "Singapore",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 211,
+        "deleted_at": null,
+        "country_name": "Slovakia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 212,
+        "deleted_at": null,
+        "country_name": "Slovenia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 213,
+        "deleted_at": null,
+        "country_name": "Solomon Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 214,
+        "deleted_at": null,
+        "country_name": "Somalia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 215,
+        "deleted_at": null,
+        "country_name": "South Africa",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 216,
+        "deleted_at": null,
+        "country_name": "South Georgia and the South Sandwich Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 217,
+        "deleted_at": null,
+        "country_name": "South Korea",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 218,
+        "deleted_at": null,
+        "country_name": "Spain",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 219,
+        "deleted_at": null,
+        "country_name": "Sri Lanka",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 220,
+        "deleted_at": null,
+        "country_name": "Sudan",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 221,
+        "deleted_at": null,
+        "country_name": "Suriname",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 222,
+        "deleted_at": null,
+        "country_name": "Svalbard and Jan Mayen",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 223,
+        "deleted_at": null,
+        "country_name": "Swaziland",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 224,
+        "deleted_at": null,
+        "country_name": "Sweden",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 225,
+        "deleted_at": null,
+        "country_name": "Switzerland",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 226,
+        "deleted_at": null,
+        "country_name": "Syria",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 227,
+        "deleted_at": null,
+        "country_name": "São Tomé and Príncipe",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 228,
+        "deleted_at": null,
+        "country_name": "Taiwan",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 229,
+        "deleted_at": null,
+        "country_name": "Tajikistan",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 230,
+        "deleted_at": null,
+        "country_name": "Tanzania",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 231,
+        "deleted_at": null,
+        "country_name": "Thailand",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 232,
+        "deleted_at": null,
+        "country_name": "Timor-Leste",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 233,
+        "deleted_at": null,
+        "country_name": "Togo",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 234,
+        "deleted_at": null,
+        "country_name": "Tokelau",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 235,
+        "deleted_at": null,
+        "country_name": "Tonga",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 236,
+        "deleted_at": null,
+        "country_name": "Trinidad and Tobago",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 237,
+        "deleted_at": null,
+        "country_name": "Tunisia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 238,
+        "deleted_at": null,
+        "country_name": "Turkey",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 239,
+        "deleted_at": null,
+        "country_name": "Turkmenistan",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 240,
+        "deleted_at": null,
+        "country_name": "Turks and Caicos Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 241,
+        "deleted_at": null,
+        "country_name": "Tuvalu",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 242,
+        "deleted_at": null,
+        "country_name": "U.S. Minor Outlying Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 243,
+        "deleted_at": null,
+        "country_name": "U.S. Miscellaneous Pacific Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 244,
+        "deleted_at": null,
+        "country_name": "U.S. Virgin Islands",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 245,
+        "deleted_at": null,
+        "country_name": "Uganda",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 246,
+        "deleted_at": null,
+        "country_name": "Ukraine",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 247,
+        "deleted_at": null,
+        "country_name": "Union of Soviet Socialist Republics",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 248,
+        "deleted_at": null,
+        "country_name": "United Arab Emirates",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 249,
+        "deleted_at": null,
+        "country_name": "United Kingdom",
+        "created_at": null,
+        "updated_at": null
+    },
+    
+    {
+        "id": 251,
+        "deleted_at": null,
+        "country_name": "Unknown or Invalid Region",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 252,
+        "deleted_at": null,
+        "country_name": "Uruguay",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 253,
+        "deleted_at": null,
+        "country_name": "Uzbekistan",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 254,
+        "deleted_at": null,
+        "country_name": "Vanuatu",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 255,
+        "deleted_at": null,
+        "country_name": "Vatican City",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 256,
+        "deleted_at": null,
+        "country_name": "Venezuela",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 257,
+        "deleted_at": null,
+        "country_name": "Vietnam",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 258,
+        "deleted_at": null,
+        "country_name": "Wake Island",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 259,
+        "deleted_at": null,
+        "country_name": "Wallis and Futuna",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 260,
+        "deleted_at": null,
+        "country_name": "Western Sahara",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 261,
+        "deleted_at": null,
+        "country_name": "Yemen",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 262,
+        "deleted_at": null,
+        "country_name": "Zambia",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 263,
+        "deleted_at": null,
+        "country_name": "Zimbabwe",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 264,
+        "deleted_at": null,
+        "country_name": "Aland Islands",
+        "created_at": null,
+        "updated_at": null
+    }
+]

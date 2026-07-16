@@ -119,7 +119,7 @@ class DashboardController extends Controller
 
     public function getProfessionalRoles()
     {
-        $roles = Role::select('id', 'name')->whereIn('id', PROFESSIONAL_ROLES_IDS)->orderBy('id','ASC')->get();
+        $roles = Role::select('id', 'name')->with('badge')->whereIn('id', PROFESSIONAL_ROLES_IDS)->orderBy('id','ASC')->get();
         return makeResponse(SUCCESS_CODE, 'Professional roles fetched.', $roles);
     }
 

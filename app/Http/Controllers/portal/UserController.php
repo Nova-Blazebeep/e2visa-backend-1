@@ -139,7 +139,7 @@ class UserController extends Controller
             'subscribe_for_newsletter' => 'nullable|boolean',
             'image' => 'nullable|image|max:5120',
             'about' => 'nullable|string',
-            'licensed_states' => 'nullable|array|max:3',
+            'licensed_states' => 'nullable|array',
             'licensed_states.*' => 'nullable|string|max:100',
         ];
 
@@ -148,7 +148,7 @@ class UserController extends Controller
         $country = $validated['country_id'] ? Country::find($validated['country_id']) : null;
         $state = $validated['state_id'] ? State::find($validated['state_id']) : null;
         $county = $validated['county_id'] ? County::find($validated['county_id']) : null;
-        $licensedStates = array_slice(array_filter($request->input('licensed_states', [])), 0, 3);
+        $licensedStates = array_values(array_unique(array_filter($request->input('licensed_states', []))));
 
         if ($request->hasFile('image')) {
             $image = $request->file('image');

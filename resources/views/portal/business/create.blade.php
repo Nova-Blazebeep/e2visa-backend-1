@@ -9,6 +9,20 @@
         .text-primary {
             color: #0d6efd !important;
         }
+
+        /* Consistent form layout */
+        .form fieldset legend.col-form-label {
+            font-weight: 500;
+        }
+
+        .required-legend::after {
+            content: " *";
+            color: #dc3545;
+        }
+
+        .form .input-group {
+            margin-bottom: 0;
+        }
     </style>
     <div id="fullscreen-loader" class="fullscreen-loader">
         <div class="loader-content">
@@ -29,13 +43,10 @@
                         <br><small class="text-success fw-semibold">(this title will appear to users)</small>
                     </legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <input type="text" class="form-control" placeholder="Listing Heading"
-                                    value="{{ old('listing_heading') }}" id="listing_heading" name="listing_heading"
-                                    required>
-                                <p class="ms-2">Required</p>
-                            </div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" placeholder="Listing Heading"
+                                value="{{ old('listing_heading') }}" id="listing_heading" name="listing_heading"
+                                required>
                         </div>
                     </div>
                 </fieldset>
@@ -56,8 +67,7 @@
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0 required-legend">Listing Is :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9">
+                        <div class="col-md-8">
                              {{-- First 2 rows --}}
                                 @foreach ($listing_types->take(2) as $listing_type)
                                     <div class="form-check">
@@ -86,41 +96,34 @@
                                         </label>
                                     </div>
                                 @endif
-                            </div>
                         </div>
                     </div>
                 </fieldset>
 
                 <fieldset class="row mb-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Primary Business Category :</legend>
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">Primary Business Category :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-8 d-flex">
-                                <select id="category_id" name="category_id" class="form-select" required>
-                                    <option value="">Select category</option>
-                                    @foreach ($categories as $category)
-                                        <option value="{{ $category->id }}"
-                                            {{ old('category_id') == $category->id ? 'selected' : '' }}>
-                                            {{ $category->name }}
-                                        </option>
-                                    @endforeach
-                                </select>
-                                <p class="ms-2">Required</p>
-                            </div>
+                        <div class="col-md-8">
+                            <select id="category_id" name="category_id" class="form-select" required>
+                                <option value="">Select category</option>
+                                @foreach ($categories as $category)
+                                    <option value="{{ $category->id }}"
+                                        {{ old('category_id') == $category->id ? 'selected' : '' }}>
+                                        {{ $category->name }}
+                                    </option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                 </fieldset>
 
                 <fieldset class="row mb-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Business Subcategory :</legend>
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">Business Subcategory :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-8 d-flex">
-                                <select id="subcategory_id" name="sub_category_id" class="form-select" required>
-                                    <option value="">Select subcategory</option>
-                                </select>
-                                <p class="ms-2">Required</p>
-                            </div>
+                        <div class="col-md-8">
+                            <select id="subcategory_id" name="sub_category_id" class="form-select" required>
+                                <option value="">Select subcategory</option>
+                            </select>
                         </div>
                     </div>
                 </fieldset>
@@ -129,7 +132,7 @@
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0">Details :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9 inner-type">
+                        <div class="col-md-8 inner-type">
                             @foreach ($business_types as $business_type)
                                 <div class="form-check">
                                     <input class="form-check-input" name="business_type_ids[]"
@@ -153,56 +156,45 @@
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0 required-legend">Country :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <select id="country_id" name="country_id" class="form-select" required>
-                                    <option value="">Select Country</option>
-                                    @foreach ($countries as $country)
-                                        <option value="{{ $country->id }}"
-                                            {{ old('country_id') == $country->id ? 'selected' : '' }}>
-                                            {{ $country->name }}
-                                        </option>
-                                    @endforeach
-                                </select>
-                                <p class="ms-2">Required</p>
-                            </div>
+                        <div class="col-md-8">
+                            <select id="country_id" name="country_id" class="form-select" required>
+                                <option value="">Select Country</option>
+                                @foreach ($countries as $country)
+                                    <option value="{{ $country->id }}"
+                                        {{ old('country_id') == $country->id ? 'selected' : '' }}>
+                                        {{ $country->name }}
+                                    </option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0 required-legend">State :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <select id="state_id" name="state_id" class="form-select" required>
-                                    <option value="">Select State</option>
-                                </select>
-                                <p class="ms-2">Required</p>
-                            </div>
+                        <div class="col-md-8">
+                            <select id="state_id" name="state_id" class="form-select" required>
+                                <option value="">Select State</option>
+                            </select>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0 required-legend">County :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <select id="county_id" name="county_id" class="form-select" required>
-                                    <option value="">Select County</option>
-                                </select>
-                                <p class="ms-2">Required</p>
-                            </div>
+                        <div class="col-md-8">
+                            <select id="county_id" name="county_id" class="form-select" required>
+                                <option value="">Select County</option>
+                            </select>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0">City :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <input type="text" class="form-control" placeholder="City"
-                                    value="{{ old('zip_code') }}" id="zip_code" name="zip_code">
-                            </div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" placeholder="City"
+                                value="{{ old('zip_code') }}" id="zip_code" name="zip_code">
                         </div>
                     </div>
                 </fieldset>
@@ -210,44 +202,40 @@
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0">Street Address :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <input type="text" class="form-control pac-target-input" placeholder="Street Address"
-                                    value="{{ old('street_address', '') }}" id="street_address" name="street_address"
-                                    autocomplete="off">
-                            </div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control pac-target-input" placeholder="Street Address"
+                                value="{{ old('street_address', '') }}" id="street_address" name="street_address"
+                                autocomplete="off">
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0">Make Confidential :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 inner-type">
-                                <div class="form-check ms-2">
-                                    <input class="form-check-input" type="checkbox" name="is_confidential_state"
-                                        id="is_confidential_state" value="1"
-                                        {{ old('is_confidential_state') ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="is_confidential_state">State</label>
-                                </div>
-                                <div class="form-check ms-2">
-                                    <input class="form-check-input" type="checkbox" name="is_confidential_country"
-                                        id="is_confidential_country" value="1"
-                                        {{ old('is_confidential_country') ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="is_confidential_country">Country</label>
-                                </div>
-                                <div class="form-check ms-2">
-                                    <input class="form-check-input" type="checkbox" name="is_confidential_city"
-                                        id="is_confidential_city" value="1"
-                                        {{ old('is_confidential_city') ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="is_confidential_city">City</label>
-                                </div>
-                                <div class="form-check ms-2">
-                                    <input class="form-check-input" type="checkbox" name="is_confidential_address"
-                                        id="is_confidential_address" value="1"
-                                        {{ old('is_confidential_address') ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="is_confidential_address">Address</label>
-                                </div>
+                        <div class="col-md-8 inner-type">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="is_confidential_state"
+                                    id="is_confidential_state" value="1"
+                                    {{ old('is_confidential_state') ? 'checked' : '' }}>
+                                <label class="form-check-label" for="is_confidential_state">State</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="is_confidential_country"
+                                    id="is_confidential_country" value="1"
+                                    {{ old('is_confidential_country') ? 'checked' : '' }}>
+                                <label class="form-check-label" for="is_confidential_country">Country</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="is_confidential_city"
+                                    id="is_confidential_city" value="1"
+                                    {{ old('is_confidential_city') ? 'checked' : '' }}>
+                                <label class="form-check-label" for="is_confidential_city">City</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="is_confidential_address"
+                                    id="is_confidential_address" value="1"
+                                    {{ old('is_confidential_address') ? 'checked' : '' }}>
+                                <label class="form-check-label" for="is_confidential_address">Address</label>
                             </div>
                         </div>
                     </div>
@@ -258,24 +246,20 @@
                     </div>
                 </div>
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Contact :</legend>
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">Contact :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9">
-                                <div class="d-flex">
-                                    <select id="contact_id" name="contact_id" class="form-select" required
-                                        onchange="showBrokerInfo(this)">
-                                        <option value="">Select Contact</option>
-                                        @foreach ($users as $user)
-                                            <option value="{{ $user->id }}" data-email="{{ $user->email }}"
-                                                data-phone="{{ $user->userInformation->phone_number ?? 'NA' }}"
-                                                {{ old('contact_id') == $user->id ? 'selected' : '' }}>
-                                                {{ $user->name }}
-                                            </option>
-                                        @endforeach
-                                    </select>
-                                    <p class="ms-2">Required</p>
-                                </div>
+                        <div class="col-md-8">
+                                <select id="contact_id" name="contact_id" class="form-select" required
+                                    onchange="showBrokerInfo(this)">
+                                    <option value="">Select Contact</option>
+                                    @foreach ($users as $user)
+                                        <option value="{{ $user->id }}" data-email="{{ $user->email }}"
+                                            data-phone="{{ $user->userInformation->phone_number ?? 'NA' }}"
+                                            {{ old('contact_id') == $user->id ? 'selected' : '' }}>
+                                            {{ $user->name }}
+                                        </option>
+                                    @endforeach
+                                </select>
 
                                 <div class="contactInfoDiv mt-3">
                                     <p><a href="#" class="text-primary"
@@ -291,30 +275,26 @@
                                     value="{{ old('contact_phone') }}">
                                 <input type="hidden" name="contact_user_id" id="hidden_contact_user_id"
                                     value="{{ old('contact_user_id') }}">
-                            </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">
-                        Listing Number:
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">
+                        Listing Number :
                         <br><span class="text-danger fw-semibold">(Not shown on listing)</span>
                     </legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <input type="text" class="form-control" placeholder=""
-                                    id="listing_number" name="listing_number" value="{{ old('listing_number') }}">
-                                <p class="ms-2">Required</p>
-                            </div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" placeholder=""
+                                id="listing_number" name="listing_number" value="{{ old('listing_number') }}">
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Non-Disclosure Agreement</legend>
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">Non-Disclosure Agreement :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9">
-                            <div class="form-check ms-4">
+                        <div class="col-md-8">
+                            <div class="form-check">
                                 <input class="form-check-input use_ndaClass" type="radio"
                                     name="is_non_disclosure_agreement" id="nda_no" value="0"
                                     {{ old('is_non_disclosure_agreement') == '0' ? 'checked' : '' }}>
@@ -322,7 +302,7 @@
                                     Do Not Use a Non-Disclosure Agreement
                                 </label>
                             </div>
-                            <div class="form-check ms-4">
+                            <div class="form-check">
                                 <input class="form-check-input use_ndaClass" type="radio"
                                     name="is_non_disclosure_agreement" id="nda_yes" value="1"
                                     {{ old('is_non_disclosure_agreement') == '1' ? 'checked' : '' }}>
@@ -330,7 +310,7 @@
                                     Upload Your Own Non-Disclosure Agreement
                                 </label>
                             </div>
-                            <div id="nda_upload_section" class="ms-4 mt-2" style="{{ old('is_non_disclosure_agreement') == '1' ? '' : 'display:none;' }}">
+                            <div id="nda_upload_section" class="mt-2" style="{{ old('is_non_disclosure_agreement') == '1' ? '' : 'display:none;' }}">
                                 <input type="file" class="form-control" name="nda_document" id="nda_document"
                                     accept=".pdf,.doc,.docx">
                                 <small class="text-muted">Accepted formats: PDF, DOC, DOCX (max 10MB)</small>
@@ -341,16 +321,11 @@
                 <h5 class="mt-2">Listing Summary and Description</h5>
                 <hr>
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Listing Summary:</legend>
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">Listing Summary :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <div class="input-group mb-3">
-                                    <textarea class="form-control" id="listing_summary" name="listing_summary" placeholder="Listing Summary"
-                                        rows="3">{{ old('listing_summary') }}</textarea>
-                                </div>
-                                <p class="ms-2">Required</p>
-                            </div>
+                        <div class="col-md-8">
+                            <textarea class="form-control" id="listing_summary" name="listing_summary" placeholder="Listing Summary"
+                                rows="3">{{ old('listing_summary') }}</textarea>
                         </div>
                     </div>
                 </fieldset>
@@ -361,77 +336,68 @@
                 </div>
 
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Listing Price:</legend>
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">Listing Price :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="asking_price_label">$</span>
-                                    <input type="text" class="form-control" name="asking_price"
-                                        id="asking_price" placeholder="Listing Price" aria-label="Listing Price"
-                                        aria-describedby="asking_price_label" value="{{ old('asking_price') }}">
-                                </div>
-                                <p class="ms-2">Required</p>
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <span class="input-group-text" id="asking_price_label">$</span>
+                                <input type="text" class="form-control" name="asking_price"
+                                    id="asking_price" placeholder="Listing Price" aria-label="Listing Price"
+                                    aria-describedby="asking_price_label" value="{{ old('asking_price') }}">
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Cash Flow:</legend>
+                    <legend class="col-form-label col-sm-3 pt-0">Cash Flow :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="cash_flow_label">$</span>
-                                    <input type="text" class="form-control" name="cash_flow"
-                                        id="cash_flow" placeholder="Cash Flow" aria-label="Cash Flow"
-                                        aria-describedby="cash_flow_label" value="{{ old('cash_flow') }}">
-                                </div>
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <span class="input-group-text" id="cash_flow_label">$</span>
+                                <input type="text" class="form-control" name="cash_flow"
+                                    id="cash_flow" placeholder="Cash Flow" aria-label="Cash Flow"
+                                    aria-describedby="cash_flow_label" value="{{ old('cash_flow') }}">
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">EBITDA:</legend>
+                    <legend class="col-form-label col-sm-3 pt-0">EBITDA :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="ebitdas_label">$</span>
-                                    <input type="text" class="form-control" name="ebitdas"
-                                        id="ebitdas" placeholder="EBITDA" aria-label="EBITDA"
-                                        aria-describedby="ebitdas_label" value="{{ old('ebitdas') }}">
-                                </div>
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <span class="input-group-text" id="ebitdas_label">$</span>
+                                <input type="text" class="form-control" name="ebitdas"
+                                    id="ebitdas" placeholder="EBITDA" aria-label="EBITDA"
+                                    aria-describedby="ebitdas_label" value="{{ old('ebitdas') }}">
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Gross Revenue:</legend>
+                    <legend class="col-form-label col-sm-3 pt-0">Gross Revenue :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="gross_revenue_label">$</span>
-                                    <input type="text" class="form-control" name="gross_revenue"
-                                        id="gross_revenue" placeholder="Gross Revenue" aria-label="Gross Revenue"
-                                        aria-describedby="gross_revenue_label" value="{{ old('gross_revenue') }}">
-                                </div>
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <span class="input-group-text" id="gross_revenue_label">$</span>
+                                <input type="text" class="form-control" name="gross_revenue"
+                                    id="gross_revenue" placeholder="Gross Revenue" aria-label="Gross Revenue"
+                                    aria-describedby="gross_revenue_label" value="{{ old('gross_revenue') }}">
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Inventory:</legend>
+                    <legend class="col-form-label col-sm-3 pt-0">Inventory :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9">
+                        <div class="col-md-8">
                             <div class="input-group mb-2">
                                 <span class="input-group-text" id="inventory_label">$</span>
                                 <input type="text" class="form-control" name="inventory"
                                     id="inventory" placeholder="Inventory" aria-label="Inventory"
                                     aria-describedby="inventory_label" value="{{ old('inventory') }}">
                             </div>
-                            <div class="form-check ms-1">
+                            <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="inventory_included_in_price"
                                     id="inventory_included_in_price" value="1"
                                     {{ old('inventory_included_in_price') ? 'checked' : '' }}>
@@ -443,16 +409,16 @@
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">FF&amp;E:</legend>
+                    <legend class="col-form-label col-sm-3 pt-0">FF&amp;E :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9">
+                        <div class="col-md-8">
                             <div class="input-group mb-2">
                                 <span class="input-group-text" id="ffe_label">$</span>
                                 <input type="text" class="form-control" placeholder="FF&E"
                                     name="ffe" id="ffe" aria-label="FFE" aria-describedby="ffe_label"
                                     value="{{ old('ffe') }}">
                             </div>
-                            <div class="form-check ms-1">
+                            <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="ffe_included_in_price"
                                     id="ffe_included_in_price" value="1"
                                     {{ old('ffe_included_in_price') ? 'checked' : '' }}>
@@ -464,24 +430,22 @@
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Total Building Size:</legend>
+                    <legend class="col-form-label col-sm-3 pt-0">Total Building Size :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 inner-type d-flex">
-                                <div class="input-group mb-3">
-                                    <input type="number" class="form-control" placeholder="Total Building Size"
-                                        name="building_size" id="building_size" aria-label="Building Size"
-                                        aria-describedby="building_size_label" value="{{ old('building_size') }}">
-                                    <span class="input-group-text" id="building_size_label">sqft</span>
-                                </div>
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <input type="number" class="form-control" placeholder="Total Building Size"
+                                    name="building_size" id="building_size" aria-label="Building Size"
+                                    aria-describedby="building_size_label" value="{{ old('building_size') }}">
+                                <span class="input-group-text" id="building_size_label">sqft</span>
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Seller Financing?</legend>
+                    <legend class="col-form-label col-sm-3 pt-0">Seller Financing :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9">
+                        <div class="col-md-8">
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="checkbox" name="is_seller_financing_available"
                                     id="is_seller_financing_available" value="1"
@@ -503,32 +467,27 @@
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0">Number of Employees :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                {{-- text type allows entries like "12 full time, 2 part-time" --}}
-                                <input type="text" class="form-control"
-                                    placeholder="e.g. 12 full time, 2 part-time" value="{{ old('number_of_employees') }}"
-                                    id="number_of_employees" name="number_of_employees">
-                            </div>
+                        <div class="col-md-8">
+                            {{-- text type allows entries like "12 full time, 2 part-time" --}}
+                            <input type="text" class="form-control"
+                                placeholder="e.g. 12 full time, 2 part-time" value="{{ old('number_of_employees') }}"
+                                id="number_of_employees" name="number_of_employees">
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Year Established :</legend>
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">Year Established :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-5 d-flex">
-                                <select id="year_established" name="year_established" class="form-select">
-                                    <option value="">Select Year</option>
-                                    @foreach ($established_years as $established_year)
-                                        <option value="{{ $established_year->year }}"
-                                            {{ old('year_established') == $established_year->year ? 'selected' : '' }}>
-                                            {{ $established_year->year }}
-                                        </option>
-                                    @endforeach
-                                </select>
-                                <p class="ms-2">Required</p>
-                            </div>
+                        <div class="col-md-8">
+                            <select id="year_established" name="year_established" class="form-select">
+                                <option value="">Select Year</option>
+                                @foreach ($established_years as $established_year)
+                                    <option value="{{ $established_year->year }}"
+                                        {{ old('year_established') == $established_year->year ? 'selected' : '' }}>
+                                        {{ $established_year->year }}
+                                    </option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                 </fieldset>
@@ -536,64 +495,54 @@
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0">Site/Infrastructure :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <textarea class="form-control" id="facilities" name="facilities" rows="3" placeholder="Site/Infrastructure">{{ old('facilities') }}</textarea>
-                            </div>
+                        <div class="col-md-8">
+                            <textarea class="form-control" id="facilities" name="facilities" rows="3" placeholder="Site/Infrastructure">{{ old('facilities') }}</textarea>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Training/Onboarding:</legend>
+                    <legend class="col-form-label col-sm-3 pt-0">Training/Onboarding :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <textarea class="form-control" id="support_and_training" name="support_and_training" rows="3"
-                                    placeholder="Training/Onboarding">{{ old('support_and_training') }}</textarea>
-                            </div>
+                        <div class="col-md-8">
+                            <textarea class="form-control" id="support_and_training" name="support_and_training" rows="3"
+                                placeholder="Training/Onboarding">{{ old('support_and_training') }}</textarea>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0">Motivation for Sale :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <input type="text" class="form-control" placeholder="Motivation for Sale"
-                                    id="reason_for_selling" name="reason_for_selling"
-                                    value="{{ old('reason_for_selling') }}">
-                            </div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" placeholder="Motivation for Sale"
+                                id="reason_for_selling" name="reason_for_selling"
+                                value="{{ old('reason_for_selling') }}">
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Competitive Landscape/Market Dynamics:</legend>
+                    <legend class="col-form-label col-sm-3 pt-0">Competitive Landscape/Market Dynamics :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <textarea class="form-control" placeholder="Competitive Landscape/Market Dynamics" id="competition_market_pros_and_cons"
-                                    name="competition_market_pros_and_cons" rows="3">{{ old('competition_market_pros_and_cons') }}</textarea>
-                            </div>
+                        <div class="col-md-8">
+                            <textarea class="form-control" placeholder="Competitive Landscape/Market Dynamics" id="competition_market_pros_and_cons"
+                                name="competition_market_pros_and_cons" rows="3">{{ old('competition_market_pros_and_cons') }}</textarea>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Opportunities/Development:</legend>
+                    <legend class="col-form-label col-sm-3 pt-0">Opportunities/Development :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-9 d-flex">
-                                <textarea class="form-control" placeholder="Opportunities/Development"
-                                    id="growth_and_expansion_pros_and_cons" name="growth_and_expansion_pros_and_cons" rows="3">{{ old('growth_and_expansion_pros_and_cons') }}</textarea>
-                            </div>
+                        <div class="col-md-8">
+                            <textarea class="form-control" placeholder="Opportunities/Development"
+                                id="growth_and_expansion_pros_and_cons" name="growth_and_expansion_pros_and_cons" rows="3">{{ old('growth_and_expansion_pros_and_cons') }}</textarea>
                         </div>
                     </div>
                 </fieldset>
 
                 {{-- Real Estate Section --}}
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Real Estate:</legend>
+                    <legend class="col-form-label col-sm-3 pt-0">Real Estate :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9">
+                        <div class="col-md-8">
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="checkbox" name="real_estate_leased"
                                     id="real_estate_leased" value="1"
@@ -634,14 +583,11 @@
                     </div>
                 </div>
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Gallery :</legend>
+                    <legend class="col-form-label col-sm-3 pt-0">Image :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-5 d-flex">
-                                <input type="file" class="form-control" id="images" accept="image/*"
-                                    name="images[]">
-                                <p class="ms-2">Required</p>
-                            </div>
+                        <div class="col-md-8">
+                            @include('portal.partials.image-dropzone')
+                            <p class="text-muted small mt-1">An image is required.</p>
                         </div>
                     </div>
                 </fieldset>
@@ -649,11 +595,8 @@
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0">Document Upload :</legend>
                     <div class="col-sm-9">
-                        <div class="form-check">
-                            <div class="col-md-5 d-flex">
-                                <input type="file" class="form-control" id="seller_financial_documents"
-                                    name="seller_financial_documents[]">
-                            </div>
+                        <div class="col-md-8">
+                            @include('portal.partials.document-dropzone')
                         </div>
                     </div>
                 </fieldset>
@@ -862,7 +805,7 @@
             });
 
             const images = document.getElementById('images');
-            if (!images.files.length) errors.push("Please upload at least one gallery image.");
+            if (!images.files.length) errors.push("Please upload an image.");
             const maxFileSize = 50 * 1024 * 1024; // 50MB
             if (images.files[0] && images.files[0].size > maxFileSize)
                 errors.push("Image file is too large. Maximum size is 50MB.");

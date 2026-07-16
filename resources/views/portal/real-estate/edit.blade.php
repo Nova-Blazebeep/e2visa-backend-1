@@ -6,6 +6,11 @@
         .text-primary { color: #0d6efd !important; }
         .existing-image-thumb { width:100px; height:75px; object-fit:cover; border:1px solid #dee2e6; border-radius:4px; }
         #location_picker_map { height:320px; border-radius:8px; border:1px solid #dee2e6; cursor:crosshair; }
+
+        /* Consistent form layout */
+        .form fieldset legend.col-form-label { font-weight: 500; }
+        .required-legend::after { content: " *"; color: #dc3545; }
+        .form .input-group { margin-bottom: 0; }
     </style>
     <div id="fullscreen-loader" class="fullscreen-loader">
         <div class="loader-content"><div class="loader-spinner"></div></div>
@@ -24,11 +29,10 @@
                         <br><small class="text-success fw-semibold">(this title will appear to users)</small>
                     </legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9 d-flex">
+                        <div class="col-md-8">
                             <input type="text" class="form-control" placeholder="Listing Title"
                                 value="{{ old('listing_heading', $business->listing_heading) }}"
                                 id="listing_heading" name="listing_heading" required autocomplete="off">
-                            <p class="ms-2">Required</p>
                         </div>
                     </div>
                 </fieldset>
@@ -36,8 +40,8 @@
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0 required-legend">Property Type :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9 d-flex">
-                            <select class="form-control" id="property_type" name="property_type" required>
+                        <div class="col-md-8">
+                            <select class="form-select" id="property_type" name="property_type" required>
                                 <option value="">Select Property Type</option>
                                 <optgroup label="── For Sale ──">
                                     @foreach ($property_types->filter(fn($t) => str_contains($t->name, '[for sale]')) as $pt)
@@ -50,29 +54,32 @@
                                     @endforeach
                                 </optgroup>
                             </select>
-                            <p class="ms-2">Required</p>
                         </div>
                     </div>
                 </fieldset>
 
                 <fieldset class="row mb-3 mt-3" id="sale_price_group" style="display:none">
-                    <legend class="col-form-label col-sm-3 pt-0 required-legend">Sale Price ($) :</legend>
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">Sale Price :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9 d-flex">
-                            <input type="number" step="0.01" min="0" class="form-control" placeholder="e.g. 450000"
-                                value="{{ old('sale_price', $business->sale_price) }}" id="sale_price" name="sale_price" autocomplete="off">
-                            <p class="ms-2">Required</p>
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="number" step="0.01" min="0" class="form-control" placeholder="e.g. 450000"
+                                    value="{{ old('sale_price', $business->sale_price) }}" id="sale_price" name="sale_price" autocomplete="off">
+                            </div>
                         </div>
                     </div>
                 </fieldset>
 
                 <fieldset class="row mb-3 mt-3" id="monthly_rent_group" style="display:none">
-                    <legend class="col-form-label col-sm-3 pt-0 required-legend">Monthly Rent ($) :</legend>
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">Monthly Rent :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9 d-flex">
-                            <input type="number" step="0.01" min="0" class="form-control" placeholder="e.g. 1500"
-                                value="{{ old('monthly_rent', $business->monthly_rent) }}" id="monthly_rent" name="monthly_rent" autocomplete="off">
-                            <p class="ms-2">Required</p>
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="number" step="0.01" min="0" class="form-control" placeholder="e.g. 1500"
+                                    value="{{ old('monthly_rent', $business->monthly_rent) }}" id="monthly_rent" name="monthly_rent" autocomplete="off">
+                            </div>
                         </div>
                     </div>
                 </fieldset>
@@ -80,14 +87,13 @@
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0 required-legend">Rooms :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9 d-flex">
-                            <select class="form-control" id="rooms" name="rooms" required>
+                        <div class="col-md-8">
+                            <select class="form-select" id="rooms" name="rooms" required>
                                 <option value="">Select Rooms</option>
                                 @foreach(['1'=>'1+','2'=>'2+','3'=>'3+','4'=>'4+','5'=>'5+','6'=>'6+'] as $val => $label)
                                     <option value="{{ $val }}" {{ old('rooms', $business->rooms) == $val ? 'selected' : '' }}>{{ $label }}</option>
                                 @endforeach
                             </select>
-                            <p class="ms-2">Required</p>
                         </div>
                     </div>
                 </fieldset>
@@ -95,14 +101,13 @@
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0 required-legend">Baths :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9 d-flex">
-                            <select class="form-control" id="bath" name="bath" required>
+                        <div class="col-md-8">
+                            <select class="form-select" id="bath" name="bath" required>
                                 <option value="">Select Bath</option>
                                 @foreach(['1'=>'1+','2'=>'2+','3'=>'3+','4'=>'4+','5'=>'5+','6'=>'6+'] as $val => $label)
                                     <option value="{{ $val }}" {{ old('bath', $business->baths) == $val ? 'selected' : '' }}>{{ $label }}</option>
                                 @endforeach
                             </select>
-                            <p class="ms-2">Required</p>
                         </div>
                     </div>
                 </fieldset>
@@ -110,8 +115,8 @@
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0 required-legend">Square Footage :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9 d-flex">
-                            <select class="form-control" id="building_size" name="building_size" required>
+                        <div class="col-md-8">
+                            <select class="form-select" id="building_size" name="building_size" required>
                                 <option value="">Select Square Footage</option>
                                 <option value="0"    {{ old('building_size', $business->building_size) == '0'    ? 'selected' : '' }}>Under 1,000 sq ft</option>
                                 <option value="1000" {{ old('building_size', $business->building_size) == '1000' ? 'selected' : '' }}>1,000 – 2,000 sq ft</option>
@@ -119,7 +124,6 @@
                                 <option value="3500" {{ old('building_size', $business->building_size) == '3500' ? 'selected' : '' }}>3,500 – 5,000 sq ft</option>
                                 <option value="5001" {{ old('building_size', $business->building_size) == '5001' ? 'selected' : '' }}>Above 5,000 sq ft</option>
                             </select>
-                            <p class="ms-2">Required</p>
                         </div>
                     </div>
                 </fieldset>
@@ -137,7 +141,7 @@
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0 required-legend">Listing Type :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9">
+                        <div class="col-md-8">
                             @php
                                 $reTypes = $listing_types->skip(2)->sortBy(function($t) {
                                     $n = strtolower($t->listing_type);
@@ -170,43 +174,40 @@
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0 required-legend">Real Estate Country :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9 d-flex">
+                        <div class="col-md-8">
                             <select id="country_id" name="country_id" class="form-select" required>
                                 <option value="">Select Country</option>
                                 @foreach ($countries as $country)
                                     <option value="{{ $country->id }}" {{ old('country_id', $business->country_id) == $country->id ? 'selected' : '' }}>{{ $country->name }}</option>
                                 @endforeach
                             </select>
-                            <p class="ms-2">Required</p>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0 required-legend">Real Estate State :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9 d-flex">
+                        <div class="col-md-8">
                             <select id="state_id" name="state_id" class="form-select" required>
                                 <option value="">Select State</option>
                             </select>
-                            <p class="ms-2">Required</p>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0 required-legend">Real Estate County :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9 d-flex">
+                        <div class="col-md-8">
                             <select id="county_id" name="county_id" class="form-select" required>
                                 <option value="">Select County</option>
                             </select>
-                            <p class="ms-2">Required</p>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0">City :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9 d-flex">
+                        <div class="col-md-8">
                             <input type="text" class="form-control" placeholder="City" value="{{ old('zip_code', $business->zip_code) }}" id="zip_code" name="zip_code">
                         </div>
                     </div>
@@ -214,7 +215,7 @@
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0">Street Address :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9 d-flex">
+                        <div class="col-md-8">
                             <input type="text" class="form-control" placeholder="Street Address" value="{{ old('street_address', $business->street_address) }}" id="street_address" name="street_address" autocomplete="off">
                         </div>
                     </div>
@@ -246,23 +247,23 @@
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0">Make Confidential :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9 inner-type">
-                            <div class="form-check ms-2">
+                        <div class="col-md-8 inner-type">
+                            <div class="form-check">
                                 <input type="hidden" name="is_confidential_state" value="0">
                                 <input class="form-check-input" type="checkbox" name="is_confidential_state" id="is_confidential_state" value="1" {{ old('is_confidential_state', $business->is_confidential_state) ? 'checked' : '' }}>
                                 <label class="form-check-label" for="is_confidential_state">State</label>
                             </div>
-                            <div class="form-check ms-2">
+                            <div class="form-check">
                                 <input type="hidden" name="is_confidential_country" value="0">
                                 <input class="form-check-input" type="checkbox" name="is_confidential_country" id="is_confidential_country" value="1" {{ old('is_confidential_country', $business->is_confidential_country) ? 'checked' : '' }}>
                                 <label class="form-check-label" for="is_confidential_country">Country</label>
                             </div>
-                            <div class="form-check ms-2">
+                            <div class="form-check">
                                 <input type="hidden" name="is_confidential_city" value="0">
                                 <input class="form-check-input" type="checkbox" name="is_confidential_city" id="is_confidential_city" value="1" {{ old('is_confidential_city', $business->is_confidential_city) ? 'checked' : '' }}>
                                 <label class="form-check-label" for="is_confidential_city">City</label>
                             </div>
-                            <div class="form-check ms-2">
+                            <div class="form-check">
                                 <input type="hidden" name="is_confidential_address" value="0">
                                 <input class="form-check-input" type="checkbox" name="is_confidential_address" id="is_confidential_address" value="1" {{ old('is_confidential_address', $business->is_confidential_address) ? 'checked' : '' }}>
                                 <label class="form-check-label" for="is_confidential_address">Address</label>
@@ -274,24 +275,21 @@
                 <div class="row"><div class="col-12 inner-border"><h5>Contact and Listing Reference Information</h5></div></div>
 
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Contact :</legend>
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">Contact :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9">
-                            <div class="d-flex">
-                                <select id="contact_id" name="contact_id" class="form-select" required>
-                                    <option value="">Select Contact</option>
-                                    @foreach ($users as $user)
-                                        <option value="{{ $user->id }}"
-                                            data-name="{{ $user->userInformation->name ?? $user->name }}"
-                                            data-email="{{ $user->email }}"
-                                            data-phone="{{ $user->userInformation->phone_number ?? 'NA' }}"
-                                            {{ old('contact_id', $business->contact_user_id ?? '') == $user->id ? 'selected' : '' }}>
-                                            {{ $user->userInformation->name ?? $user->name }}
-                                        </option>
-                                    @endforeach
-                                </select>
-                                <p class="ms-2">Required</p>
-                            </div>
+                        <div class="col-md-8">
+                            <select id="contact_id" name="contact_id" class="form-select" required>
+                                <option value="">Select Contact</option>
+                                @foreach ($users as $user)
+                                    <option value="{{ $user->id }}"
+                                        data-name="{{ $user->userInformation->name ?? $user->name }}"
+                                        data-email="{{ $user->email }}"
+                                        data-phone="{{ $user->userInformation->phone_number ?? 'NA' }}"
+                                        {{ old('contact_id', $business->contact_user_id ?? '') == $user->id ? 'selected' : '' }}>
+                                        {{ $user->userInformation->name ?? $user->name }}
+                                    </option>
+                                @endforeach
+                            </select>
                             <div class="contactInfoDiv mt-3">
                                 <p><a href="#" class="text-primary" id="display_contact_email">{{ old('contact_email', $business->contact_email ?? '') }}</a></p>
                                 <p><a href="#" class="text-primary" id="display_contact_phone">{{ old('contact_phone', $business->contact_phone ?? '') }}</a></p>
@@ -305,15 +303,14 @@
                 </fieldset>
 
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">
-                        Listing Number:<br><span class="inner-coler">(Not shown on listing)</span>
+                    <legend class="col-form-label col-sm-3 pt-0 required-legend">
+                        Listing Number :<br><span class="inner-coler">(Not shown on listing)</span>
                     </legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9 d-flex">
+                        <div class="col-md-8">
                             <input type="text" class="form-control" placeholder="Office Reference ID"
                                 id="listing_number" name="listing_number"
                                 value="{{ old('listing_number', $business->listing_number) }}">
-                            <p class="ms-2">Required</p>
                         </div>
                     </div>
                 </fieldset>
@@ -323,7 +320,7 @@
                 <fieldset class="row mb-3 mt-3">
                     <legend class="col-form-label col-sm-3 pt-0">Listing Summary/Description :</legend>
                     <div class="col-sm-9">
-                        <div class="col-md-9">
+                        <div class="col-md-8">
                             <textarea class="form-control" id="listing_summary" name="listing_summary"
                                 placeholder="Listing Summary/Description — include all features, details, and amenities"
                                 rows="8">{{ old('listing_summary', $business->listing_summary) }}</textarea>
@@ -333,6 +330,7 @@
 
                 <div class="row"><div class="col-12 inner-border"><h5>Buyer Email Response Options</h5></div></div>
                 <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-3 pt-0">Options :</legend>
                     <div class="col-sm-9">
                         <div class="form-check">
                             <input type="hidden" name="is_required_buyer_telephone_number" value="0">
@@ -354,26 +352,15 @@
 
                 <div class="row"><div class="col-12 inner-border"><h5>Images</h5></div></div>
 
-                {{-- Show existing gallery images --}}
-                @if($business->business_images->count() > 0)
                 <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Current Gallery Images :</legend>
+                    <legend class="col-form-label col-sm-3 pt-0">Image :</legend>
                     <div class="col-sm-9">
-                        <div class="d-flex flex-wrap gap-2">
-                            @foreach($business->business_images as $img)
-                                <img src="{{ asset('storage/' . $img->image_path) }}" alt="Gallery Image" class="existing-image-thumb">
-                            @endforeach
-                        </div>
-                        <p class="text-muted small mt-1">{{ $business->business_images->count() }} image(s) saved. Upload new images below to replace them.</p>
-                    </div>
-                </fieldset>
-                @endif
-
-                <fieldset class="row mb-3 mt-3">
-                    <legend class="col-form-label col-sm-3 pt-0">Gallery :</legend>
-                    <div class="col-sm-9">
-                        <div class="col-md-5">
-                            <input type="file" multiple class="form-control" id="images" accept="image/*" name="images[]">
+                        <div class="col-md-8">
+                            @include('portal.partials.image-dropzone', [
+                                'currentImageUrl' => $business->business_images->first()
+                                    ? asset('storage/' . $business->business_images->first()->image_path)
+                                    : '',
+                            ])
                         </div>
                     </div>
                 </fieldset>

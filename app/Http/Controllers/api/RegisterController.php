@@ -345,7 +345,7 @@ class RegisterController extends Controller
                 'name'             => 'nullable|string|max:255',
                 'phone_number'     => 'nullable|max:20',
                 'about'            => 'required',
-                'licensed_states'  => 'nullable|array|max:3',
+                'licensed_states'  => 'nullable|array',
                 'licensed_states.*'=> 'nullable|string|max:100',
             ]);
 
@@ -358,7 +358,7 @@ class RegisterController extends Controller
                 $user->about = $request->about;
                 $user->save();
 
-                $licensedStates = array_slice(array_filter($request->input('licensed_states', [])), 0, 3);
+                $licensedStates = array_values(array_unique(array_filter($request->input('licensed_states', []))));
 
                 $userInfo = $user->userInformation;
 

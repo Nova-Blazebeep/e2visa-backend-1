@@ -188,7 +188,7 @@ class BusinessInformationController extends Controller
 
             $eagerLoad = $request->search_type == 'real_estate'
                 ? ['business_images', 'country', 'state', 'county']
-                : ['business_images', 'county'];
+                : ['business_images', 'country', 'state', 'county'];
 
             $query = BusinessInformation::with($eagerLoad)->where('is_publish', 1);
             if ($request->search_type == 'business') {

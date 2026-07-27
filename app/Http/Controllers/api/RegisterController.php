@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 use Spatie\Permission\Models\Role;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Validation\Rule;
+use Illuminate\Database\QueryException;
 
 class RegisterController extends Controller
 {
@@ -162,7 +162,12 @@ class RegisterController extends Controller
 {
     $rules = [
         'name'     => 'required|string|max:255',
-        'email'    => ['required', 'email', Rule::unique('users')->whereNull('deleted_at')],
+        // Uniqueness is NOT enforced here: an existing-but-unverified account for
+        // this email is a valid, expected case (handled below — the account is
+        // updated and a fresh verification email is sent). Blocking it at the
+        // validation layer would make that unverified-account recovery path
+        // unreachable and leave the user stuck with no way to finish signing up.
+        'email'    => ['required', 'email'],
         'password' => 'required|min:6|confirmed',
         'role_id'     => 'required|string',
         'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
@@ -181,7 +186,19 @@ class RegisterController extends Controller
 
     try {
         $response = DB::transaction(function () use ($request) {
-            $existingUser = User::where('email', $request->email)->first();
+            // Include soft-deleted rows: MySQL's unique index on `email` doesn't
+            // know about deleted_at, so a soft-deleted account still physically
+            // occupies the address and would otherwise block re-registration
+            // with a raw duplicate-key error. A deleted account should never
+            // hold an email hostage, so purge it here and proceed as a fresh signup.
+            $existingUser = User::withTrashed()->where('email', $request->email)->first();
+            if ($existingUser && $existingUser->trashed()) {
+                UserInformation::where('user_id', $existingUser->id)->forceDelete();
+                PasswordResetTokens::where('email', $existingUser->email)->delete();
+                $existingUser->forceDelete();
+                $existingUser = null;
+            }
+
             $role = Role::findOrFail($request->role_id);
             $country = Country::findOrFail($request->country_id);
             $state = State::findOrFail($request->state_id);
@@ -289,8 +306,60 @@ class RegisterController extends Controller
         });
 
         return $response;
+    } catch (QueryException $e) {
+        // Two near-simultaneous submissions can both pass the uniqueness
+        // check before either commits; the second insert then hits the
+        // DB-level unique constraint. Surface a friendly message instead
+        // of the raw SQL error.
+        if ($e->getCode() === '23000') {
+            return makeResponse(NOT_ACCEPTABLE, 'This email is already registered. Please log in or use a different email.');
+        }
+        return makeResponse(FAILURE_CODE, 'Registration failed. Please try again.');
     } catch (\Exception $e) {
         return makeResponse(FAILURE_CODE, $e->getMessage());
+    }
+}
+
+public function resendVerificationEmail(Request $request)
+{
+    $rules = ['email' => 'required|email'];
+    ValidateApiRequest($rules, $request->all());
+
+    try {
+        $user = User::where('email', $request->email)->first();
+
+        if (!$user) {
+            return makeResponse(NOT_ACCEPTABLE, 'No account found with this email.');
+        }
+
+        if ($user->email_verified_at) {
+            return makeResponse(NOT_ACCEPTABLE, 'This email is already verified. Please log in.');
+        }
+
+        $existingToken = PasswordResetTokens::where('email', $user->email)->first();
+        if ($existingToken && $existingToken->created_at >= Carbon::now()->subSeconds(60)) {
+            return makeResponse(NOT_ACCEPTABLE, 'A verification email was just sent. Please wait a minute before requesting another.');
+        }
+
+        $token = Str::random(60);
+        PasswordResetTokens::updateOrInsert(
+            ['email' => $user->email],
+            ['token' => $token, 'created_at' => Carbon::now()]
+        );
+
+        $verificationUrl = url("/api/verify-email/{$token}");
+
+        Mail::send('emails.verify-email', [
+            'url' => $verificationUrl,
+            'name' => $user->name,
+        ], function ($message) use ($user) {
+            $message->to($user->email)
+                ->subject('Verify your email address');
+        });
+
+        return makeResponse(SUCCESS_CODE, 'Verification email sent. Please check your inbox.');
+    } catch (\Exception $e) {
+        return makeResponse(FAILURE_CODE, 'Failed to send verification email. Please try again.');
     }
 }
 
@@ -344,7 +413,7 @@ class RegisterController extends Controller
             $validator = Validator::make($request->all(), [
                 'name'             => 'nullable|string|max:255',
                 'phone_number'     => 'nullable|max:20',
-                'about'            => 'required',
+                'about'            => 'required|max:150',
                 'licensed_states'  => 'nullable|array',
                 'licensed_states.*'=> 'nullable|string|max:100',
             ]);
@@ -355,6 +424,9 @@ class RegisterController extends Controller
 
             try {
                 $user->name = $request->name;
+                // Kept in sync for backward compatibility — the admin panel
+                // and public professional profile read about from
+                // user_information.about (updated below), not this column.
                 $user->about = $request->about;
                 $user->save();
 
@@ -364,11 +436,13 @@ class RegisterController extends Controller
 
                 if ($userInfo) {
                     $userInfo->phone_number    = $request->phone_number;
+                    $userInfo->about           = $request->about;
                     $userInfo->licensed_states = $licensedStates;
                     $userInfo->save();
                 } else {
                     $user->userInformation()->create([
                         'phone_number'    => $request->phone_number,
+                        'about'           => $request->about,
                         'licensed_states' => $licensedStates,
                     ]);
                 }

@@ -179,9 +179,10 @@
         </div>
 
         <div class="col-12">
-            <label class="form-label">About</label>
-            <textarea name="about" id="about" rows="4" class="form-control"
+            <label class="form-label">About <small class="text-muted">(max 150 characters)</small></label>
+            <textarea name="about" id="about" rows="4" maxlength="150" class="form-control"
                 placeholder="A short bio shown on the public profile">{{ trim($user->userInformation->about ?? '') }}</textarea>
+            <small class="d-block text-end mt-1" id="aboutCharCount">0/150 characters</small>
         </div>
 
         <div class="col-12">
@@ -244,6 +245,20 @@
 
 <script>
     $(function() {
+        // Live character counter for the About field (mirrors the frontend limit)
+        const $aboutField = $('#about');
+        const $aboutCount = $('#aboutCharCount');
+        const ABOUT_MAX = 150;
+
+        function updateAboutCount() {
+            const len = $aboutField.val().length;
+            $aboutCount.text(len + '/' + ABOUT_MAX + ' characters');
+            $aboutCount.toggleClass('text-danger fw-semibold', len >= ABOUT_MAX);
+            $aboutCount.toggleClass('text-muted', len < ABOUT_MAX);
+        }
+        $aboutField.on('input', updateAboutCount);
+        updateAboutCount();
+
         let userCountry = "{{ $info->country_id }}";
         let userState = "{{ $info->state_id }}";
         let userCounty = "{{ $info->county_id }}";

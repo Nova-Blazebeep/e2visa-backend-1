@@ -138,7 +138,7 @@ class UserController extends Controller
             'zipcode' => 'nullable|string|max:20',
             'subscribe_for_newsletter' => 'nullable|boolean',
             'image' => 'nullable|image|max:5120',
-            'about' => 'nullable|string',
+            'about' => 'nullable|string|max:150',
             'licensed_states' => 'nullable|array',
             'licensed_states.*' => 'nullable|string|max:100',
         ];

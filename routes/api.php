@@ -24,6 +24,7 @@ use App\Http\Controllers\portal\RealestateController;
 Route::middleware(['api', 'session'])->post('login', [LoginController::class, 'login']);
 Route::post('/register', [RegisterController::class, 'register']);
 Route::get('/verify-email/{token}', [RegisterController::class, 'verifyEmail']);
+Route::post('/resend-verification-email', [RegisterController::class, 'resendVerificationEmail']);
 Route::middleware('auth:sanctum')->group(function () {
 // Categories & Sub Categories
 

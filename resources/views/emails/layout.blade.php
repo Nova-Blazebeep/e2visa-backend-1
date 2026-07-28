@@ -139,7 +139,7 @@
 
         <div class="signature">
             <p class="team">The E2Visa Team</p>
-            <p class="tagline">Buy a business, find an immigration attorney, buy a home — all in one place.</p>
+            <p class="tagline">buy a business, find an immigration attorney, buy a home - all in one place.</p>
             <p class="footer-links">
                 <a href="{{ FRONTENDURL }}" target="_blank" rel="noopener">e2visa.com</a>
                 &nbsp;&middot;&nbsp;

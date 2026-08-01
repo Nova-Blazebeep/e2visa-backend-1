@@ -1,0 +1,36 @@
+name: Deploy E2Visa Backend
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy Laravel Backend to EC2
+        uses: appleboy/ssh-action@v1.0.3
+
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+
+          script: |
+            cd /var/www/e2visa/e2visa-backend-p
+
+            git pull origin main
+
+            composer install --no-interaction --prefer-dist --optimize-autoloader
+
+            php artisan optimize:clear
+
+            php artisan config:cache
+            php artisan route:cache
+            php artisan view:cache
+
+            sudo systemctl restart php8.5-fpm
+
+            sudo systemctl reload nginx

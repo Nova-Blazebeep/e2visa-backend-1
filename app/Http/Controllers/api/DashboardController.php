@@ -135,10 +135,14 @@ class DashboardController extends Controller
                 return makeResponse(FAILURE_CODE, 'Role not found.');
             }
 
-            $users = User::with(['userInformation'])
+            $users = User::with(['userInformation', 'roleBadge:id,role_id,icon', 'userBadge:id,user_id,status'])
                 ->where('role_id', $role->id)
                 ->whereNotNull('email_verified_at')
                 ->get();
+
+            foreach ($users as $u) {
+                $u->badge_icon = $u->activeBadgeIcon();
+            }
 
             return makeResponse(SUCCESS_CODE, FETCH_SUCCESS, $users);
         } catch (\Exception $e) {
@@ -192,14 +196,15 @@ class DashboardController extends Controller
 
     $professional = User::with([
             'userInformation',
-            'roleBadge:id,role_id,icon' // eager load badge
+            'roleBadge:id,role_id,icon', // eager load badge
+            'userBadge:id,user_id,status', // paid-badge status — gates whether the icon above actually shows
         ])
         ->where('id', $request->professional_id)
         ->whereIn('role_id', PROFESSIONAL_ROLES_IDS)
         ->first();
 
     if ($professional) {
-        $professional->badge_icon = optional($professional->roleBadge)->icon;
+        $professional->badge_icon = $professional->activeBadgeIcon();
 
         return makeResponse(SUCCESS_CODE, REQUEST_SUCCESSFUL, $professional);
     } else {
@@ -213,14 +218,15 @@ class DashboardController extends Controller
         try {
         $professionals = User::with([
                 'userInformation',
-                'roleBadge:id,role_id,icon' // load badge icon
+                'roleBadge:id,role_id,icon', // load badge icon
+                'userBadge:id,user_id,status', // paid-badge status — gates whether the icon above actually shows
             ])
             ->whereNotNull('email_verified_at')
             ->whereIn('role_id', PROFESSIONAL_ROLES_IDS)
             ->get();
 
         foreach ($professionals as $pro) {
-            $pro->badge_icon = optional($pro->roleBadge)->icon;
+            $pro->badge_icon = $pro->activeBadgeIcon();
         }
 
         return makeResponse(SUCCESS_CODE, FETCH_SUCCESS, $professionals);

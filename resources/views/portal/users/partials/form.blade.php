@@ -82,7 +82,11 @@
 <form id="usermodalForm" action="{{ route('portal.users.storeOrUpdate', $user->id ?? null) }}" method="POST"
     enctype="multipart/form-data">
     @csrf
-    @php $info = optional($user->userInformation); @endphp
+    @php
+        $info = optional($user->userInformation);
+        $badge = optional($user->userBadge ?? null);
+        $badgeExemptRoles = ['Buyer', 'Admin', 'Moderator'];
+    @endphp
 
     <div class="row g-3">
 
@@ -198,6 +202,27 @@
                 <option value="">Select a country first</option>
             </select>
             <small class="text-muted">Hold Ctrl / Cmd to select multiple.</small>
+        </div>
+
+        <div class="col-12">
+            <h6 class="form-section-title">Badge</h6>
+            <small class="text-muted d-block mb-2">Not applicable for Buyer / Admin / Moderator accounts — leave as-is for those roles.</small>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Badge Status</label>
+            <select name="badge_status" class="form-select">
+                <option value="pending" {{ ($badge->status ?? 'pending') == 'pending' ? 'selected' : '' }}>Pending</option>
+                <option value="active" {{ ($badge->status ?? '') == 'active' ? 'selected' : '' }}>Active</option>
+                <option value="revoked" {{ ($badge->status ?? '') == 'revoked' ? 'selected' : '' }}>Revoked</option>
+            </select>
+            <small class="text-muted">Setting this to Active sends the user a confirmation email and unlocks forum posting.</small>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Payment Reference / Note</label>
+            <input type="text" name="payment_reference" class="form-control" maxlength="255"
+                placeholder="e.g. invoice # or note from Mike" value="{{ $badge->payment_reference ?? '' }}">
         </div>
 
         <div class="col-md-6">

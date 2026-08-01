@@ -36,6 +36,11 @@ class ForumCommentsController extends Controller
 
         try {
             $user = auth()->user();
+
+            if (!$user->hasActiveBadge()) {
+                return makeResponse(ABORT_CODE, 'Get your badge to participate in the forum.');
+            }
+
             $comment = ForumComments::create([
                 'forum_id' => $request->forum_id,
                 'content' => $request->content,

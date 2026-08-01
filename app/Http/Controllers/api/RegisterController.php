@@ -8,6 +8,7 @@ use App\Models\Country;
 use App\Models\PasswordResetTokens;
 use App\Models\State;
 use App\Models\User;
+use App\Models\UserBadge;
 use App\Models\UserInformation;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
@@ -185,7 +186,10 @@ class RegisterController extends Controller
     ValidateApiRequest($rules, $request->all());
 
     try {
-        $response = DB::transaction(function () use ($request) {
+        // The transaction only covers DB writes. Sending the verification email
+        // is deliberately done AFTER it commits (see below) — a transient SMTP
+        // hiccup must never roll back an otherwise-successful account creation.
+        $outcome = DB::transaction(function () use ($request) {
             // Include soft-deleted rows: MySQL's unique index on `email` doesn't
             // know about deleted_at, so a soft-deleted account still physically
             // occupies the address and would otherwise block re-registration
@@ -211,12 +215,12 @@ class RegisterController extends Controller
 
 
             if ($existingUser && $existingUser->updated_at >= Carbon::now()->subMinutes(10)) {
-                return makeResponse(NOT_ACCEPTABLE, 'Please wait at least 10 minutes before reattempt.');
+                return ['response' => makeResponse(NOT_ACCEPTABLE, 'Please wait at least 10 minutes before reattempt.')];
             }
 
             if ($existingUser) {
                 if ($existingUser->email_verified_at) {
-                    return makeResponse(NOT_ACCEPTABLE, 'Email already registered and verified. Please log in.');
+                    return ['response' => makeResponse(NOT_ACCEPTABLE, 'Email already registered and verified. Please log in.')];
                 }
 
                 $existingUser->update([
@@ -226,6 +230,7 @@ class RegisterController extends Controller
                     'role'     => $role->name,
                 ]);
                 $existingUser->syncRoles($role->name);
+                $this->ensurePendingBadge($existingUser, $role->name);
 
                 UserInformation::updateOrCreate(
                     ['user_id' => $existingUser->id],
@@ -250,17 +255,10 @@ class RegisterController extends Controller
                     ['token' => $token, 'created_at' => Carbon::now()]
                 );
 
-                $verificationUrl = url("/api/verify-email/{$token}");
-
-                Mail::send('emails.verify-email', [
-                    'url' => $verificationUrl,
-                    'name' => $existingUser->name
-                ], function ($message) use ($existingUser) {
-                    $message->to($existingUser->email)
-                        ->subject('Verify your email address');
-                });
-
-                return makeResponse(SUCCESS_CODE, 'Your previous unverified account was updated. Please check your email to verify.');
+                return [
+                    'response' => makeResponse(SUCCESS_CODE, 'Your previous unverified account was updated. Please check your email to verify.'),
+                    'mail' => ['email' => $existingUser->email, 'name' => $existingUser->name, 'url' => url("/api/verify-email/{$token}")],
+                ];
             }
 
             $user = User::create([
@@ -271,6 +269,7 @@ class RegisterController extends Controller
                 'role'     => $role->name,
             ]);
             $user->syncRoles($role->name);
+            $this->ensurePendingBadge($user, $role->name);
 
             UserInformation::create([
                 'user_id'               => $user->id,
@@ -293,19 +292,30 @@ class RegisterController extends Controller
                 ['email' => $user->email],
                 ['token' => $token, 'created_at' => Carbon::now()]
             );
-            $verificationUrl = url("/api/verify-email/{$token}");
 
-            Mail::send('emails.verify-email', [
-                'url' => $verificationUrl,
-                'name' => $user->name
-            ], function ($message) use ($user) {
-                $message->to($user->email)
-                    ->subject('Verify your email address');
-            });
-            return makeResponse(SUCCESS_CODE, 'Registration successful. Please check your email to verify your account.');
+            return [
+                'response' => makeResponse(SUCCESS_CODE, 'Registration successful. Please check your email to verify your account.'),
+                'mail' => ['email' => $user->email, 'name' => $user->name, 'url' => url("/api/verify-email/{$token}")],
+            ];
         });
 
-        return $response;
+        // Account is safely committed at this point. A failure here must not
+        // undo it or block the signup — just log it; the user can always
+        // retry via /api/resend-verification-email.
+        if (!empty($outcome['mail'])) {
+            try {
+                Mail::send('emails.verify-email', [
+                    'url' => $outcome['mail']['url'],
+                    'name' => $outcome['mail']['name'],
+                ], function ($message) use ($outcome) {
+                    $message->to($outcome['mail']['email'])->subject('Verify your email address');
+                });
+            } catch (\Throwable $e) {
+                \Log::error('Verification email failed to send during registration: ' . $e->getMessage());
+            }
+        }
+
+        return $outcome['response'];
     } catch (QueryException $e) {
         // Two near-simultaneous submissions can both pass the uniqueness
         // check before either commits; the second insert then hits the
@@ -316,8 +326,26 @@ class RegisterController extends Controller
         }
         return makeResponse(FAILURE_CODE, 'Registration failed. Please try again.');
     } catch (\Exception $e) {
-        return makeResponse(FAILURE_CODE, $e->getMessage());
+        // Never leak internal exception details (server paths, mail-host
+        // errors, etc.) to the client — log it server-side and return a
+        // generic message instead.
+        \Log::error('Registration failed: ' . $e->getMessage());
+        return makeResponse(FAILURE_CODE, 'Registration failed. Please try again.');
     }
+}
+
+// Buyers, Admins, and Moderators never need a paid badge — everyone else
+// (Seller, Attorney, Business Broker, and the rest of the professional
+// roles) gets a pending UserBadge row at signup, activated later by an
+// admin once Mike's merchant services confirms payment. firstOrCreate
+// keeps this idempotent for the re-registration-of-an-unverified-account
+// path, where a badge row may already exist from a prior attempt.
+private function ensurePendingBadge(User $user, string $roleName): void
+{
+    if (in_array($roleName, ['Buyer', 'Admin', 'Moderator'], true)) {
+        return;
+    }
+    UserBadge::firstOrCreate(['user_id' => $user->id], ['status' => 'pending']);
 }
 
 public function resendVerificationEmail(Request $request)
@@ -401,6 +429,31 @@ public function resendVerificationEmail(Request $request)
             }
         }
 
+
+        // Lightweight "refresh my own data" endpoint — lets the frontend pick up
+        // changes made elsewhere (e.g. an admin activating a badge in the portal)
+        // without forcing the user to sign out and back in. Same enrichment as
+        // LoginController::login() so the response can be merged straight into
+        // the locally-stored user object.
+        public function me(Request $request)
+        {
+            $user = Auth::user();
+
+            if (!$user) {
+                return makeResponse(ABORT_CODE, UNAUTHORIZED);
+            }
+
+            $userInfo = UserInformation::where('user_id', $user->id)->first();
+            $user['phone'] = $userInfo->phone_number ?? 'NA';
+            $user['badge_status'] = in_array($user->role, ['Buyer', 'Admin', 'Moderator'], true)
+                ? null
+                : ($user->userBadge->status ?? null);
+            $user['role_badge_icon'] = $user->activeBadgeIcon();
+
+            return makeResponse(SUCCESS_CODE, FETCH_SUCCESS, [
+                'user' => $user->load('userInformation'),
+            ]);
+        }
 
         public function updateProfile(Request $request)
         {

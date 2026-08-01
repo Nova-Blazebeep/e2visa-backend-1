@@ -27,6 +27,7 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/', [UserController::class, 'index'])->name('portal.users.index')->middleware('permission:view-users');
         Route::get('/list', [UserController::class, 'list'])->name('portal.users.list')->middleware('permission:view-users');
         Route::get('/details/{id}', [UserController::class, 'details'])->name('portal.users.details')->middleware('permission:view-users');
+        Route::get('/live-listings/{id}', [UserController::class, 'liveListings'])->name('portal.users.liveListings')->middleware('permission:view-users');
         Route::get('/edit/{id}', [UserController::class, 'edit'])->name('portal.users.edit')->middleware('permission:view-users');
         Route::post('/store-or-update/{id?}', [UserController::class, 'storeOrUpdate'])->name('portal.users.storeOrUpdate')->middleware('permission:add-users');
         Route::get('/create', [UserController::class, 'create'])->name('portal.users.create')->middleware('permission:add-users');

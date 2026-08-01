@@ -8,7 +8,10 @@ class BusinessInformationRequest extends FormRequest
 {
     public function authorize(): bool
     {
-        return true;
+        // Basic sanity check only — the actual badge-eligibility/ownership
+        // rules live in the controller, so a rejection returns the app's
+        // normal makeResponse() envelope instead of a bare 403.
+        return auth()->check();
     }
 
     public function rules(): array

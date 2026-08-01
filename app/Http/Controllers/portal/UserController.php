@@ -3,20 +3,26 @@
 namespace App\Http\Controllers\portal;
 
 use App\Http\Controllers\Controller;
+use App\Models\BusinessInformation;
 use App\Models\Country;
 use App\Models\County;
 use App\Models\State;
 use App\Models\User;
+use App\Models\UserBadge;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Spatie\Permission\Models\Role;
 
 class UserController extends Controller
 {
+    // Buyers, Admins, and Moderators never need a paid badge.
+    private const BADGE_EXEMPT_ROLES = ['Buyer', 'Admin', 'Moderator'];
+
     public function index()
     {
         $roles=Role::all();
@@ -39,14 +45,27 @@ class UserController extends Controller
     $columnSortOrder = $order_arr[0]['dir'];
     $searchValue = $search_arr['value'];
 
-    // Base query with role relationship
-    $query = User::with('roles', 'roleBadge');
+    // Base query with role relationship. live_listings_count is scoped to
+    // published (is_publish=1) listings only — drafts don't count as "live".
+    $query = User::with('roles', 'roleBadge', 'userBadge')
+        ->withCount(['bussinessinformation as live_listings_count' => function ($q) {
+            $q->where('is_publish', 1);
+        }]);
 
     // Role filter from DataTables request
     if ($request->filled('role_id')) {
         $roleId = $request->role_id;
         $query->whereHas('roles', function($q) use ($roleId) {
             $q->where('id', $roleId);
+        });
+    }
+
+    // Paid-badge status filter — lets an admin quickly pull up everyone
+    // waiting on activation.
+    if ($request->filled('badge_status')) {
+        $badgeStatus = $request->badge_status;
+        $query->whereHas('userBadge', function($q) use ($badgeStatus) {
+            $q->where('status', $badgeStatus);
         });
     }
 
@@ -80,6 +99,8 @@ class UserController extends Controller
                 : '',
             'role' => $record->roles->pluck('name')->implode(', '), // Multiple roles comma separated
             'is_featured' => $record->is_featured,
+            'live_listings' => $this->liveListingsCell($record),
+            'badge_status' => $this->badgeStatusBadge($record),
             "action" => '',
         ];
     }
@@ -91,6 +112,48 @@ class UserController extends Controller
         "data" => $data_arr,
     ]);
 }
+
+    // Small colored pill for the user list — blank for Buyer/Admin/Moderator
+    // (no badge concept applies), otherwise Pending/Active/Revoked.
+    private function badgeStatusBadge(User $record): string
+    {
+        if (in_array($record->role, self::BADGE_EXEMPT_ROLES, true) || !$record->userBadge) {
+            return '';
+        }
+        $colors = ['pending' => '#b8860b', 'active' => '#1e8449', 'revoked' => '#a93226'];
+        $status = $record->userBadge->status;
+        $color = $colors[$status] ?? '#6c757d';
+        return '<span style="display:inline-block;padding:2px 10px;border-radius:12px;font-size:11px;font-weight:600;'
+            . 'text-transform:uppercase;color:#fff;background:' . $color . ';">' . ucfirst($status) . '</span>';
+    }
+
+    // "Live Listings" cell — a plain number when zero, a clickable link when
+    // the user has published listings. Reuses the existing .viewDetailBtn /
+    // #DetailModal pattern already wired up globally in portal.layout.app,
+    // so clicking it pops the same modal as the "View Detail" button does.
+    private function liveListingsCell(User $record): string
+    {
+        $count = $record->live_listings_count ?? 0;
+        if ($count < 1) {
+            return '<span class="text-muted">0</span>';
+        }
+        $url = route('portal.users.liveListings', $record->id);
+        return '<a href="#" class="viewDetailBtn fw-semibold" data-url="' . $url . '">' . $count . '</a>';
+    }
+
+    // Renders the modal content listing a user's published listings by name,
+    // each linking to that listing's admin edit/detail page.
+    public function liveListings($id)
+    {
+        $record = User::findOrFail($id);
+        $listings = BusinessInformation::where('user_id', $id)
+            ->where('is_publish', 1)
+            ->orderBy('listing_heading')
+            ->get(['id', 'listing_heading', 'business_type']);
+
+        return view('portal.users.partials.live-listings', compact('record', 'listings'))->render();
+    }
+
     public function details($id)
     {
         $record = User::findOrFail($id);
@@ -114,7 +177,7 @@ class UserController extends Controller
 
     public function edit($id)
     {
-        $user = User::with('userInformation')->findOrFail($id);
+        $user = User::with('userInformation', 'userBadge')->findOrFail($id);
         $roles = Role::all();
         $countries = Country::all();
         return view('portal.users.partials.form', compact('user', 'roles', 'countries'))->render();
@@ -141,6 +204,8 @@ class UserController extends Controller
             'about' => 'nullable|string|max:150',
             'licensed_states' => 'nullable|array',
             'licensed_states.*' => 'nullable|string|max:100',
+            'badge_status' => 'nullable|in:pending,active,revoked',
+            'payment_reference' => 'nullable|string|max:255',
         ];
 
         $validated = $request->validate($rules);
@@ -196,6 +261,8 @@ class UserController extends Controller
                 ]
             );
 
+            $this->syncBadgeStatus($user, $validated['role'], $validated['badge_status'] ?? null, $validated['payment_reference'] ?? null);
+
             return response()->json(['message' => 'User updated successfully!', 'data' => $user], 200);
         } else {
             // Permanently remove any soft-deleted record with this email so the unique index doesn't block the insert
@@ -235,7 +302,45 @@ class UserController extends Controller
                 'licensed_states' => $licensedStates,
             ]);
 
+            $this->syncBadgeStatus($user, $validated['role'], $validated['badge_status'] ?? null, $validated['payment_reference'] ?? null);
+
             return response()->json(['message' => 'User created successfully!', 'data' => $user], 201);
+        }
+    }
+
+    // Creates/updates the user's paid-badge row from the admin form. Exempt
+    // roles (Buyer/Admin/Moderator) are skipped entirely — nothing to gate for
+    // them. A transition INTO 'active' or INTO 'revoked' sends the matching
+    // email; every other change (payment reference, re-saving the same
+    // status, or no change at all) is silent.
+    private function syncBadgeStatus(User $user, string $roleName, ?string $requestedStatus, ?string $paymentReference): void
+    {
+        if (in_array($roleName, self::BADGE_EXEMPT_ROLES, true)) {
+            return;
+        }
+
+        $badge = UserBadge::firstOrCreate(['user_id' => $user->id], ['status' => 'pending']);
+        $newStatus = $requestedStatus ?? $badge->status;
+        $previousStatus = $badge->status;
+        $becameActive = $newStatus === 'active' && $previousStatus !== 'active';
+        $becameRevoked = $newStatus === 'revoked' && $previousStatus !== 'revoked';
+
+        $badge->status = $newStatus;
+        $badge->payment_reference = $paymentReference;
+        if ($becameActive) {
+            $badge->activated_at = now();
+            $badge->activated_by = Auth::id();
+        }
+        $badge->save();
+
+        if ($becameActive) {
+            Mail::send('emails.badge_activated', ['name' => $user->name], function ($message) use ($user) {
+                $message->to($user->email)->subject('Your E2Visa badge is active');
+            });
+        } elseif ($becameRevoked) {
+            Mail::send('emails.badge_revoked', ['name' => $user->name], function ($message) use ($user) {
+                $message->to($user->email)->subject('Your E2Visa badge has been revoked');
+            });
         }
     }
 

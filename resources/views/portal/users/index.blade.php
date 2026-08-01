@@ -20,6 +20,8 @@
                             <th>Email</th>
                             <th>Role</th>
                             <th>Badge</th>
+                            <th>Live Listings</th>
+                            <th>Badge Status</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -40,6 +42,7 @@
             url: "{{ route('portal.users.list') }}",
             data: function (d) {
                 d.role_id = $('#roleFilter').val(); // send role filter value
+                d.badge_status = $('#badgeStatusFilter').val(); // send paid-badge status filter value
             }
         },
         columns: [
@@ -48,6 +51,8 @@
             { data: 'email' },
             { data: 'role' },
             { data: 'role_badge' },
+            { data: 'live_listings', orderable: false, searchable: false },
+            { data: 'badge_status', orderable: false, searchable: false },
             {
                         data: 'action',
                         orderable: false,
@@ -76,10 +81,25 @@
                 </select>
             `;
 
-            // prepend dropdown before search input
+            const badgeStatusDropdown = `
+                <select id="badgeStatusFilter" class="form-select form-select-sm"
+                    style="width:150px; display:inline-block; margin-right:10px;">
+                    <option value="">All Badge Statuses</option>
+                    <option value="pending">Pending</option>
+                    <option value="active">Active</option>
+                    <option value="revoked">Revoked</option>
+                </select>
+            `;
+
+            // prepend dropdowns before search input
+            $filter.prepend(badgeStatusDropdown);
             $filter.prepend(roleDropdown);
 
             $('#roleFilter').on('change', function () {
+                datatable.ajax.reload();
+            });
+
+            $('#badgeStatusFilter').on('change', function () {
                 datatable.ajax.reload();
             });
         }

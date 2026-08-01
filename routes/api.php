@@ -19,6 +19,7 @@ use App\Http\Controllers\api\ForumCommentsRepliesController;
 use App\Http\Controllers\api\ForumController;
 use App\Models\ForumCommentReplies;
 use App\Http\Controllers\portal\RealestateController;
+use App\Http\Controllers\api\MyListingController;
 
 // Auth Apis
 Route::middleware(['api', 'session'])->post('login', [LoginController::class, 'login']);
@@ -35,12 +36,24 @@ Route::middleware('auth:sanctum')->group(function () {
 // Route::put('/sub-categories/{id}', [CategoryController::class, 'updateSubcategory']);
 // Route::delete('/sub-categories/{id}', [CategoryController::class, 'destroySubcategory']);
 
-// Business Information
-
+// Business Information (legacy, unused — dead one-listing-per-user CRUD,
+// superseded by /my-listings below)
 // Route::post('/business-information', [BusinessInformationController::class, 'store']);
 // Route::get('/business-info/{userId}', [BusinessInformationController::class, 'show']);
 // Route::put('/business-info/{userId}', [BusinessInformationController::class, 'update']);
 // Route::delete('/business-info/{userId}', [BusinessInformationController::class, 'destroy']);
+
+// Phase 2: self-service listing management for badge-active professionals.
+// Ownership + badge-eligibility are enforced inside MyListingController.
+Route::prefix('my-listings')->group(function () {
+    Route::get('/', [MyListingController::class, 'index']);
+    Route::get('/{id}', [MyListingController::class, 'show']);
+    Route::post('/business', [MyListingController::class, 'storeBusiness']);
+    Route::post('/business/{id}', [MyListingController::class, 'updateBusiness']);
+    Route::post('/real-estate', [MyListingController::class, 'storeRealEstate']);
+    Route::post('/real-estate/{id}', [MyListingController::class, 'updateRealEstate']);
+    Route::delete('/{id}', [MyListingController::class, 'destroy']);
+});
 
 // Pages
 Route::get('pages', [PagesController::class, 'index']);
@@ -58,6 +71,7 @@ Route::prefix('forum')->group(function () {
 Route::post('/change-password', [AuthController::class, 'changePassword']);
 
 Route::post('/user/profile', [RegisterController::class, 'updateProfile']);
+Route::get('/user/me', [RegisterController::class, 'me']);
 Route::post('/update-profile-image-update', [AuthController::class, 'updateProfileImage']);
 });
 

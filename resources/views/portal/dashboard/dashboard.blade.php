@@ -6,7 +6,7 @@
     {{-- Page Header --}}
     <div class="page-header">
         <div>
-            <h4 class="page-title">Dashboard</h4>
+            <h4 class="page-title">Dashboard Updated by Pipeline</h4>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">

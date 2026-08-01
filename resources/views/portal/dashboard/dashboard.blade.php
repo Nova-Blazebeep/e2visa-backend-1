@@ -215,21 +215,7 @@
         </div>
 
 
-        {{-- Pipeline Test --}}
-        <div class="col-sm-6 col-lg-3">
-            <div class="card stat-card h-100">
-                <div class="card-body d-flex align-items-center gap-3">
-                    <div class="icon-circle bg-label-dark">
-                        <i class="ti ti-server"></i>
-                    </div>
-
-                    <div>
-                        <p class="stat-label mb-1">Pipeline Test</p>
-                        <h4 class="stat-value mb-0">0</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
 
 
     </div>

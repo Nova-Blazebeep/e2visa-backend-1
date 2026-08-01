@@ -1,4 +1,5 @@
 @extends('portal.layout.app')
+
 @section('content')
 <div class="container-xxl flex-grow-1 container-p-y">
 
@@ -8,15 +9,19 @@
             <h4 class="page-title">Dashboard</h4>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
+                    <li class="breadcrumb-item">
+                        <a href="{{ route('dashboard') }}">Home</a>
+                    </li>
                     <li class="breadcrumb-item active">Overview</li>
                 </ol>
             </nav>
         </div>
     </div>
 
+
     {{-- Stat Cards --}}
     <div class="row g-4">
+
 
         {{-- Users --}}
         <div class="col-sm-6 col-lg-3">
@@ -33,6 +38,7 @@
             </div>
         </div>
 
+
         {{-- Buyers --}}
         <div class="col-sm-6 col-lg-3">
             <div class="card stat-card h-100">
@@ -47,6 +53,7 @@
                 </div>
             </div>
         </div>
+
 
         {{-- Sellers --}}
         <div class="col-sm-6 col-lg-3">
@@ -63,6 +70,7 @@
             </div>
         </div>
 
+
         {{-- Brokers --}}
         <div class="col-sm-6 col-lg-3">
             <div class="card stat-card h-100">
@@ -77,6 +85,7 @@
                 </div>
             </div>
         </div>
+
 
         {{-- Attorneys --}}
         <div class="col-sm-6 col-lg-3">
@@ -93,6 +102,7 @@
             </div>
         </div>
 
+
         {{-- Businesses --}}
         <div class="col-sm-6 col-lg-3">
             <div class="card stat-card h-100">
@@ -107,6 +117,7 @@
                 </div>
             </div>
         </div>
+
 
         {{-- Categories --}}
         <div class="col-sm-6 col-lg-3">
@@ -123,6 +134,7 @@
             </div>
         </div>
 
+
         {{-- Subscribers --}}
         <div class="col-sm-6 col-lg-3">
             <div class="card stat-card h-100">
@@ -137,6 +149,7 @@
                 </div>
             </div>
         </div>
+
 
         {{-- Contacts --}}
         <div class="col-sm-6 col-lg-3">
@@ -153,6 +166,7 @@
             </div>
         </div>
 
+
         {{-- Pages --}}
         <div class="col-sm-6 col-lg-3">
             <div class="card stat-card h-100">
@@ -167,6 +181,7 @@
                 </div>
             </div>
         </div>
+
 
         {{-- Subscriptions --}}
         <div class="col-sm-6 col-lg-3">
@@ -183,6 +198,7 @@
             </div>
         </div>
 
+
         {{-- Testimonials --}}
         <div class="col-sm-6 col-lg-3">
             <div class="card stat-card h-100">
@@ -198,6 +214,26 @@
             </div>
         </div>
 
-    </div>{{-- /.row --}}
+
+        {{-- Pipeline Test --}}
+        <div class="col-sm-6 col-lg-3">
+            <div class="card stat-card h-100">
+                <div class="card-body d-flex align-items-center gap-3">
+                    <div class="icon-circle bg-label-dark">
+                        <i class="ti ti-server"></i>
+                    </div>
+
+                    <div>
+                        <p class="stat-label mb-1">Pipeline Test</p>
+                        <h4 class="stat-value mb-0">0</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    {{-- /.row --}}
+
 </div>
 @endsection

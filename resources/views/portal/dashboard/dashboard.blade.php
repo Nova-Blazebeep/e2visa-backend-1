@@ -176,7 +176,7 @@
                         <i class="ti ti-credit-card"></i>
                     </div>
                     <div>
-                        <p class="stat-label mb-1">Subscription</p>
+                        <p class="stat-label mb-1">Subscriptions</p>
                         <h4 class="stat-value mb-0">{{ $subscriptionCount ?? 0 }}</h4>
                     </div>
                 </div>

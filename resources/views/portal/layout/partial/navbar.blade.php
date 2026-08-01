@@ -49,7 +49,7 @@
                     <li>
                         <a class="dropdown-item" href="{{route('setting.index')}}">
                             <i class="ti ti-settings me-2 ti-sm"></i>
-                            <span class="align-middle">Settings</span>
+                            <span class="align-middle">Setting</span>
                         </a>
                     </li>
                     <li>
